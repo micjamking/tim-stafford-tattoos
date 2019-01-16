@@ -1,0 +1,116 @@
+{% import "/views/macros/_chapter.html" as chapter with context %}
+
+<div class="tst-section-events{% if partial.class %} {{partial.class}}{% endif %}">
+  <div class="tst-section-events__container"
+    {% if partial.events_settings %}
+    ng-controller="TSTIGEventsController as events"
+    ng-init="events.init({{partial.events_settings|jsonify}})"
+    {% endif %}>
+
+    <div class="tst-section-events__list" tst-events>
+      <!-- TODO: Setup ngFor loop for tst-section-events -->
+      <div class="tst-section-event tst-section-event--1">
+        <div class="tst-section-event__image background-images">
+          <div class="tst-section-event__image__image background-images__image tst-desktop-only"
+            style="background-image: url(/images/events/tim-stafford-event-honolulu.jpg)"></div>
+          <div class="tst-section-event__image__image background-images__image tst-mobile-only"></div>
+        </div>
+
+        <div class="tst-section-event__content">
+          <div class="tst-section-event__chapter tst-chapter">
+            <div class="tst-section-event__chapter__title">GUESS WHOS COMIN BACK OAHU!?</div>
+            <div class="tst-section-event__chapter__date">December 18, 2018 — January 10, 2019</div>
+            <div class="tst-section-event__chapter__location">Honolulu, Hawaii</div>
+            <div class="tst-section-event__chapter__description">Ready to cap this year off right!!! After this year, much needed REST, RELAXATION AND PRICELESS FAMILY TIME is in order...</div>
+            <div class="tst-section-event__chapter__ctas ctas">
+              <div class="tst-section-event__chapter__cta ctas__cta">
+                <a class="cta__item button">
+                  <span class="button__label">
+                   <span class="button__label__label">Book Event</span>
+                 </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tst-section-event tst-section-event--2">
+        <div class="tst-section-event__image background-images">
+          <div class="tst-section-event__image__image background-images__image tst-desktop-only"
+            style="background-image: url(/images/events/tim-stafford-event-honolulu.jpg)"></div>
+          <div class="tst-section-event__image__image background-images__image tst-mobile-only"></div>
+        </div>
+
+        <div class="tst-section-event__content">
+          <div class="tst-section-event__chapter tst-chapter">
+            <div class="tst-section-event__chapter__title">GUESS WHOS COMIN BACK OAHU!?</div>
+            <div class="tst-section-event__chapter__date">December 18, 2018 — January 10, 2019</div>
+            <div class="tst-section-event__chapter__location">Honolulu, Hawaii</div>
+            <div class="tst-section-event__chapter__description">Ready to cap this year off right!!! After this year, much needed REST, RELAXATION AND PRICELESS FAMILY TIME is in order...</div>
+            <div class="tst-section-event__chapter__ctas ctas">
+              <div class="tst-section-event__chapter__cta ctas__cta">
+                <a class="cta__item button">
+                  <span class="button__label">
+                   <span class="button__label__label">Book Event</span>
+                 </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tst-section-event tst-section-event--3">
+        <div class="tst-section-event__image background-images">
+          <div class="tst-section-event__image__image background-images__image tst-desktop-only"
+            style="background-image: url(/images/events/tim-stafford-event-honolulu.jpg)"></div>
+          <div class="tst-section-event__image__image background-images__image tst-mobile-only"></div>
+        </div>
+
+        <div class="tst-section-event__content">
+          <div class="tst-section-event__chapter tst-chapter">
+            <div class="tst-section-event__chapter__title">GUESS WHOS COMIN BACK OAHU!?</div>
+            <div class="tst-section-event__chapter__date">December 18, 2018 — January 10, 2019</div>
+            <div class="tst-section-event__chapter__location">Honolulu, Hawaii</div>
+            <div class="tst-section-event__chapter__description">Ready to cap this year off right!!! After this year, much needed REST, RELAXATION AND PRICELESS FAMILY TIME is in order...</div>
+            <div class="tst-section-event__chapter__ctas ctas">
+              <div class="tst-section-event__chapter__cta ctas__cta">
+                <a class="cta__item button">
+                  <span class="button__label">
+                   <span class="button__label__label">Book Event</span>
+                 </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tst-section-event tst-section-event--4">
+        <div class="tst-section-event__image background-images">
+          <div class="tst-section-event__image__image background-images__image tst-desktop-only"
+            style="background-image: url(/images/events/tim-stafford-event-honolulu.jpg)"></div>
+          <div class="tst-section-event__image__image background-images__image tst-mobile-only"></div>
+        </div>
+
+        <div class="tst-section-event__content">
+          <div class="tst-section-event__chapter tst-chapter">
+            <div class="tst-section-event__chapter__title">GUESS WHOS COMIN BACK OAHU!?</div>
+            <div class="tst-section-event__chapter__date">December 18, 2018 — January 10, 2019</div>
+            <div class="tst-section-event__chapter__location">Honolulu, Hawaii</div>
+            <div class="tst-section-event__chapter__description">Ready to cap this year off right!!! After this year, much needed REST, RELAXATION AND PRICELESS FAMILY TIME is in order...</div>
+            <div class="tst-section-event__chapter__ctas ctas">
+              <div class="tst-section-event__chapter__cta ctas__cta">
+                <a class="cta__item button">
+                  <span class="button__label">
+                   <span class="button__label__label">Book Event</span>
+                 </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

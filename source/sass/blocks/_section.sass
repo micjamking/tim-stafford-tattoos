@@ -1,0 +1,112 @@
+/* ==========================================================================
+   Section
+   ========================================================================== */
+
+.tst-section
+  &__container
+    position: relative
+    display: flex
+    width: 100%
+    height: auto
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    +md
+      flex-direction: row
+    +xl
+      max-width: $global-container-max-width
+      margin: 0 auto
+
+  &__item
+    position: relative
+    width: 100%
+    flex: 1
+
+    @for $i from 1 through 5
+      &--order-#{$i}
+        order: $i
+
+    @for $i from 1 through 5
+      &--mobile-order-#{$i}
+        +md-lt
+          order: $i
+
+  &__item--full-width
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+    .tst-section__item__background-images .background-images__image
+      background-size: cover
+
+  &__item--centered
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+    .tst-chapter
+      padding: 0
+      +md
+        align-items: center
+
+    .tst-chapter__body
+      +md
+        max-width: 400px
+
+    .tst-chapter__title,
+    .tst-chapter__body
+      +md
+        text-align: center
+
+  &--light-theme
+    .tst-chapter__title,
+    .tst-chapter__subtitle,
+    .tst-chapter__body
+      +type-white
+
+  &--bio
+    .tst-section__container
+      margin-bottom: 140px
+
+    .tst-section__item--image-only
+      height: calc(338 / 1440 * 100vw)
+      max-height: 338px
+
+    .tst-chapter__title
+      margin-bottom: 10px
+
+      &::before,
+      &::after
+        display: inline-flex
+        color: inherit
+
+      &::before
+        content: "\“"
+
+      &::after
+        content: "\”"
+
+    .tst-chapter__body
+      +type-size-body-medium
+      max-width: 565px
+
+  &--get-in-touch
+    .tst-section__container
+      height: calc(539 / 1440 * 100vw)
+      min-height: 480px
+      max-height: 539px
+
+    .tst-chapter__title
+      letter-spacing: 4px
+      text-transform: uppercase
+      margin-bottom: 10px
+
+    .tst-chapter__body
+      margin-bottom: 10px
+
+    .tst-chapter__body__paragraph
+      +type-weight-regular
+      +type-size-body-medium

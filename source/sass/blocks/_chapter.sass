@@ -1,0 +1,60 @@
+/* ==========================================================================
+   Chapter
+   ========================================================================== */
+
+.tst-chapter
+  position: relative
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: flex-start
+
+  &__images
+    order: 1
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    +md
+      flex-direction: row
+
+  &__image
+    img
+      width: 100%
+      height: auto
+
+  &__title,
+  &__body
+    text-align: left
+
+  &__title
+    order: 2
+    position: relative
+    margin-bottom: 24px
+    letter-spacing: 4px
+    text-transform: uppercase
+    +type-heading
+
+  &__subtitle
+    order: 3
+    position: relative
+
+  &__body
+    width: 100%
+    order: 4
+    +type-body
+
+  &__ctas
+    display: flex
+    order: 5
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    +md
+      flex-direction: row
+
+    .ctas__cta
+      margin-right: 20px
+
+      &:last-child
+        margin-right: 0px

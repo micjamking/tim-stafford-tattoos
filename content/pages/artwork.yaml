@@ -1,0 +1,32 @@
+$title: Artwork
+$path: /{root}/artwork/
+$order: 1
+
+
+partials:
+- partial: hero
+  chapter:
+    class: "tst-hero__chapter"
+    title@: "Artwork"
+  background_images:
+  - class: "background-images__image--octopus tst-desktop-only"
+    url: "/static/images/artwork/tim-stafford-octopus.jpg"
+  # - class: "background-images__image--octopus tst-mobile-only"
+  #   url: "/"
+
+- partial: section-gallery
+  class: "tst-section-gallery--artwork"
+  ig_gallery_settings:
+    item_count: 20
+  chapter_top:
+    ctas:
+    - label@: "All"
+      ng_click: ""
+    - label@: "Tattoos"
+      ng_click: ""
+    - label@: "Illustration"
+      ng_click: ""
+  chapter_bottom:
+    ctas:
+    - label@: "Load More"
+      ng_click: ""

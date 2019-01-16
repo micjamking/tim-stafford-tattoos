@@ -1,0 +1,19 @@
+$title: Contact
+$path: /{root}/contact/
+$order: 3
+
+
+partials:
+- partial: hero
+  chapter:
+    class: "tst-hero__chapter"
+    title@: "Contact"
+  background_images:
+  - class: "background-images__image--clockwork-orange tst-desktop-only"
+    url: "/static/images/contact/tim-stafford-clockwork-orange.jpg"
+  # - class: "background-images__image--clockwork-orange tst-mobile-only"
+  #   url: "/"
+
+- partial: form
+  class: "tst-form--contact"
+  form: !g.yaml /content/partials/contact-form.yaml

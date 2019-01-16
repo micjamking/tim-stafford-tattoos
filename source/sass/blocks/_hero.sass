@@ -1,0 +1,39 @@
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
+.tst-hero
+  &__container
+    position: relative
+    display: flex
+    width: 100%
+    height: 300px
+    max-width: $global-container-max-width
+    margin: 0 auto
+    justify-content: center
+    align-items: center
+
+  &__chapter
+    position: relative
+    text-align: center
+    z-index: 1
+    align-items: center
+
+  &:not(.tst-hero--main)
+    .background-images__image
+      background-size: cover
+    .tst-hero__container
+      margin-bottom: 60px
+
+  &--main
+    .tst-hero__container
+      height: calc(100vh - #{$global-header-height})
+
+    .tst-chapter__title
+      +type-size-hero-large
+      text-transform: uppercase
+
+    .tst-chapter__subtitle
+      +type-size-body-large
+      text-transform: uppercase
+      letter-spacing: 4px

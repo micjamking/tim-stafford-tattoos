@@ -1,0 +1,21 @@
+{#
+ # Renders background images
+ # Options:
+ #  images (array): list of images
+ #  - image.url (string): URL to background image
+ #  - image.class (string): CSS modifier class for background image
+ #}
+{% macro background_images(container_class, images) %}
+<div class="{% if container_class %}{{container_class}} {% endif %}background-images">
+  {% for image in images %}
+  <div class="background-images__image{% if image.class %} {{image.class}}{% endif %}{% if image.id %} background-images__image--{{image.id}}{% endif %}{% if image.lazy_image %} lazy-image{% endif %}"
+    {% if image.url %}
+      {% if image.lazy_image %}
+      data-src="{{g.static(image.url).url.path}}"
+      {% else %}
+      style="background-image: url({{g.static(image.url).url.path}})"
+      {% endif %}
+    {% endif %}></div>
+  {% endfor %}
+</div>
+{% endmacro %}

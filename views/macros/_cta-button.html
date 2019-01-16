@@ -1,0 +1,21 @@
+{#
+ # Renders a single cta button.
+ # Options:
+ #  doc (object): A document reference.
+ #  url (string): The destination url for the cta.
+ #  label (string): The label text inside the cta.
+ #  class (string): Css class modifiers on the cta.  Most commonly used to pass color variations. Example: cta-button--orange, cta-button--white
+ #}
+{% macro cta_button(options) %}
+{% if options.doc %}
+   {% set url = options.doc.url.path %}
+{% endif %}
+{% if options.url %}
+   {% set url = options.url %}
+{% endif %}
+<a href="{{url}}" class="cta__item button{% if options.class %} {{options.class}}{% endif %}"{% if options.delay %} data-delay="{{options.delay}}"{% endif %}>
+  <span class="button__label">
+   <span class="button__label__label">{{_(options.label)}}</span>
+ </span>
+</a>
+{% endmacro %}

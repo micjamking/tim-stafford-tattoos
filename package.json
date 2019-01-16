@@ -1,0 +1,57 @@
+{
+  "name": "timstaffordtattoos.com",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "author": "Mike King",
+  "private": true,
+  "config": {
+    "grow_sdk_url": "https://install.growsdk.org",
+    "lr_options": "-w 600 -e 'html,yaml,md,css,js,png,gif,jpg,svg'",
+    "lr_watch_dir": "./content, ./static, ./views"
+  },
+  "scripts": {
+    "setup": "curl $npm_package_config_grow_sdk_url | bash && npm i",
+    "start": "NODE_ENV=development concurrently --kill-others \"~/bin/grow run --port=3000\" \"npm run livereload\" \"webpack --watch\"",
+    "update:content": "~/bin/grow preprocess --tag content",
+    "postupdate:content": "npm run echo:complete",
+    "echo:complete": "echo \"$(tput setaf 148)Complete!$(tput sgr0)\"",
+    "clean": "rm -rf node_modules package-lock.json",
+    "postclean": "npm run echo:complete",
+    "livereload": "livereload \"$npm_package_config_lr_watch_dir\" $npm_package_config_lr_options",
+    "build": "NODE_ENV=production webpack && ~/bin/grow build",
+    "postbuild": "npm run echo:complete",
+    "backup": "git add . && git commit -m \"$msg\" && git push",
+    "backup:auto": "msg='Saving progress...' npm run backup",
+    "deploy": "~/bin/grow deploy github",
+    "postversion": "git push --tags"
+  },
+  "devDependencies": {
+    "autoprefixer": "7.1.2",
+    "babel-core": "6.25.0",
+    "babel-eslint": "7.2.3",
+    "babel-loader": "7.1.1",
+    "babel-preset-env": "1.6.0",
+    "babel-preset-es2015-node6": "0.4.0",
+    "babel-preset-stage-2": "6.24.1",
+    "concurrently": "3.5.0",
+    "css-loader": "0.28.4",
+    "eslint": "4.4.0",
+    "eslint-loader": "1.9.0",
+    "extract-loader": "1.0.0",
+    "extract-text-webpack-plugin": "3.0.0",
+    "livereload": "0.6.2",
+    "node-sass": "4.5.3",
+    "postcss-loader": "2.0.6",
+    "progress-bar-webpack-plugin": "1.10.0",
+    "sass-loader": "6.0.6",
+    "style-loader": "0.18.2",
+    "uglifyjs-webpack-plugin": "0.4.6",
+    "webpack": "3.4.1"
+  },
+  "dependencies": {
+    "airkit": "github:grow/airkit",
+    "angular-animate": "1.6.4",
+    "angular-touch": "1.6.4",
+    "vanilla-lazyload": "8.7.1"
+  }
+}

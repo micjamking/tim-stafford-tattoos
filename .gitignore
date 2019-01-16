@@ -1,0 +1,20 @@
+# Ignored file pattern for timstaffordtattoos.com
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+error.log
+
+# Node
+node_modules
+
+# Grow Project
+*.zip
+build
+bower_components
+**.mo

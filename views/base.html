@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="{{doc.locale}}">
+<head>
+  <!-- Settings -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, height=device-height" />
+
+  <!-- Search -->
+  <meta name="author" content="{{ podspec.meta.search.author }}" />
+  {% if doc.description %}
+  <meta name="description" content="{{ doc.description }}" />
+  {% else %}
+  <meta name="description" content="{{ podspec.meta.search.description }}" />
+  {% endif %}
+  {% if doc.keywords %}
+  <meta name="keywords" content="{{ doc.keywords }}" />
+  {% else %}
+  <meta name="keywords" content="{{ podspec.meta.search.keywords }}" />
+  {% endif %}
+  {% if podspec.meta.search.google_site_verification %}
+  <meta name="google-site-verification" content="{{ podspec.meta.search.google_site_verification }}" />
+  {% endif %}
+
+  <!-- Open Graph (Facebook) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="{{ podspec.title }}" />
+  <meta property="og:url" content="{{ doc.url }}" />
+  {% if doc.url.path == '/' %}
+  <meta property="og:title" content="{{ podspec.title }}" />
+  {% else %}
+  <meta property="og:title" content="{% if doc.title %}{{ doc.title }} | {% endif %}{{ podspec.title }}" />
+  {% endif %}
+  {% if doc.description %}
+  <meta property="og:description" content="{{ doc.description }}" />
+  {% else %}
+  <meta property="og:description" content="{{ podspec.meta.open_graph.description }}" />
+  {% endif %}
+  {% if podspec.meta.open_graph.image_path %}
+  <meta property="og:image" content="{{ g.static(podspec.meta.open_graph.image_path).url.path }}" />
+  {% endif %}
+  {% if podspec.meta.open_graph.image_type %}
+  <meta property="og:image:type" content="{{ podspec.meta.open_graph.image_type }}" />
+  {% endif %}
+  {% if podspec.meta.open_graph.image_width %}
+  <meta property="og:image:width" content="{{ podspec.meta.open_graph.image_width }}" />
+  {% endif %}
+  {% if podspec.meta.open_graph.image_height %}
+  <meta property="og:image:height" content="{{ podspec.meta.open_graph.image_height }}" />
+  {% endif %}
+  {% if podspec.meta.open_graph.facebook_app_id %}
+  <meta property="fb:app_id" content="{{ podspec.meta.open_graph.facebook_app_id }}" />
+  {% endif %}
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  {% if podspec.meta.twitter.username %}
+  <meta name="twitter:site" content="{{ podspec.meta.twitter.username }}">
+  <meta name="twitter:creator" content="{{ podspec.meta.twitter.username }}">
+  {% endif %}
+  {% if doc.url.path == '/' %}
+  <meta name="twitter:title" content="{{ podspec.title }}" />
+  {% else %}
+  <meta name="twitter:title" content="{% if doc.title %}{{ doc.title }} | {% endif %}{{ podspec.title }}" />
+  {% endif %}
+  {% if doc.description %}
+  <meta name="twitter:description" content="{{ doc.description }}">
+  {% else %}
+  <meta name="twitter:description" content="{{ podspec.meta.open_graph.description }}">
+  {% endif %}
+
+  <!-- Google+ -->
+  {% if podspec.meta.google.plus_id %}
+  <link rel="author" href="//plus.google.com/{{ podspec.meta.google.plus_id }}/posts" />
+  <link rel="publisher" href="//plus.google.com/{{ podspec.meta.google.plus_id }}/about" />
+  {% endif %}
+
+  <!-- DNS Prefetch -->
+  <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Bowlby+One|Open+Sans:300,400,700">
+  <link rel="stylesheet" href="{{ g.static('/static/style.css').url.path }}" />
+
+  {% if podspec.meta.favicon_path %}
+  <!-- Icons -->
+  <link rel="icon" type="image/png" href="{{ g.static(podspec.meta.favicon_path).url.path }}" />
+  {% endif %}
+  {% if podspec.meta.icon_path %}
+  <link rel="apple-touch-icon" href="{{ g.static(podspec.meta.icon_path).url.path }}" />
+  {% endif %}
+
+  {% if doc.url.path == '/' %}
+  <title>{{ podspec.title }}</title>
+  {% else %}
+  <title>{% if doc.title %}{{ doc.title }} | {% endif %}{{ podspec.title }}</title>
+  {% endif %}
+
+  {% if podspec.meta.google.analytics_id %}
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', '{{ podspec.meta.google.analytics_id }}', 'auto');
+    ga('send', 'pageview');
+  </script>
+  {% endif %}
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+  <script src="{{ g.static('/static/script.js').url.path }}"></script>
+</head>
+{#
+ # Set a class on the body
+ #}
+{% if doc.url.path == '/' %}
+  {% set body_class = 'home' %}
+{% else %}
+  {% set body_class = doc.url.path|replace("/", "") %}
+{% endif %}
+<body class="{{ body_class }}">
+  {% include "/views/partials/_preloader.html" %}
+
+  {% include "/views/partials/_header.html" %}
+
+  <section class="tst-main">
+    {% block main %}
+      {% if doc.partials %}
+        {% for partial in doc.partials if partial.partial and partial.enabled is not sameas false %}
+          {% include '/views/partials/_' ~ partial.partial ~ '.html' with context %}
+        {% endfor %}
+      {% else %}
+        {{doc.html|safe}}
+      {% endif %}
+    {% endblock %}
+  </section>
+
+  {% include "/views/partials/_footer.html" %}
+</body>
+</html>

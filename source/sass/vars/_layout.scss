@@ -1,0 +1,41 @@
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+// Sizes
+$global-border-radius: 3px;
+$global-header-height: 120px;
+$global-container-max-width: 1340px;
+
+// Spacing
+$global-padding: 1.25em;
+$global-margin: 1.25em;
+$global-spacing-xs: 10px;
+$global-spacing-sm: 15px;
+$global-spacing-md: 20px;
+$global-spacing-lg: 40px;
+$global-spacing-xl: 60px;
+
+// General screen sizes
+$global-screen-size-small: 320px;
+$global-screen-size-medium: 768px;
+$global-screen-size-large: 1024px;
+$global-screen-size-xlarge: 1440px;
+
+// Device resolutions
+$global-min-dpr: 1.25;
+$global-min-dpi: 200;
+
+// Media Queries
+$small-screen:  'only screen and (min-width: #{$global-screen-size-small})';
+$medium-screen: 'only screen and (min-width: #{$global-screen-size-medium})';
+$large-screen:  'only screen and (min-width: #{$global-screen-size-large})';
+$xlarge-screen: 'only screen and (min-width: #{$global-screen-size-xlarge})';
+$retina: (
+ 'only screen and (-webkit-min-device-pixel-ratio: #{$global-min-dpr})',
+ 'only screen and (min--moz-device-pixel-ratio: #{$global-min-dpr})',
+ 'only screen and (-o-min-device-pixel-ratio: #{$global-min-dpr}/1)',
+ 'only screen and (min-device-pixel-ratio: #{$global-min-dpr})',
+ 'only screen and (min-resolution: #{$global-min-dpi}dpi)',
+ 'only screen and (min-resolution: #{$global-min-dpr}dppx)'
+);

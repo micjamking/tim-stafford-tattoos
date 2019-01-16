@@ -1,0 +1,98 @@
+{% import "/views/macros/_background-images.html" as background_images with context %}
+{% import "/views/macros/_cta-button.html" as cta_button with context %}
+
+{#
+ # Renders an unordered list
+ #
+ # list:
+ # - class? (string) Optional classes to pass
+ # - items (Array<object>) list items
+ #}
+{% macro body_list(class, items) %}
+<ul class="chapter__body-list{% if class %} {{ class }}{% endif %}">
+  {% for item in items %}
+  <li class="chapter__body-list__item">
+    {% if item.name %}<span class="chapter__body-list__item__name">{{_(item.name)}}{% if item.value %}{{_(': ')}}{% endif %}</span>{% endif %}
+    {% if item.value %}<span class="chapter__body-list__item__value">{{_(item.value)}}</span>{% endif %}
+
+    {% if item.list %}
+    {{ body_list('chapter__body-list--nested', item.list)}}
+    {% endif %}
+
+  </li>
+  {% endfor %}
+</ul>
+{% endmacro %}
+
+
+{#
+ # Renders a chapter.
+ #
+ # chapter:
+ # - class? (string) Optional classes to pass
+ # - theme? (string) Overrides the main theme.
+ # - inline_images? (Array<object>) list of paths to static images
+ # - title? (string) Optional title of chapter
+ # - subtitle? (string) Optional subtitle of chapter
+ # - body? (string|Array<string>) Optional chapter content (also permits lists of strings)
+ # - body_list? (Array<object>) Optional unordered key/value list of content
+ # - background_images? (Array<object>)  list of paths to static images
+ # - ctas? (Array<object>) Optional buttons
+ #}
+{% macro chapter(chapter) %}
+<div class="tst-chapter{% if chapter.class %} {{ chapter.class }}{% endif %}{% if chapter.theme %} tst-chapter--{{ chapter.theme }}{% endif %}">
+
+  {% if chapter.inline_images %}
+  <div class="tst-chapter__images">
+    {% for image in chapter.inline_images %}
+    <div class="image tst-chapter__image{% if image.class %} tst-chapter__image--{{ image.class }}{% endif %}">
+      <img data-src="{{ g.static(image.url).url.path }}" />
+    </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  {% if chapter.title %}
+  <div class="tst-chapter__title{% if chapter.title_class %} {{chapter.title_class}}{% endif %}">{{ _(chapter.title) }}</div>
+  {% endif %}
+
+  {% if chapter.subtitle %}
+  <div class="tst-chapter__subtitle{% if chapter.subtitle_class %} {{chapter.subtitle_class}}{% endif %}">{{ _(chapter.subtitle) }}</div>
+  {% endif %}
+
+  {% if chapter.body %}
+    {# Permit lists of strings or single strings for chapter.body. #}
+    {% if chapter.body is string %}
+       {% set body = _(chapter.body) %}
+    {% elif chapter.body is sequence %}
+       {% set body = [] %}
+       {% for item in chapter.body %}
+          {% do body.append('<p class="tst-chapter__body__paragraph">') %}
+          {% do body.append(_(item)) %}
+          {% do body.append('</p>') %}
+       {% endfor %}
+       {% set body = ''.join(body) %}
+    {% endif %}
+  <div class="tst-chapter__body">{{ _(body) }}</div>
+  {% endif %}
+
+  {% if chapter.body_list %}
+  {{ body_list(chapter.body_list_class or '', chapter.body_list)}}
+  {% endif %}
+
+  {% if chapter.background_images %}
+  {{background_images.background_images('chapter__background-images', chapter.background_images)}}
+  {% endif %}
+
+  {% if chapter.ctas %}
+  <div class="tst-chapter__ctas{% if chapter.ctas_class %} {{chapter.ctas_class}}{% endif %} ctas">
+    {% for cta in chapter.ctas %}
+      <div class="tst-chapter__cta ctas__cta">
+        {{cta_button.cta_button(cta)}}
+      </div>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+</div>
+{% endmacro %}

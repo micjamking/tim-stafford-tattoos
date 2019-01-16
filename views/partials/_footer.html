@@ -1,0 +1,21 @@
+{% set footer = g.doc('/content/partials/footer.yaml', locale=doc.locale) %}
+
+<footer class="tst-footer">
+  <div class="tst-footer__container">
+    <div class="tst-copyright">
+      {{_('&copy; ' ~ '2019 ' ~ footer.copyright)}}
+    </div>
+
+    {% if footer.nav__social %}
+    <nav class="tst-nav tst-nav--social">
+      <ul class="tst-nav__links">
+        {% for item in footer.nav__social %}
+        <li class="tst-nav__links__link{% if item.class %} {{item.class}}{% endif %}">
+          <a class="cta-button--link-only" href="{{item.url}}">{{_(item.label)}}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    {% endif %}
+  </div>
+</footer>

@@ -1,0 +1,8 @@
+copyright: "Tim Stafford Tattoos"
+nav__social:
+  - class: "ge-nav__links__link--facebook"
+    label@: "Facebook"
+    url: ""
+  - class: "ge-nav__links__link--instagram"
+    label@: "Instagram"
+    url: ""

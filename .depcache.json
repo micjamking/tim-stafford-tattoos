@@ -1,0 +1,23 @@
+{
+  "/content/pages/contact.yaml": [
+    "/content/pages/artwork.yaml",
+    "/content/pages/contact.yaml",
+    "/content/pages/events.yaml",
+    "/content/partials/contact-form.yaml",
+    "/content/partials/footer.yaml",
+    "/static/apple-touch-icon-precomposed.png",
+    "/static/favicon.png",
+    "/static/images/contact/tim-stafford-clockwork-orange.jpg",
+    "/static/script.js",
+    "/static/style.css",
+    "/views/partials/_footer.html",
+    "/views/partials/_form.html",
+    "/views/partials/_header.html",
+    "/views/partials/_hero.html",
+    "/views/partials/_preloader.html"
+  ],
+  "/content/pages/home.yaml": [
+    "/content/pages/artwork.yaml",
+    "/content/pages/contact.yaml"
+  ]
+}

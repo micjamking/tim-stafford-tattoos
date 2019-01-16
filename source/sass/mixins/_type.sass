@@ -1,0 +1,82 @@
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+// Colors
+=type-white
+  color: $global-color-white
+
+=type-grey
+  color: $global-color-dark-grey
+
+=type-black
+  color: $global-color-black
+
+=type-gold
+  color: $global-color-gold
+
+// Font Family
+=type-font-body
+  font-family: $global-font-body
+
+=type-font-heading
+  font-family: $global-font-heading
+
+// Font Weights
+=type-weight-light
+  font-weight: 300
+
+=type-weight-regular
+  font-weight: 400
+
+=type-weight-bold
+  font-weight: 700
+
+// Font Size
+=type-size-body-small
+  font-size: 16px
+  line-height: 24px
+
+=type-size-body-medium
+  font-size: 18px
+  line-height: 27px
+
+=type-size-body-large
+  font-size: 24px
+  line-height: 27px
+
+=type-size-hero-small
+  font-size: 36px
+  line-height: 54px
+
+=type-size-hero-large
+  font-size: 64px
+  line-height: 96px
+
+=type-size-navigation-small
+  font-size: 12px
+  line-height: 18px
+
+=type-anti-aliasing
+  -webkit-font-smoothing: antialiased
+
+// Typography
+=type-body
+  +type-font-body
+  +type-black
+  +type-size-body-small
+  +type-weight-light
+  +type-anti-aliasing
+
+=type-heading
+  +type-font-heading
+  +type-black
+  +type-size-body-large
+  +type-weight-regular
+  margin: 0
+  padding: 0
+
+=type-navigation
+  +type-font-body
+  +type-black
+  +type-size-navigation-small

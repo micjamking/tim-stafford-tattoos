@@ -1,0 +1,64 @@
+/* ==========================================================================
+   Section Events
+   ========================================================================== */
+
+.tst-section-events
+  &__container
+    +xl
+      max-width: $global-container-max-width
+      margin: 0 auto
+
+  &__container,
+  &__list
+    position: relative
+    display: flex
+    width: 100%
+    height: auto
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+  &__list
+    max-width: 900px
+    margin: 0 auto
+
+  .tst-section-event
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: flex-start
+    margin-bottom: 40px
+
+    &__image
+      position: relative
+      display: flex
+      width: calc(400 / 1440 * 100vw)
+      max-width: 400px
+      height: calc(400 / 1440 * 100vw)
+      max-height: 400px
+      margin-right: calc(77 / 1440 * 100vw)
+      flex: 1 0 auto
+      +xl
+        margin-right: 77px
+
+    &__chapter
+      margin-top: 20px
+
+    &__chapter__title
+      +type-weight-bold
+      +type-size-body-large
+      margin-bottom: 30px
+
+    &__chapter__date
+      +type-weight-regular
+      margin-bottom: 10px
+
+    &__chapter__date,
+    &__chapter__location
+      +type-size-body-medium
+
+    &__chapter__location
+      margin-bottom: 30px
+
+    &__chapter__description
+      margin-bottom: 30px

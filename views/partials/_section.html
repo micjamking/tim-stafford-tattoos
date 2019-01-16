@@ -1,0 +1,33 @@
+{% import "/views/macros/_background-images.html" as background_images with context %}
+{% import "/views/macros/_chapter.html" as chapter with context %}
+
+{% macro section_item(item) %}
+<div class="tst-section__item{% if item.class %} {{item.class}}{% endif %}">
+  {% if item.background_images %}
+    {{background_images.background_images('tst-section__item__background-images', item.background_images)}}
+  {% endif %}
+
+  {% if item.background_video %}
+    <div class="tst-section__item__background-video background-video tst-desktop-only">
+      <video muted playsinline class="tst-section__item__background-video__video background-video__video">
+        <source src="{{g.static(item.background_video, locale=doc.locale).url.path}}" type="video/mp4">
+      </video>
+    </div>
+  {% endif %}
+
+  {% if item.chapter %}
+    {{chapter.chapter(item.chapter)}}
+  {% endif %}
+
+</div>
+{% endmacro %}
+
+<div {% if partial.id %}id="{{partial.id}}"{% endif %} class="tst-section{% if partial.class %} {{partial.class}}{% endif %}">
+  <div class="tst-section__container">
+    {% if partial.sections %}
+      {% for item in partial.sections %}
+        {{section_item(item)}}
+      {% endfor %}
+    {% endif %}
+  </div>
+</div>

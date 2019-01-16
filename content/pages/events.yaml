@@ -1,0 +1,19 @@
+$title: Events
+$path: /{root}/events/
+$order: 2
+
+
+partials:
+- partial: hero
+  chapter:
+    class: "tst-hero__chapter"
+    title@: "Events"
+  background_images:
+  - class: "background-images__image--tiki tst-desktop-only"
+    url: "/static/images/events/tim-stafford-tiki.jpg"
+  # - class: "background-images__image--tiki tst-mobile-only"
+  #   url: "/"
+
+- partial: section-events
+  ig_events_settings:
+    show_historical_events: false

@@ -1,0 +1,66 @@
+grow_version: ">=0.2.5"
+home: "/content/pages/home.yaml"
+
+title: "Tim Stafford | Tattoo Artist & Illustrator"
+meta:
+  search:
+    author: "Tim Stafford"
+    description: "Timothy Stafford is an Austin-based tattoo artist and illustrator who specializes in 'New School'."
+    keywords: "Tim Stafford, personal website, tattoo artist, illustrator, sketch artist, ink master"
+  open_graph:
+    image_path: ""
+    image_type: "image/png"
+    image_width: "1200"
+    image_height: "630"
+    facebook_app_id: ""
+  twitter:
+    username: "@timstaffordtattoos"
+  google:
+    plus_id: ""
+    analytics_id: ""
+  favicon_path: "/static/favicon.png"
+  icon_path: "/static/apple-touch-icon-precomposed.png"
+
+static_dirs:
+- static_dir: /static/
+  serve_at: "/"
+
+localization:
+  default_locale: en
+
+sitemap:
+  enabled: true
+
+extensions:
+  preprocessors:
+  - extensions.google_forms.GoogleFormsPreprocessor
+
+preprocessors:
+- name: "strings"
+  kind: "google_sheets"
+  id: ""
+  collection: /content/strings
+  format: grid
+  autorun: false
+  generate_ids: true
+  tags:
+  - content
+
+- name: "contact"
+  kind: "google_forms"
+  id: "1FAIpQLScq3YVo1eFHHgZ9tgHMHAN3QVtidWIKdTWZDD7lrPLJuom3Uw"
+  path: /content/partials/contact-form.yaml
+  autorun: false
+  tags:
+  - content
+
+deployments:
+  default:
+    destination: local
+    out_dir: "/dist/"
+  github:
+    destination: "git"
+    repo: "https://github.com/micjamking/tim-stafford-tattoos.git"
+    branch: "gh-pages"
+  env:
+    host: timstaffordtattoos.com

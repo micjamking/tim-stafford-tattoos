@@ -1,0 +1,52 @@
+/* ==========================================================================
+   Breakpoints
+   ========================================================================== */
+
+
+=sm
+  @media #{$small-screen}
+    @content
+
+=md
+  @media #{$medium-screen}
+    @content
+
+=lg
+  @media #{$large-screen}
+    @content
+
+=xl
+  @media #{$xlarge-screen}
+    @content
+
+=sm-lt
+  +less-than($global-screen-size-small - 1px)
+    @content
+
+=md-lt
+  +less-than($global-screen-size-medium - 1px)
+    @content
+
+=lg-lt
+  +less-than($global-screen-size-large - 1px)
+    @content
+
+=xl-lt
+  +less-than($global-screen-size-xlarge - 1px)
+    @content
+
+=larger-than($width)
+  @media (min-width: $width)
+    @content
+
+=less-than($width)
+  @media (max-width: $width)
+    @content
+
+=shorter-than($height)
+  @media (max-height: $height)
+    @content
+
+=taller-than($height)
+  @media (max-height: $height)
+    @content

@@ -1,0 +1,47 @@
+{% import "/views/macros/_background-images.html" as background_images with context %}
+{% import "/views/macros/_chapter.html" as chapter with context %}
+
+<div class="tst-hero{% if partial.class %} {{partial.class}}{% endif %}">
+  <div class="tst-hero__container"
+    {% if partial.hero_controller %}
+    ng-controller="TSTHeroController as hero"
+    {% endif %}>
+
+    {% if partial.background_video %}
+      <div class="tst-hero__background-video background-video{% if partial.background_video.class %} {{partial.background_video.class}}{% endif %}">
+        <video autoplay loop muted playsinline class="tst-hero__background-video__video--desktop background-video__video">
+          <source src="{{g.static(partial.background_video.url, locale=doc.locale).url.path}}" type="video/mp4">
+        </video>
+      </div>
+    {% endif %}
+
+    {% if partial.background_images %}
+      {{background_images.background_images('tst-hero__background-images', partial.background_images)}}
+    {% endif %}
+
+    {% if partial.carousel_settings %}
+    <div class="tst-hero__carousel"
+      ng-controller="TSTCarouselController as carousel"
+      ng-init="carousel.init({{partial.carousel_settings|jsonify}})">
+      <div class="tst-hero__slides" tst-carousel>
+        {% if partial.carousel_slides %}
+          {% for slide in partial.carousel_slides %}
+          <div class="tst-hero__slide tst-hero__slide--{{loop.index}}" tst-carousel-slide ng-cloak>
+            {% if slide.background_images %}
+              {{background_images.background_images('tst-hero__slide__background-images', slide.background_images)}}
+            {% endif %}
+            {% if slide.chapter %}
+              {{chapter.chapter(slide.chapter)}}
+            {% endif %}
+          </div>
+          {% endfor %}
+        {% endif %}
+      </div>
+    </div>
+    {% endif %}
+
+    {% if partial.chapter %}
+      {{chapter.chapter(partial.chapter)}}
+    {% endif %}
+  </div>
+</div>

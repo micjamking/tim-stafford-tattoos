@@ -1,0 +1,62 @@
+action: https://docs.google.com/forms/d/e/1FAIpQLScq3YVo1eFHHgZ9tgHMHAN3QVtidWIKdTWZDD7lrPLJuom3Uw/formResponse?hl=en
+description@: Please fill out this form so I can learn more about your tattoo.
+items:
+- header:
+    title@: Personal Details
+  required: false
+- description: ''
+  fields:
+  - field_type: TEXT
+    name: entry.1433002692
+    placeholder@: Your answer
+  label@: First & Last Name
+  required: false
+- description: ''
+  fields:
+  - field_type: TEXT
+    name: entry.79326389
+    placeholder@: Your answer
+  label@: Email Address
+  required: false
+- description: ''
+  fields:
+  - field_type: TEXT
+    name: entry.1676609741
+    placeholder@: Your answer
+  label@: Phone Number (incl. area code)
+  required: false
+- description: ''
+  fields:
+  - field_type: TEXTAREA
+    name: entry.609752798
+    placeholder@: Your answer
+  label@: City
+  required: false
+- description: ''
+  fields:
+  - field_type: TEXT
+    name: entry.1217768681
+    placeholder@: Your answer
+  label@: State
+  required: false
+- header:
+    title@: Tattoo Details
+  required: false
+- description: ''
+  fields:
+  - field_type: TEXT
+    name: entry.1635709819
+    placeholder@: Your answer
+  label@: Description of tattoo
+  required: false
+- description: ''
+  fields:
+  - field_type: TEXT
+    name: entry.1537899124
+    placeholder@: Your answer
+  label@: Location of tattoo
+  required: false
+- description: ''
+  label@: Desired date for tattoo session
+  required: false
+title@: Tattoo Inquiry Form

@@ -1,0 +1,69 @@
+$title: Home
+$path: /{root}/
+$order: -1
+$hidden: true
+
+
+partials:
+- partial: hero
+  hero_controller: true
+  class: "tst-hero--main"
+  chapter:
+    class: "tst-hero__chapter"
+    title@: "Tim Stafford"
+    subtitle@: "Tattoo Artist & Illustrator"
+  background_images:
+  - class: "background-images__image--boston-terrier tst-desktop-only"
+    url: "/static/images/home/tim-stafford-boston-terrier.jpg"
+  # - class: "background-images__image--boston-terrier tst-mobile-only"
+  #   url: "/"
+
+
+- partial: section
+  class: "tst-section--bio"
+  sections:
+  - class: "tst-section__item--image-only tst-section__item--order-1"
+    background_images:
+    - class: "background-images__image--tim-portrait tst-desktop-only"
+      url: "/static/images/home/tim-stafford-portrait.jpg"
+    # - class: "background-images__image--tim-portrait tst-mobile-only"
+    #   url: "/"
+  - class: "tst-section__item--order-2"
+    chapter:
+      class: "tst-section__item__chapter"
+      title@: "CREATIVITY IS EVERYTHING"
+      body@:
+      - "Timothy Stafford is an Austin-based tattoo artist and illustrator who specializes in 'New School', combining unique character design, realistic texture and vibrant color to create a style all his own. For the last decade, Tim has been establishing himself as one of the premier atists and illustrators in the tattoo industry, creating mind-blowing tattoos & illustrations completely from scratch."
+      - "Tim was also featured on Paramount Network's Ink Master Season 11 as a top-4 finisher."
+
+
+- partial: section-gallery
+  class: "tst-section-gallery--home"
+  ig_gallery_settings:
+    item_count: 4
+  chapter_top:
+    title@: "Latest Artwork"
+  chapter_bottom:
+    ctas:
+    - label@: "View More"
+      url: !g.url /content/pages/artwork.yaml
+
+
+- partial: section
+  class: "tst-section--get-in-touch tst-section--light-theme"
+  sections:
+  - class: "tst-section__item--full-width tst-section__item--centered"
+    chapter:
+      title@: "Ready To Get Tattooed?"
+      body@:
+      - "Lets consult over your ideas, finalize your concept, schedule a date that works for both of us, and place a deposit."
+      - "Can’t wait to get started!"
+      ctas:
+      - class: "button--gold"
+        label@: "Get In Touch"
+        url: !g.url /content/pages/contact.yaml
+    background_images:
+    - class: "background-images__image--tim-stafford-tattooing tst-desktop-only"
+      url: "/static/images/home/tim-stafford-tattooing.jpg"
+    # - class: "background-images__image--tim-stafford-tattooing tst-mobile-only"
+    #   url: "/"
