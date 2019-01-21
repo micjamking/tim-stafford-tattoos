@@ -1,4 +1,20 @@
 {
+  "/content/pages/artwork.yaml": [
+    "/content/pages/artwork.yaml",
+    "/content/pages/contact.yaml",
+    "/content/pages/events.yaml",
+    "/content/partials/footer.yaml",
+    "/static/apple-touch-icon-precomposed.png",
+    "/static/favicon.png",
+    "/static/images/artwork/tim-stafford-octopus.jpg",
+    "/static/script.js",
+    "/static/style.css",
+    "/views/partials/_footer.html",
+    "/views/partials/_header.html",
+    "/views/partials/_hero.html",
+    "/views/partials/_preloader.html",
+    "/views/partials/_section-gallery.html"
+  ],
   "/content/pages/contact.yaml": [
     "/content/pages/artwork.yaml",
     "/content/pages/contact.yaml",
@@ -16,8 +32,39 @@
     "/views/partials/_hero.html",
     "/views/partials/_preloader.html"
   ],
+  "/content/pages/events.yaml": [
+    "/content/pages/artwork.yaml",
+    "/content/pages/contact.yaml",
+    "/content/pages/events.yaml",
+    "/content/partials/footer.yaml",
+    "/static/apple-touch-icon-precomposed.png",
+    "/static/favicon.png",
+    "/static/images/events/tim-stafford-tiki.jpg",
+    "/static/script.js",
+    "/static/style.css",
+    "/views/partials/_footer.html",
+    "/views/partials/_header.html",
+    "/views/partials/_hero.html",
+    "/views/partials/_preloader.html",
+    "/views/partials/_section-events.html"
+  ],
   "/content/pages/home.yaml": [
     "/content/pages/artwork.yaml",
-    "/content/pages/contact.yaml"
+    "/content/pages/contact.yaml",
+    "/content/pages/events.yaml",
+    "/content/partials/footer.yaml",
+    "/static/apple-touch-icon-precomposed.png",
+    "/static/favicon.png",
+    "/static/images/home/tim-stafford-boston-terrier.jpg",
+    "/static/images/home/tim-stafford-portrait.jpg",
+    "/static/images/home/tim-stafford-tattooing.jpg",
+    "/static/script.js",
+    "/static/style.css",
+    "/views/partials/_footer.html",
+    "/views/partials/_header.html",
+    "/views/partials/_hero.html",
+    "/views/partials/_preloader.html",
+    "/views/partials/_section-gallery.html",
+    "/views/partials/_section.html"
   ]
 }
