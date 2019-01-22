@@ -12,7 +12,10 @@
     flex-direction: column
     justify-content: center
     align-items: center
-    margin-bottom: 150px
+    margin-bottom: 80px
+    +mobile-section-padding
+    +md
+      margin-bottom: 150px
     +xl
       max-width: $global-container-max-width
       margin: 0 auto 150px
@@ -20,6 +23,13 @@
   &__chapter-top,
   &__images
     margin-bottom: 50px
+
+  &__chapter-top
+    +md-lt
+      margin-bottom: 25px
+
+    .tst-chapter__title:only-child
+      margin-bottom: 0
 
   &__images
     display: flex
@@ -35,11 +45,17 @@
     position: relative
     display: flex
     flex: 1
-    width: calc(320 / 1440 * 100vw)
-    max-width: 320px
-    height: calc(320 / 1440 * 100vw)
-    max-height: 320px
-    margin-right: 20px
+    width: calc(100vw - 40px)
+    height: calc(100vw - 40px)
+    min-width: 200px
+    min-height: 200px
+    margin-bottom: 25px
+    +md
+      width: calc(320 / 1440 * 100vw)
+      height: calc(320 / 1440 * 100vw)
+      max-width: 320px
+      max-height: 320px
+      margin-right: 20px
 
     &:last-child
       margin-right: 0

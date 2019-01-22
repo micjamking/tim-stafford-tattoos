@@ -11,8 +11,8 @@ partials:
   background_images:
   - class: "background-images__image--octopus tst-desktop-only"
     url: "/static/images/artwork/tim-stafford-octopus.jpg"
-  # - class: "background-images__image--octopus tst-mobile-only"
-  #   url: "/"
+  - class: "background-images__image--octopus tst-mobile-only"
+    url: "/static/images/artwork/tim-stafford-octopus.mobile.jpg"
 
 - partial: section-gallery
   class: "tst-section-gallery--artwork"

@@ -11,8 +11,8 @@ partials:
   background_images:
   - class: "background-images__image--clockwork-orange tst-desktop-only"
     url: "/static/images/contact/tim-stafford-clockwork-orange.jpg"
-  # - class: "background-images__image--clockwork-orange tst-mobile-only"
-  #   url: "/"
+  - class: "background-images__image--clockwork-orange tst-mobile-only"
+    url: "/static/images/contact/tim-stafford-clockwork-orange.mobile.jpg"
 
 - partial: section
   class: "tst-section--faq"

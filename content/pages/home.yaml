@@ -15,8 +15,8 @@ partials:
   background_images:
   - class: "background-images__image--boston-terrier tst-desktop-only"
     url: "/static/images/home/tim-stafford-boston-terrier.jpg"
-  # - class: "background-images__image--boston-terrier tst-mobile-only"
-  #   url: "/"
+  - class: "background-images__image--boston-terrier tst-mobile-only"
+    url: "/static/images/home/tim-stafford-boston-terrier.mobile.jpg"
 
 
 - partial: section
@@ -24,10 +24,8 @@ partials:
   sections:
   - class: "tst-section__item--image-only tst-section__item--order-1"
     background_images:
-    - class: "background-images__image--tim-portrait tst-desktop-only"
+    - class: "background-images__image--tim-portrait"
       url: "/static/images/home/tim-stafford-portrait.jpg"
-    # - class: "background-images__image--tim-portrait tst-mobile-only"
-    #   url: "/"
   - class: "tst-section__item--order-2"
     chapter:
       class: "tst-section__item__chapter"
@@ -65,5 +63,5 @@ partials:
     background_images:
     - class: "background-images__image--tim-stafford-tattooing tst-desktop-only"
       url: "/static/images/home/tim-stafford-tattooing.jpg"
-    # - class: "background-images__image--tim-stafford-tattooing tst-mobile-only"
-    #   url: "/"
+    - class: "background-images__image--tim-stafford-tattooing tst-mobile-only"
+      url: "/static/images/home/tim-stafford-tattooing.mobile.jpg"

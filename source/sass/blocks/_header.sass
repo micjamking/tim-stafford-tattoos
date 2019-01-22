@@ -6,7 +6,9 @@
   width: 100%
   z-index: 3
   transition: all 250ms ease-out
-  height: $global-header-height
+  height: 80px
+  +md
+    height: $global-header-height
 
   &__container
     position: relative
@@ -19,9 +21,12 @@
 
   &__logo
     position: absolute
-    top: 41px
-    left: 50px
+    top: 25px
+    left: 25px
     z-index: 2
+    +md
+      top: 41px
+      left: 50px
     a
       display: flex
       line-height: 1

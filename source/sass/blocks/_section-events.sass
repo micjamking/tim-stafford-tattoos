@@ -4,6 +4,7 @@
 
 .tst-section-events
   &__container
+    +mobile-section-padding
     +xl
       max-width: $global-container-max-width
       margin: 0 auto
@@ -24,25 +25,43 @@
 
   .tst-section-event
     display: flex
-    flex-direction: row
+    flex-direction: column
     justify-content: center
-    align-items: flex-start
-    margin-bottom: 40px
+    align-items: center
+    padding-bottom: 40px
+    +md-lt
+      padding-top: 40px
+      border-bottom: 1px solid $global-color-black
+
+      &:first-child
+        padding-top: 0
+
+      &:last-child
+        border-bottom: 0
+    +md
+      flex-direction: row
+      align-items: flex-start
 
     &__image
       position: relative
       display: flex
       width: calc(400 / 1440 * 100vw)
-      max-width: 400px
+      min-width: 200px
       height: calc(400 / 1440 * 100vw)
-      max-height: 400px
-      margin-right: calc(77 / 1440 * 100vw)
+      min-height: 200px
       flex: 1 0 auto
+      +md
+        max-width: 400px
+        max-height: 400px
+        margin-right: calc(77 / 1440 * 100vw)
       +xl
         margin-right: 77px
 
     &__chapter
       margin-top: 20px
+      +md-lt
+        align-items: center
+        text-align: center
 
     &__chapter__title
       +type-weight-bold

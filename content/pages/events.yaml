@@ -11,8 +11,8 @@ partials:
   background_images:
   - class: "background-images__image--tiki tst-desktop-only"
     url: "/static/images/events/tim-stafford-tiki.jpg"
-  # - class: "background-images__image--tiki tst-mobile-only"
-  #   url: "/"
+  - class: "background-images__image--tiki tst-mobile-only"
+    url: "/static/images/events/tim-stafford-tiki.mobile.jpg"
 
 - partial: section-events
   ig_events_settings:

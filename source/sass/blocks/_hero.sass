@@ -19,6 +19,9 @@
     z-index: 1
     align-items: center
 
+    .tst-chapter__title:only-child
+      margin-bottom: 0
+
   &:not(.tst-hero--main)
     .background-images__image
       background-size: cover
@@ -27,13 +30,27 @@
 
   &--main
     .tst-hero__container
-      height: calc(100vh - #{$global-header-height})
+      height: calc(100vh - 80px)
+      +md
+        height: calc(100vh - #{$global-header-height})
 
     .tst-chapter__title
-      +type-size-hero-large
+      font-size: 45px
+      line-height: 1.0
       text-transform: uppercase
+      +md-lt
+        text-align: center
+      +md
+        +type-size-hero-large
 
     .tst-chapter__subtitle
-      +type-size-body-large
+      +type-size-body-medium
       text-transform: uppercase
       letter-spacing: 4px
+      +md-lt
+        text-align: center
+      +md
+        +type-size-body-large
+
+    .background-images__image--boston-terrier
+      background-size: cover

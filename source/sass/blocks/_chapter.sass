@@ -30,10 +30,10 @@
   &__title
     order: 2
     position: relative
-    margin-bottom: 24px
     letter-spacing: 4px
     text-transform: uppercase
     +type-heading
+    margin-bottom: 24px
 
   &__subtitle
     order: 3
@@ -50,11 +50,17 @@
     flex-direction: column
     justify-content: center
     align-items: center
+    +md-lt
+      .ctas__cta
+        margin-bottom: 25px
+
+        &:last-child
+          margin-bottom: 0px
     +md
       flex-direction: row
 
-    .ctas__cta
-      margin-right: 20px
+      .ctas__cta
+        margin-right: 20px
 
-      &:last-child
-        margin-right: 0px
+        &:last-child
+          margin-right: 0px
