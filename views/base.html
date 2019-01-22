@@ -34,7 +34,7 @@
   {% if doc.description %}
   <meta property="og:description" content="{{ doc.description }}" />
   {% else %}
-  <meta property="og:description" content="{{ podspec.meta.open_graph.description }}" />
+  <meta property="og:description" content="{{ podspec.meta.search.description }}" />
   {% endif %}
   {% if podspec.meta.open_graph.image_path %}
   <meta property="og:image" content="{{ g.static(podspec.meta.open_graph.image_path).url.path }}" />
@@ -66,7 +66,7 @@
   {% if doc.description %}
   <meta name="twitter:description" content="{{ doc.description }}">
   {% else %}
-  <meta name="twitter:description" content="{{ podspec.meta.open_graph.description }}">
+  <meta name="twitter:description" content="{{ podspec.meta.search.description }}">
   {% endif %}
 
   <!-- Google+ -->
