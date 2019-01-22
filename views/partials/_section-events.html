@@ -2,9 +2,9 @@
 
 <div class="tst-section-events{% if partial.class %} {{partial.class}}{% endif %}">
   <div class="tst-section-events__container"
-    {% if partial.events_settings %}
+    {% if partial.ig_events_settings %}
     ng-controller="TSTIGEventsController as events"
-    ng-init="events.init({{partial.events_settings|jsonify}})"
+    ng-init="events.init({{partial.ig_events_settings|jsonify}})"
     {% endif %}>
 
     <div class="tst-section-events__list" tst-events>

@@ -41,10 +41,8 @@
         width: 24px
         height: 24px
         position: absolute
-        top: 16px
-        left: 16px
-        +md
-          left: 32px
+        top: 30px
+        right: 25px
 
         &:hover
           cursor: pointer
@@ -52,6 +50,9 @@
         svg
           width: 100%
           height: 100%
+
+        &__path
+          fill: $global-color-black
 
       &__menu--off-canvas
         position: fixed
@@ -70,24 +71,32 @@
       &__close-icon
         display: none
         position: fixed
-        width: 100%
-        height: 100%
-        top: 0
-        right: 0
-        opacity: 0
+        width: 20px
+        height: 19px
+        top: 30px
+        right: 25px
         z-index: 90
+
+        svg
+          width: 100%
+          height: 100%
+
+        &__path
+          fill: $global-color-black
 
       &__links
         width: 100%
         flex-direction: column
         justify-content: center
         align-items: flex-start
+        margin-top: 16px
 
       &__links__link
         cursor: pointer
         padding: 0px 16px
 
         &--active
+          background-color: #F4F4F4
           &::after
             display: none
 

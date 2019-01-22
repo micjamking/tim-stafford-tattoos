@@ -16,4 +16,5 @@ partials:
 
 - partial: section-events
   ig_events_settings:
+    item_count: 4
     show_historical_events: false

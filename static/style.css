@@ -1192,14 +1192,8 @@ textarea:focus {
   width: 24px;
   height: 24px;
   position: absolute;
-  top: 16px;
-  left: 16px;
-}
-
-@media only screen and (min-width: 768px) {
-  .tst-nav--mobile .tst-nav__menu-icon {
-    left: 32px;
-  }
+  top: 30px;
+  right: 25px;
 }
 
 .tst-nav--mobile .tst-nav__menu-icon:hover {
@@ -1209,6 +1203,10 @@ textarea:focus {
 .tst-nav--mobile .tst-nav__menu-icon svg {
   width: 100%;
   height: 100%;
+}
+
+.tst-nav--mobile .tst-nav__menu-icon__path {
+  fill: #0E0E0E;
 }
 
 .tst-nav--mobile .tst-nav__menu--off-canvas {
@@ -1235,12 +1233,20 @@ textarea:focus {
 .tst-nav--mobile .tst-nav__close-icon {
   display: none;
   position: fixed;
+  width: 20px;
+  height: 19px;
+  top: 30px;
+  right: 25px;
+  z-index: 90;
+}
+
+.tst-nav--mobile .tst-nav__close-icon svg {
   width: 100%;
   height: 100%;
-  top: 0;
-  right: 0;
-  opacity: 0;
-  z-index: 90;
+}
+
+.tst-nav--mobile .tst-nav__close-icon__path {
+  fill: #0E0E0E;
 }
 
 .tst-nav--mobile .tst-nav__links {
@@ -1258,11 +1264,16 @@ textarea:focus {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
+  margin-top: 16px;
 }
 
 .tst-nav--mobile .tst-nav__links__link {
   cursor: pointer;
   padding: 0px 16px;
+}
+
+.tst-nav--mobile .tst-nav__links__link--active {
+  background-color: #F4F4F4;
 }
 
 .tst-nav--mobile .tst-nav__links__link--active::after {

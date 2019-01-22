@@ -15,8 +15,6 @@ export default class IGGalleryController {
     this._$w = $window;
 
     this._utils = new utils();
-
-    this.init();
   }
 
   /**

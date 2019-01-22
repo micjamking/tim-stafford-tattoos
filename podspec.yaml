@@ -58,9 +58,10 @@ deployments:
   default:
     destination: local
     out_dir: "/dist/"
+
   github:
     destination: "git"
     repo: "https://github.com/micjamking/tim-stafford-tattoos.git"
     branch: "gh-pages"
-  env:
-    host: timstaffordtattoos.com
+    env:
+      host: timstaffordtattoos.com

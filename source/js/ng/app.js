@@ -10,6 +10,7 @@ import IGEventsController from './controllers/ig-events-controller';
 import IGGalleryController from './controllers/ig-gallery-controller';
 
 /** Directives */
+import mobileMenuDirective from './directives/mobile-menu';
 
 const APP_NAMESPACE = 'tst';
 const angular = window.angular;
@@ -57,10 +58,10 @@ export default class App {
     ];
 
     this._ngDirectives = [
-      // {
-      //   name: 'tstHeaderScroll',
-      //   class: headerScrollDirective
-      // }
+      {
+        name: 'tstMobileMenu',
+        class: mobileMenuDirective
+      }
     ];
 
     this._init();
