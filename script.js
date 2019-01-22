@@ -637,6 +637,9 @@ var _createClass = function () { function defineProperties(target, props) { for 
 /** Controllers */
 
 
+/** Directives */
+
+
 var _carouselController = __webpack_require__(7);
 
 var _carouselController2 = _interopRequireDefault(_carouselController);
@@ -657,11 +660,13 @@ var _igGalleryController = __webpack_require__(11);
 
 var _igGalleryController2 = _interopRequireDefault(_igGalleryController);
 
+var _mobileMenu = __webpack_require__(12);
+
+var _mobileMenu2 = _interopRequireDefault(_mobileMenu);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-/** Directives */
 
 var APP_NAMESPACE = 'tst';
 var angular = window.angular;
@@ -702,12 +707,10 @@ var App = function () {
 
     this._ngServices = [];
 
-    this._ngDirectives = [
-      // {
-      //   name: 'tstHeaderScroll',
-      //   class: headerScrollDirective
-      // }
-    ];
+    this._ngDirectives = [{
+      name: 'tstMobileMenu',
+      class: _mobileMenu2.default
+    }];
 
     this._init();
   }
@@ -975,8 +978,6 @@ var IGEventsController = function () {
     this._$w = $window;
 
     this._utils = new _utils2.default();
-
-    this.init();
   }
 
   /**
@@ -1035,8 +1036,6 @@ var IGGalleryController = function () {
     this._$w = $window;
 
     this._utils = new _utils2.default();
-
-    this.init();
   }
 
   /**
@@ -1055,6 +1054,137 @@ var IGGalleryController = function () {
 }();
 
 exports.default = IGGalleryController;
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var MobileMenuController = function () {
+  _createClass(MobileMenuController, null, [{
+    key: '$inject',
+    get: function get() {
+      return ['$scope', '$element', '$attrs'];
+    }
+  }]);
+
+  function MobileMenuController($scope, $element, $attrs) {
+    var _this = this;
+
+    _classCallCheck(this, MobileMenuController);
+
+    this._$scope = $scope;
+    this._$el = $element[0];
+    this._attrs = $attrs;
+    this._w = window;
+
+    this._$scope.isMenuActive = false;
+    this.activeClass = this._attrs.tstMobileMenuActiveClass || 'active';
+    this.activeElsClass = 'mobile-active';
+    this.$activeEls = document.querySelectorAll('[tst-mobile-menu-active-element]');
+    this.$menuButton = this._$el.querySelectorAll('[tst-mobile-menu-open-button]')[0];
+    this.$menuWrapper = this._$el.querySelectorAll('[tst-mobile-menu-wrapper]')[0];
+    this.$closeButton = this._$el.querySelectorAll('[tst-mobile-menu-close-button]')[0];
+
+    if (this.$menuButton) this.$menuButton.addEventListener('click', function (e) {
+      return _this.openMenu(e);
+    });
+    if (this.$closeButton) this.$closeButton.addEventListener('click', function (e) {
+      return _this.closeMenu(e);
+    });
+
+    console.log('mobile menu directive instantiated.');
+
+    this._$scope.$on('$destroy', function () {
+      _this._dispose();
+    });
+  }
+
+  /**
+   * Open mobile menu
+   * @param {Event} e - Event object
+   */
+
+
+  _createClass(MobileMenuController, [{
+    key: 'openMenu',
+    value: function openMenu(e) {
+      var _this2 = this;
+
+      this._$scope.isMenuActive = true;
+      this._$el.classList.add(this.activeClass);
+      this.$menuWrapper.classList.add(this.activeClass);
+      this.$activeEls.forEach(function (el) {
+        el.classList.add(_this2.activeElsClass);
+      });
+    }
+
+    /**
+     * Close mobile menu
+     * @param {Event} e - Event object
+     */
+
+  }, {
+    key: 'closeMenu',
+    value: function closeMenu(e) {
+      var _this3 = this;
+
+      this._$scope.isMenuActive = false;
+      this._$el.classList.remove(this.activeClass);
+      this.$menuWrapper.classList.remove(this.activeClass);
+      this.$activeEls.forEach(function (el) {
+        el.classList.remove(_this3.activeElsClass);
+      });
+    }
+
+    /**
+     * Cleans up slideshow on $destroy event.
+     */
+
+  }, {
+    key: '_dispose',
+    value: function _dispose() {
+      // console.log('$destroy event fired!');
+    }
+  }]);
+
+  return MobileMenuController;
+}();
+
+/**
+ * Mobile navigation menu
+ *
+ * tst-mobile-menu-active-class (string): Optional name of active class, defaults to 'active'
+ *
+ * <nav tst-mobile-menu>
+ *   <div tst-mobile-menu-open-button></div>
+ *   <div tst-mobile-menu-wrapper>
+ *     <div tst-mobile-menu-close-button></div>
+ *     <ul>...</ul>
+ *   </div>
+ * </nav>
+ *
+ */
+
+
+var mobileMenuDirective = function mobileMenuDirective() {
+  return {
+    restrict: 'A',
+    controller: MobileMenuController
+  };
+};
+
+exports.default = mobileMenuDirective;
 
 /***/ })
 /******/ ]);
