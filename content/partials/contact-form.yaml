@@ -10,53 +10,57 @@ items:
     name: entry.1433002692
     placeholder@: Your answer
   label@: First & Last Name
-  required: false
+  required: true
 - description: ''
   fields:
   - field_type: TEXT
     name: entry.79326389
     placeholder@: Your answer
   label@: Email Address
-  required: false
-- description: ''
+  required: true
+- description@: tel-field
   fields:
   - field_type: TEXT
     name: entry.1676609741
     placeholder@: Your answer
   label@: Phone Number (incl. area code)
-  required: false
+  required: true
 - description: ''
   fields:
-  - field_type: TEXTAREA
+  - field_type: TEXT
     name: entry.609752798
     placeholder@: Your answer
   label@: City
-  required: false
+  required: true
 - description: ''
   fields:
   - field_type: TEXT
     name: entry.1217768681
     placeholder@: Your answer
   label@: State
-  required: false
+  required: true
 - header:
     title@: Tattoo Details
   required: false
 - description: ''
   fields:
-  - field_type: TEXT
+  - field_type: TEXTAREA
     name: entry.1635709819
     placeholder@: Your answer
   label@: Description of tattoo
-  required: false
+  required: true
 - description: ''
   fields:
   - field_type: TEXT
     name: entry.1537899124
     placeholder@: Your answer
   label@: Location of tattoo
-  required: false
-- description: ''
-  label@: Desired date for tattoo session
-  required: false
+  required: true
+- description@: date-field
+  fields:
+  - field_type: TEXT
+    name: entry.522584008
+    placeholder@: Your answer
+  label@: Desired start date for tattoo session
+  required: true
 title@: Tattoo Inquiry Form

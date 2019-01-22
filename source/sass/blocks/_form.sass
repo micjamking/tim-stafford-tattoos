@@ -11,6 +11,7 @@
     flex-direction: column
     justify-content: center
     align-items: center
+    margin-bottom: 100px
 
   &__success
     display: none
@@ -24,5 +25,82 @@
     border: 1px solid $global-color-black
     padding: 50px 60px
 
-  &--contact
-    max
+  .form__title,
+  .form__description,
+  .form__header
+    margin-bottom: 25px
+
+  .form__title,
+  .form__description
+    text-align: center
+
+  .form__header,
+  .form__field__label
+    +type-size-form-small
+
+  .form__title
+    +type-size-form-large
+
+  .form__header
+    +type-weight-bold
+    text-transform: uppercase
+
+  .form__field
+    display: flex
+    flex-direction: column
+    margin-bottom: 25px
+
+  .form__field__label
+    order: 1
+    display: flex
+    position: relative
+    z-index: 1
+    transition: all 300ms ease
+    transform-origin: left top
+    transform: translate3d(0, 120%, 0) scale3d(1.0,1.0,1.0)
+
+  .form__field__input
+    order: 2
+    position: relative
+    z-index: 2
+
+  .form__field__input:focus,
+  .form__field__input:valid,
+    + .form__field__label
+      transform: translate3d(0, 0, 0) scale3d(0.85,0.85,0.85)
+
+  .form__field__input[type="date"]
+    margin-bottom: 60px
+
+    + .form__field__label
+      transform: translate3d(0, 0, 0) scale3d(1.0,1.0,1.0)
+      margin-top: 20px
+      margin-bottom: 25px
+
+  .required
+    +type-red
+    +type-weight-bold
+    margin-left: 3px
+
+  .tst-form__cta
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    text-align: center
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea
+  width: 100%
+  height: auto
+  min-height: 35px
+  appearance: none
+  background-color: transparent
+  border: 0 none
+  outline: none
+  border-bottom: 1px solid $global-color-black
+
+  &:focus
+    outline: none

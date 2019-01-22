@@ -14,6 +14,14 @@ partials:
   # - class: "background-images__image--clockwork-orange tst-mobile-only"
   #   url: "/"
 
+- partial: section
+  class: "tst-section--faq"
+  sections:
+  - class: "tst-section__item--centered"
+    chapter:
+      title@: "Booking By Appointment Only"
+      body@: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin massa justo, fermentum vel mauris quis, ornare imperdiet ante. Cras a sem sed massa convallis lobortis."
+
 - partial: form
   class: "tst-form--contact"
   form: !g.yaml /content/partials/contact-form.yaml

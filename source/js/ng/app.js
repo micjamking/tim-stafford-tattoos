@@ -4,6 +4,7 @@
 
 /** Controllers */
 import CarouselController from './controllers/carousel-controller';
+import FormController from './controllers/form-controller';
 import HeroController from './controllers/hero-controller';
 import IGEventsController from './controllers/ig-events-controller';
 import IGGalleryController from './controllers/ig-gallery-controller';
@@ -32,6 +33,10 @@ export default class App {
       {
         name: 'TSTCarouselController',
         class: CarouselController
+      },
+      {
+        name: 'TSTFormController',
+        class: FormController
       },
       {
         name: 'TSTHeroController',

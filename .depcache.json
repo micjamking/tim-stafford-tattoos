@@ -30,7 +30,8 @@
     "/views/partials/_form.html",
     "/views/partials/_header.html",
     "/views/partials/_hero.html",
-    "/views/partials/_preloader.html"
+    "/views/partials/_preloader.html",
+    "/views/partials/_section.html"
   ],
   "/content/pages/events.yaml": [
     "/content/pages/artwork.yaml",

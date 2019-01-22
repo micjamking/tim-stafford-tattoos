@@ -82,31 +82,37 @@
 
 {% macro text_field(item, field) %}
   <div class="form__field" data-name="{{field.name}}">
-    {{_label(item, field)}}
-    <div class="form__field__input">
-      {% if item.label == "Country" %}
-        {{country_select(item, field)}}
+    {% if item.label == "Country" %}
+      {{country_select(item, field)}}
+    {% else %}
+      {% if "email" in item.label.lower() %}
+      {% set type = "email" %}
+      {% elif "date-field" in item.description %}
+      {% set type = "date" %}
+      {% elif "tel-field" in item.description %}
+      {% set type = "tel" %}
       {% else %}
-        <input
-          type="{{"email" if "email" in item.label.lower() else field.field_type|lower}}"
-          {{"required" if item.required}}
-          name="{{field.name}}"
-          class="form__field__control">
+      {% set type = field.field_type|lower %}
       {% endif %}
-    </div>
+      <input
+        type="{{type}}"
+        {{"required" if item.required}}
+        {{"pattern=[0-9]{4}-[0-9]{2}-[0-9]{2}" if "date-field" in item.description}}
+        name="{{field.name}}"
+        class="form__field__input">
+    {% endif %}
+    {{_label(item, field)}}
   </div>
 {% endmacro %}
 
 {% macro textarea_field(item, field) %}
   <div class="form__field" data-name="{{field.name}}">
+    <textarea
+      placeholder="{{_(item.description)}}"
+      {{"required" if item.required}}
+      name="{{field.name}}"
+      class="form__field__input"></textarea>
     {{_label(item, field)}}
-    <div class="form__field__input">
-      <textarea
-        placeholder="{{_(item.description)}}"
-        {{"required" if item.required}}
-        name="{{field.name}}"
-        class="form__field__control"></textarea>
-    </div>
   </div>
 {% endmacro %}
 
