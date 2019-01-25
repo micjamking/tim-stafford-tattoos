@@ -708,17 +708,6 @@ h6 {
   }
 }
 
-.tst-form__success {
-  display: none;
-}
-
-.tst-form__success.active {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .tst-form__form {
   width: 100%;
   max-width: 600px;

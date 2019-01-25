@@ -4,7 +4,7 @@
   <div class="tst-form__container" ng-controller="TSTFormController as form">
     {% if partial.form %}
     {% set form = partial.form %}
-    <form class="tst-form__form" action="{{form.action}}" target="form-iframe" ng-submit="form.submit()" ng-hide="form.submitted">
+    <form class="tst-form__form" action="{{form.action}}" target="tst-form-iframe" ng-submit="form.submit($event)" ng-hide="form.submitted" tst-form>
       <div class="form__title">{{_(form.get('title'))}}</div>
       <div class="form__description">{{_(form.get('description'))}}</div>
       {{google_forms.render_fields(form.get('items'))}}
@@ -14,7 +14,7 @@
         </button>
       </div>
     </form>
-    <iframe class="hidden" name="tst-form-iframe"></iframe>
+    <iframe class="hidden" name="tst-form-iframe" tst-form-iframe></iframe>
     <div class="tst-form__success" ng-show="form.submitted">
       {{_('Thank you! We\'ve received your message and will review it as soon as we can.')}}
     </div>

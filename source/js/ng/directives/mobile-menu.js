@@ -29,9 +29,8 @@ class MobileMenuController {
 
   /**
    * Open mobile menu
-   * @param {Event} e - Event object
    */
-  openMenu(e) {
+  openMenu() {
     this._$scope.isMenuActive = true;
     this._$el.classList.add(this.activeClass);
     this.$menuWrapper.classList.add(this.activeClass);
@@ -42,9 +41,8 @@ class MobileMenuController {
 
   /**
    * Close mobile menu
-   * @param {Event} e - Event object
    */
-  closeMenu(e) {
+  closeMenu() {
     this._$scope.isMenuActive = false;
     this._$el.classList.remove(this.activeClass);
     this.$menuWrapper.classList.remove(this.activeClass);
