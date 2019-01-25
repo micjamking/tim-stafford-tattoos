@@ -830,17 +830,16 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      * Form controller
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      */
-
-var _utils = __webpack_require__(0);
-
-var _utils2 = _interopRequireDefault(_utils);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+/**
+ * Form controller
+ */
+
+var formSelector = '[tst-form]';
+var iframeSelector = '[tst-form-iframe]';
 
 var FormController = function () {
   _createClass(FormController, null, [{
@@ -857,20 +856,45 @@ var FormController = function () {
     this._$el = $element[0];
     this._$w = $window;
 
-    this._utils = new _utils2.default();
+    this.loading = false;
+    this.submitted = false;
 
-    this.init();
+    console.log('form controller instantiated.');
   }
 
   /**
-   * Initializes form
+   * Submits the form data by POST'ing to an iframe.
+   * @param {Event} e - Event Object
    */
 
 
   _createClass(FormController, [{
-    key: 'init',
-    value: function init() {
-      console.log('form controller initialized.');
+    key: 'submit',
+    value: function submit(e) {
+      var _this = this;
+
+      e.preventDefault();
+
+      var iframeEl = this._$el.querySelector(iframeSelector);
+      var formEl = this._$el.querySelector(formSelector);
+
+      iframeEl.addEventListener('load', function () {
+        _this.loading = false;
+        _this.submitted = true;
+
+        console.log('iframe loadeded!');
+
+        if (!_this._$scope.$$phase) {
+          _this._$scope.$apply();
+        }
+      }, { 'once': true });
+
+      this.loading = true;
+      this.submitted = false;
+
+      formEl.submit();
+
+      console.log('form submitted...');
     }
   }]);
 
@@ -1112,13 +1136,12 @@ var MobileMenuController = function () {
 
   /**
    * Open mobile menu
-   * @param {Event} e - Event object
    */
 
 
   _createClass(MobileMenuController, [{
     key: 'openMenu',
-    value: function openMenu(e) {
+    value: function openMenu() {
       var _this2 = this;
 
       this._$scope.isMenuActive = true;
@@ -1131,12 +1154,11 @@ var MobileMenuController = function () {
 
     /**
      * Close mobile menu
-     * @param {Event} e - Event object
      */
 
   }, {
     key: 'closeMenu',
-    value: function closeMenu(e) {
+    value: function closeMenu() {
       var _this3 = this;
 
       this._$scope.isMenuActive = false;

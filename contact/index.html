@@ -249,7 +249,7 @@
 </div>
 <div class="tst-form tst-form--contact">
   <div class="tst-form__container" ng-controller="TSTFormController as form">
-    <form class="tst-form__form" action="https://docs.google.com/forms/d/e/1FAIpQLScq3YVo1eFHHgZ9tgHMHAN3QVtidWIKdTWZDD7lrPLJuom3Uw/formResponse?hl=en" target="form-iframe" ng-submit="form.submit()" ng-hide="form.submitted">
+    <form class="tst-form__form" action="https://docs.google.com/forms/d/e/1FAIpQLScq3YVo1eFHHgZ9tgHMHAN3QVtidWIKdTWZDD7lrPLJuom3Uw/formResponse?hl=en" target="tst-form-iframe" ng-submit="form.submit($event)" ng-hide="form.submitted" tst-form>
       <div class="form__title">Tattoo Inquiry Form</div>
       <div class="form__description">Please fill out this form so I can learn more about your tattoo.</div>
           <div class="form__header">Personal Details</div>
@@ -374,7 +374,7 @@
         </button>
       </div>
     </form>
-    <iframe class="hidden" name="tst-form-iframe"></iframe>
+    <iframe class="hidden" name="tst-form-iframe" tst-form-iframe></iframe>
     <div class="tst-form__success" ng-show="form.submitted">
       Thank you! We've received your message and will review it as soon as we can.
     </div>
