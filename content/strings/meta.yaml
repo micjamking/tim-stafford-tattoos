@@ -1,0 +1,19 @@
+analytics_id:
+  type: analytics_id
+analytics_version:
+  string@: 1.0.0
+  type: analytics_version
+author:
+  string@: Tim Stafford
+  type: author
+description:
+  string@: "Timothy Stafford is an Austin-based tattoo artist and illustrator\L who specializes in 'New School'."
+  type: description
+facebook_app_id:
+  type: facebook_app_id
+keywords:
+  string@: Tim Stafford, personal website, tattoo artist, illustrator, sketch artist, ink master
+  type: keywords
+title:
+  string@: Tim Stafford | Tattoo Artist & Illustrator
+  type: title

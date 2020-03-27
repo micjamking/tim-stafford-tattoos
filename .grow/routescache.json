@@ -1,0 +1,102 @@
+{
+  "concrete": {
+    "dev": {
+      "/sitemap.xml": {
+        "options": null,
+        "value": {
+          "hashed": null,
+          "kind": "sitemap",
+          "meta": {
+            "collections": null,
+            "filters": null,
+            "locales": null,
+            "path": "/sitemap.xml",
+            "template": null
+          },
+          "pod_path": null
+        }
+      }
+    }
+  },
+  "dynamic": {
+    "dev": {
+      "/": {
+        "options": {},
+        "value": {
+          "hashed": "14939668598cada9b916b3024c2bbb5f501b7eaa000dcc57ecce56c6a36c727f",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/pages",
+            "locale": "en",
+            "pod_path": "/content/pages/home.yaml"
+          },
+          "pod_path": "/content/pages/home.yaml"
+        }
+      },
+      "/*": {
+        "options": null,
+        "value": {
+          "hashed": null,
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "path_format": "/",
+            "source_formats": [
+              "/static/"
+            ],
+            "static_filter": {}
+          },
+          "pod_path": null
+        }
+      },
+      "/artwork/": {
+        "options": {},
+        "value": {
+          "hashed": "9c869269972a30e10c0b7e57fcd7e704e3cb653bff89621761361b72854ca184",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/pages",
+            "locale": "en",
+            "pod_path": "/content/pages/artwork.yaml"
+          },
+          "pod_path": "/content/pages/artwork.yaml"
+        }
+      },
+      "/contact/": {
+        "options": {},
+        "value": {
+          "hashed": "692812bb94b8c01a090224b74b0676d3aab93031149d9ee6e522db3646af75b1",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/pages",
+            "locale": "en",
+            "pod_path": "/content/pages/contact.yaml"
+          },
+          "pod_path": "/content/pages/contact.yaml"
+        }
+      },
+      "/events/": {
+        "options": {},
+        "value": {
+          "hashed": "97bf706cc60abd2d2886e183db2c04caf7a7c8b30a6df93348109068f98a69db",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/pages",
+            "locale": "en",
+            "pod_path": "/content/pages/events.yaml"
+          },
+          "pod_path": "/content/pages/events.yaml"
+        }
+      }
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,34 @@
+contact_faq_body:
+  string@: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin massa justo, fermentum vel mauris quis, ornare imperdiet ante. Cras a sem sed massa convallis lobortis.
+contact_faq_title:
+  string@: Booking By Appointment Only
+contact_hero_title:
+  string@: Contact
+events_hero_title:
+  string@: Events
+home_bio_body:
+  string@: 'Timothy Stafford is an Austin-based tattoo artist and illustrator who specializes in ''New School'', combining unique character design, realistic texture and vibrant color to create a style all his own. For the last decade, Tim has been establishing himself as one of the premier atists and illustrators in the tattoo industry, creating mind-blowing tattoos & illustrations completely from scratch.
+
+
+    Tim was also featured on Paramount Network''s Ink Master Season 11 as a top-4 finisher.'
+home_bio_title:
+  string@: Creativity is Everything
+home_contact_body:
+  string@: 'Lets consult over your ideas, finalize your concept, schedule a date that works for both of us, and place a deposit.
+
+
+    Can’t wait to get started!'
+home_contact_cta:
+  string@: Get In Touch
+home_contact_title:
+  string@: Ready To Get Tattooed?
+home_gallery_cta:
+  string@: View More
+home_gallery_title:
+  string@: Latest Artwork
+home_hero_subtitle:
+  string@: Tattoo Artist & Illustrator
+home_hero_title:
+  string@: Tim Stafford
+store_hero_title:
+  string@: Store

@@ -1,0 +1,38 @@
+{
+  "/content/pages/artwork.yaml": [
+    "/content/pages/artwork.yaml"
+  ],
+  "/content/pages/contact.yaml": [
+    "/content/pages/contact.yaml",
+    "/content/partials/contact-form.yaml"
+  ],
+  "/content/pages/events.yaml": [
+    "/content/pages/events.yaml"
+  ],
+  "/content/pages/home.yaml": [
+    "/content/pages/artwork.yaml",
+    "/content/pages/contact.yaml",
+    "/content/pages/events.yaml",
+    "/content/pages/home.yaml",
+    "/content/partials/footer.yaml",
+    "/static/apple-touch-icon-precomposed.png",
+    "/static/favicon.png",
+    "/static/images/home/tim-stafford-boston-terrier.jpg",
+    "/static/images/home/tim-stafford-boston-terrier.mobile.jpg",
+    "/static/images/home/tim-stafford-portrait.jpg",
+    "/static/images/home/tim-stafford-tattooing.jpg",
+    "/static/images/home/tim-stafford-tattooing.mobile.jpg",
+    "/static/script.js",
+    "/static/style.css",
+    "/static/website_screenshot.png",
+    "/views/partials/_footer.html",
+    "/views/partials/_header.html",
+    "/views/partials/_hero.html",
+    "/views/partials/_preloader.html",
+    "/views/partials/_section-gallery.html",
+    "/views/partials/_section.html"
+  ],
+  "/content/partials/footer.yaml": [
+    "/content/partials/footer.yaml"
+  ]
+}

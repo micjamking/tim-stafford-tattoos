@@ -5,7 +5,7 @@ title: "Tim Stafford | Tattoo Artist & Illustrator"
 meta:
   search:
     author: "Tim Stafford"
-    description: "Timothy Stafford is an Austin-based tattoo artist and illustrator who specializes in 'New School'."
+    description: "Timothy Stafford is an Austin-based tattoo artist and illustrator  who specializes in 'New School'."
     keywords: "Tim Stafford, personal website, tattoo artist, illustrator, sketch artist, ink master"
   open_graph:
     image_path: "/static/website_screenshot.png"
@@ -38,7 +38,7 @@ extensions:
 preprocessors:
 - name: "strings"
   kind: "google_sheets"
-  id: ""
+  id: "1JZc9EzfbyeZSociAtDGjWqAmRUF2sUHgbzPCSuHCbcA"
   collection: /content/strings
   format: grid
   autorun: false
@@ -58,7 +58,6 @@ deployments:
   default:
     destination: local
     out_dir: "/dist/"
-
   github:
     destination: "git"
     repo: "https://github.com/micjamking/tim-stafford-tattoos.git"
