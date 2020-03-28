@@ -2452,7 +2452,7 @@ textarea:focus {
           user-select: none;
 }
 
-.snipcart-modal, .snipcart-cart-header, .snipcart-cart__content, .snipcart-featured-payment-methods__title {
+.snipcart-modal, .snipcart-cart-header, .snipcart-cart__content, .snipcart-modal__container, .snipcart-discount-box, .snipcart-featured-payment-methods__title {
   background-color: #FFFFFF;
 }
 
@@ -2475,4 +2475,50 @@ textarea:focus {
 .snipcart__icon--blue-light path,
 .snipcart__icon--blue-dark path {
   fill: #0E0E0E;
+}
+
+.snipcart-discount-box__cancel {
+  margin: 0 16px;
+}
+
+.snipcart-discount-box__submit {
+  margin-left: 16px;
+}
+
+.snipcart-cart-header {
+  padding: 32px 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  .snipcart-cart-header {
+    width: 100%;
+    max-width: 1340px;
+    padding: 32px 30px;
+    margin: 20px auto 16px auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .snipcart-layout__content {
+    width: 100%;
+    max-width: 1340px;
+  }
+}
+
+.snipcart-item-line {
+  background-color: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-bottom: 1px solid #f0f5f6;
+}
+
+.snipcart-item-line__container {
+  margin: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .snipcart-cart-header__title {
+    font-size: 16px;
+    text-transform: capitalize;
+  }
 }

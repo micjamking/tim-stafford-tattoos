@@ -28,6 +28,8 @@
   &-modal,
   &-cart-header,
   &-cart__content,
+  &-modal__container,
+  &-discount-box,
   &-featured-payment-methods__title
     background-color: #FFFFFF
   &-item-line__media--small
@@ -42,3 +44,34 @@
   &__icon--blue-light path,
   &__icon--blue-dark path
     fill: $global-color-black
+  &-discount-box__cancel
+    margin: 0 16px
+  &-discount-box__submit
+    margin-left: 16px
+  &-discount-box__button
+    // border-color: $global-color-dark-grey
+
+  &-cart-header
+    padding: 32px 25px
+    +md
+      width: 100%
+      max-width: $global-container-max-width
+      padding: 32px 30px
+      margin: 20px auto 16px auto
+
+  &-layout__content
+    +md
+      width: 100%
+      max-width: $global-container-max-width
+
+  &-item-line
+    background-color: #fff
+    box-shadow: none
+    border-bottom: 1px solid #f0f5f6
+    &__container
+      margin: 0
+
+  &-cart-header__title
+    +md
+      font-size: 16px
+      text-transform: capitalize
