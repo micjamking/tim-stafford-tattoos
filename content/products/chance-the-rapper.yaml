@@ -1,5 +1,5 @@
 $title: Chance The Rapper
-$order: 6
+$order: !g.string products.product_1006.order
 product: !g.string products.product_1006
 
 partials:

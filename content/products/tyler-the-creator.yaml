@@ -1,5 +1,5 @@
 $title: Tyler, The Creator
-$order: 7
+$order: !g.string products.product_1007.order
 product: !g.string products.product_1007
 
 partials:

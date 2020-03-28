@@ -1,5 +1,5 @@
 $title: Anderson Paak
-$order: 4
+$order: !g.string products.product_1004.order
 product: !g.string products.product_1004
 
 partials:

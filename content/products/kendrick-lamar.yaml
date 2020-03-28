@@ -1,5 +1,5 @@
 $title: Kendrick Lamar
-$order: 5
+$order: !g.string products.product_1005.order
 product: !g.string products.product_1005
 
 partials:

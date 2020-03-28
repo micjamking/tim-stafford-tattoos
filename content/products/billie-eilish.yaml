@@ -1,5 +1,5 @@
 $title: Billie Eilish
-$order: 1
+$order: !g.string products.product_1001.order
 product: !g.string products.product_1001
 
 partials:

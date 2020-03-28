@@ -1,5 +1,5 @@
 $title: Lizzo
-$order: 3
+$order: !g.string products.product_1003.order
 product: !g.string products.product_1003
 
 partials:

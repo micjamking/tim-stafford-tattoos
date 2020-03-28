@@ -1,5 +1,5 @@
 $title: Cardi B
-$order: 10
+$order: !g.string products.product_1010.order
 product: !g.string products.product_1010
 
 partials:

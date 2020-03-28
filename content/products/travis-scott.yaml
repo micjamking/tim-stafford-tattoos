@@ -1,5 +1,5 @@
 $title: Travis Scott
-$order: 8
+$order: !g.string products.product_1008.order
 product: !g.string products.product_1008
 
 partials:

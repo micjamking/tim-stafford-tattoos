@@ -1,5 +1,5 @@
 $title: The Weeknd
-$order: 9
+$order: !g.string products.product_1009.order
 product: !g.string products.product_1009
 
 partials:

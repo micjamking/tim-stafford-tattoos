@@ -180,6 +180,15 @@
     "/content/products/tyler-the-creator.yaml",
     "/content/strings/products.yaml"
   ],
+  "/content/strings/events.yaml": [
+    "/content/strings/events.yaml"
+  ],
+  "/content/strings/meta.yaml": [
+    "/content/strings/meta.yaml"
+  ],
+  "/content/strings/products.yaml": [
+    "/content/strings/products.yaml"
+  ],
   "/content/strings/ui.yaml": [
     "/content/strings/ui.yaml"
   ]
