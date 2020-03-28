@@ -24,6 +24,7 @@
       flex-direction: row
     +xl
       max-width: $global-container-max-width
+      flex-wrap: wrap
 
   .tst-section-product
     position: relative
@@ -35,6 +36,8 @@
     +md
       margin-right: 50px
       width: calc(25% - 37.5px)
+      &:nth-child(4n)
+        margin-right: 0
 
     &:last-child
       margin-right: 0
@@ -78,6 +81,8 @@
     &__chapter__title
       +type-weight-bold
       margin-bottom: 10px
+      +md
+        max-width: 75%
 
     &__chapter__price
       &::before

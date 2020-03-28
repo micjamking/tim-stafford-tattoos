@@ -1,0 +1,35 @@
+$title: Anderson Paak
+$order: 4
+product: !g.string products.product_1004
+
+partials:
+- partial: breadcrumb
+- partial: section
+  class: "tst-section--product"
+  sections:
+  - class: "tst-section__item--mobile-only tst-section__item--mobile-order-1"
+    chapter:
+      class: "tst-section__item__chapter"
+      title@: !g.string products.product_1004.title
+  - class: "tst-section__item--image-only tst-section__item--order-1 tst-section__item--mobile-order-2"
+    background_images:
+    - class: "background-images__image--product"
+      url: !g.string products.product_1004.images
+  - class: "tst-section__item--order-2 tst-section__item--mobile-order-3"
+    chapter:
+      class: "tst-section__item__chapter"
+      title@: !g.string products.product_1004.title
+      title_class: 'tst-chapter__title--desktop-only'
+      price: !g.string products.product_1004.price
+      body@: !g.string products.product_1004.description
+      sizes: !g.string products.product_1004.variant_sizes
+      ctas:
+      - class: 'snipcart-add-item'
+        label@: 'Add to Cart'
+        data:
+          item_id: !g.string products.product_1004.sku
+          item_price: !g.string products.product_1004.price
+          item_description: !g.string products.product_1004.description
+          item_image: !g.string products.product_1004.images
+          item_name: !g.string products.product_1004.title
+          item_sizes: !g.string products.product_1004.variant_sizes

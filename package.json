@@ -22,7 +22,8 @@
     "postbuild": "npm run echo:complete",
     "backup": "git add . && git commit -m \"$msg\" && git push",
     "backup:auto": "msg='Saving progress...' npm run backup",
-    "deploy": "~/bin/grow deploy github",
+    "deploy:production": "NODE_ENV=production ~/bin/grow deploy github",
+    "deploy:staging": "NODE_ENV=production ~/bin/grow deploy heroku",
     "postversion": "git push --tags"
   },
   "devDependencies": {

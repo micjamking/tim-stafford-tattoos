@@ -10,3 +10,111 @@ product_1001:
   stock: '100'
   title: Billie Eilish - Popstar Collectible Print
   variant_sizes: 11x14
+product_1002:
+  categories: prints
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id fermentum mauris. Curabitur mollis tincidunt magna et aliquet. Vestibulum lacus tellus, tempor quis sodales et, maximus eu dui. Nunc a augue dictum, fringilla orci eu, dictum libero.
+  images: https://instagram.fhnl1-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/88127840_500923037223730_3017489186002936436_n.jpg?_nc_ht=instagram.fhnl1-1.fna.fbcdn.net&_nc_cat=110&_nc_ohc=2huae_cBBXcAX8F7uB0&oh=29422dff79cb4cd57228c2ade82aaa08&oe=5EA6BE39
+  on_sale: 'FALSE'
+  price: '40.00'
+  sale_price: '30.00'
+  sku: '1002'
+  slug: donald-glover
+  stock: '100'
+  title: Donald Glover - Popstar Collectible Print
+  variant_sizes: 11x14
+product_1003:
+  categories: prints
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id fermentum mauris. Curabitur mollis tincidunt magna et aliquet. Vestibulum lacus tellus, tempor quis sodales et, maximus eu dui. Nunc a augue dictum, fringilla orci eu, dictum libero.
+  images: https://instagram.fhnl1-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/88228386_1047991352246408_9039379853419262080_n.jpg?_nc_ht=instagram.fhnl1-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=HjaWi6LNCVIAX-A_Ntw&oh=e0950bf3263f3eedf375f51751a2589f&oe=5EA9E87D
+  on_sale: 'FALSE'
+  price: '40.00'
+  sale_price: '30.00'
+  sku: '1003'
+  slug: lizzo
+  stock: '100'
+  title: Lizzo - Popstar Collectible Print
+  variant_sizes: 11x14
+product_1004:
+  categories: prints
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id fermentum mauris. Curabitur mollis tincidunt magna et aliquet. Vestibulum lacus tellus, tempor quis sodales et, maximus eu dui. Nunc a augue dictum, fringilla orci eu, dictum libero.
+  images: https://instagram.fhnl1-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/88961061_3084111751613512_3094270200009377408_n.jpg?_nc_ht=instagram.fhnl1-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=y0kYKOWcCJMAX-ROiqi&oh=e34e8dc6bda1cc5d24fe8779938f6d1f&oe=5EA9F078
+  on_sale: 'FALSE'
+  price: '40.00'
+  sale_price: '30.00'
+  sku: '1004'
+  slug: anderson-paak
+  stock: '100'
+  title: Anderson.Paak - Popstar Collectible Print
+  variant_sizes: 11x14
+product_1005:
+  categories: prints
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id fermentum mauris. Curabitur mollis tincidunt magna et aliquet. Vestibulum lacus tellus, tempor quis sodales et, maximus eu dui. Nunc a augue dictum, fringilla orci eu, dictum libero.
+  images: https://instagram.fhnl1-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/89268343_522397455352973_1134420319396605321_n.jpg?_nc_ht=instagram.fhnl1-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=LVZOMd1u8b4AX-_eNmp&oh=a9d1f3549463c2574db49f0710a55e2d&oe=5EA7F0B9
+  on_sale: 'FALSE'
+  price: '40.00'
+  sale_price: '30.00'
+  sku: '1005'
+  slug: kendrick-lamar
+  stock: '100'
+  title: Kendrick Lamar - Popstar Collectible Print
+  variant_sizes: 11x14
+product_1006:
+  categories: prints
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id fermentum mauris. Curabitur mollis tincidunt magna et aliquet. Vestibulum lacus tellus, tempor quis sodales et, maximus eu dui. Nunc a augue dictum, fringilla orci eu, dictum libero.
+  images: https://instagram.fhnl1-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/88200717_205320003880040_2230475543981284520_n.jpg?_nc_ht=instagram.fhnl1-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=r7bVM2gf1tUAX-p_E3H&oh=738800c68d1bca9d528344f4c7778acc&oe=5EA89304
+  on_sale: 'FALSE'
+  price: '40.00'
+  sale_price: '30.00'
+  sku: '1006'
+  slug: chance-the-rapper
+  stock: '100'
+  title: Chance The Rapper - Popstar Collectible Print
+  variant_sizes: 11x14
+product_1007:
+  categories: prints
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id fermentum mauris. Curabitur mollis tincidunt magna et aliquet. Vestibulum lacus tellus, tempor quis sodales et, maximus eu dui. Nunc a augue dictum, fringilla orci eu, dictum libero.
+  images: https://instagram.fhnl1-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/88321178_196263191791166_4731177196650212830_n.jpg?_nc_ht=instagram.fhnl1-1.fna.fbcdn.net&_nc_cat=102&_nc_ohc=P_VB_lzAlrsAX8-B-70&oh=89611a082626aeca73b81355833d1b87&oe=5EA775B2
+  on_sale: 'FALSE'
+  price: '40.00'
+  sale_price: '30.00'
+  sku: '1007'
+  slug: tyler-the-creator
+  stock: '100'
+  title: Tyler, The Creator - Popstar Collectible Print
+  variant_sizes: 11x14
+product_1008:
+  categories: prints
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id fermentum mauris. Curabitur mollis tincidunt magna et aliquet. Vestibulum lacus tellus, tempor quis sodales et, maximus eu dui. Nunc a augue dictum, fringilla orci eu, dictum libero.
+  images: https://instagram.fhnl1-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/88982181_1297649310623301_6639473895396629075_n.jpg?_nc_ht=instagram.fhnl1-1.fna.fbcdn.net&_nc_cat=109&_nc_ohc=RNqAu4EET-0AX-SC8LZ&oh=3ac317890d270cc28426a66846a21ed8&oe=5EA8B5AC
+  on_sale: 'FALSE'
+  price: '40.00'
+  sale_price: '30.00'
+  sku: '1008'
+  slug: travis-scott
+  stock: '100'
+  title: Travis Scott - Popstar Collectible Print
+  variant_sizes: 11x14
+product_1009:
+  categories: prints
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id fermentum mauris. Curabitur mollis tincidunt magna et aliquet. Vestibulum lacus tellus, tempor quis sodales et, maximus eu dui. Nunc a augue dictum, fringilla orci eu, dictum libero.
+  images: https://instagram.fhnl1-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/88241655_1295707247485612_7833357403423270394_n.jpg?_nc_ht=instagram.fhnl1-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=R6OZa61Yd9cAX_jZpda&oh=42cda37871a1296b64d4cb6a2f50af73&oe=5EA784A5
+  on_sale: 'FALSE'
+  price: '40.00'
+  sale_price: '30.00'
+  sku: '1009'
+  slug: the-weeknd
+  stock: '100'
+  title: The Weeknd - Popstar Collectible Print
+  variant_sizes: 11x14
+product_1010:
+  categories: prints
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id fermentum mauris. Curabitur mollis tincidunt magna et aliquet. Vestibulum lacus tellus, tempor quis sodales et, maximus eu dui. Nunc a augue dictum, fringilla orci eu, dictum libero.
+  images: https://instagram.fhnl1-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/88918710_137825390902496_6267607733311498697_n.jpg?_nc_ht=instagram.fhnl1-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=seEeCoYxGWsAX-u8ntM&oh=48ace6eb20dc9f60109e80da6334dccd&oe=5EA7DD33
+  on_sale: 'FALSE'
+  price: '40.00'
+  sale_price: '30.00'
+  sku: '1010'
+  slug: cardi-b
+  stock: '100'
+  title: Cardi B - Popstar Collectible Print
+  variant_sizes: 11x14
