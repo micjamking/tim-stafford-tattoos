@@ -1,5 +1,886 @@
 {
   "concrete": {
+    "null": {
+      "/": {
+        "options": {},
+        "value": {
+          "hashed": "1a9336f82ef4451f932855d1a20260c1eb4e2e49e82bbf36f58a970fbfde04b2",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/pages",
+            "locale": "en",
+            "pod_path": "/content/pages/home.yaml"
+          },
+          "pod_path": "/content/pages/home.yaml"
+        }
+      },
+      "/CNAME": {
+        "options": null,
+        "value": {
+          "hashed": "72c9fa2d7fd3293ef5e373475c728397ae0e387ac87f6b822c78ffbd6ecd03eb",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/CNAME",
+            "static_filter": {}
+          },
+          "pod_path": "/static/CNAME"
+        }
+      },
+      "/LICENSE": {
+        "options": null,
+        "value": {
+          "hashed": "01175d91288f1a8c89617143671c5037085f275f9010f39e0cf72b36d78bdc98",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/LICENSE",
+            "static_filter": {}
+          },
+          "pod_path": "/static/LICENSE"
+        }
+      },
+      "/Procfile": {
+        "options": null,
+        "value": {
+          "hashed": "754455a1949ab90bf5773d359fe2cb390ae45f409a26a64112c0293c37ee10cf",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/Procfile",
+            "static_filter": {}
+          },
+          "pod_path": "/static/Procfile"
+        }
+      },
+      "/apple-touch-icon-precomposed.png": {
+        "options": null,
+        "value": {
+          "hashed": "36a06ed1ce3d0e0d1eba6695bb2c5cfc71f5b50a918bb3688435b3ec57738cf3",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/apple-touch-icon-precomposed.png",
+            "static_filter": {}
+          },
+          "pod_path": "/static/apple-touch-icon-precomposed.png"
+        }
+      },
+      "/contact/": {
+        "options": {},
+        "value": {
+          "hashed": "0d2ef7cfef07a6ad10ae56ce57e4a9387e4a087a22c875b819e2d1a590ddc068",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/pages",
+            "locale": "en",
+            "pod_path": "/content/pages/contact.yaml"
+          },
+          "pod_path": "/content/pages/contact.yaml"
+        }
+      },
+      "/events/": {
+        "options": {},
+        "value": {
+          "hashed": "bd32785cf20084e3525dd57db1a4147ac1e52aa23ef916e06c4216b9533360a4",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/pages",
+            "locale": "en",
+            "pod_path": "/content/pages/events.yaml"
+          },
+          "pod_path": "/content/pages/events.yaml"
+        }
+      },
+      "/favicon.png": {
+        "options": null,
+        "value": {
+          "hashed": "00e58d8e443da8e8c65dc885f3059af183b5f92e831a7d02927cab61f3b9e4e5",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/favicon.png",
+            "static_filter": {}
+          },
+          "pod_path": "/static/favicon.png"
+        }
+      },
+      "/images/artwork/tim-stafford-octopus.jpg": {
+        "options": null,
+        "value": {
+          "hashed": "70ee7c7717e817ef90ed6149ed9870a0410e1940c2545aa4609e901e2bc1054d",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/images/artwork/tim-stafford-octopus.jpg",
+            "static_filter": {}
+          },
+          "pod_path": "/static/images/artwork/tim-stafford-octopus.jpg"
+        }
+      },
+      "/images/artwork/tim-stafford-octopus.mobile.jpg": {
+        "options": null,
+        "value": {
+          "hashed": "4fa42940815baa0e12fcaf7ea2221e9a526a650cac65fcfc75a23f4470b644a2",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/images/artwork/tim-stafford-octopus.mobile.jpg",
+            "static_filter": {}
+          },
+          "pod_path": "/static/images/artwork/tim-stafford-octopus.mobile.jpg"
+        }
+      },
+      "/images/contact/tim-stafford-clockwork-orange.jpg": {
+        "options": null,
+        "value": {
+          "hashed": "c8d605502c81bf7f85e6a11e7b70484db7a81da85881b8ad71bf9d7d05802508",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/images/contact/tim-stafford-clockwork-orange.jpg",
+            "static_filter": {}
+          },
+          "pod_path": "/static/images/contact/tim-stafford-clockwork-orange.jpg"
+        }
+      },
+      "/images/contact/tim-stafford-clockwork-orange.mobile.jpg": {
+        "options": null,
+        "value": {
+          "hashed": "07acd1b3df1338f05a9b9e2654aac100598e0df7d6a93d42e4ad3a2401e32508",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/images/contact/tim-stafford-clockwork-orange.mobile.jpg",
+            "static_filter": {}
+          },
+          "pod_path": "/static/images/contact/tim-stafford-clockwork-orange.mobile.jpg"
+        }
+      },
+      "/images/events/tim-stafford-event-honolulu.jpg": {
+        "options": null,
+        "value": {
+          "hashed": "2d4e0b29cc42ba93f45f4a5d687247486716fc2e491c916cc64bc96da5194d67",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/images/events/tim-stafford-event-honolulu.jpg",
+            "static_filter": {}
+          },
+          "pod_path": "/static/images/events/tim-stafford-event-honolulu.jpg"
+        }
+      },
+      "/images/events/tim-stafford-tiki.jpg": {
+        "options": null,
+        "value": {
+          "hashed": "12ebe0c17014bfa8ffa9c3188975f9b4e7e17c85b4b4c378d7ce56fb34e898ac",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/images/events/tim-stafford-tiki.jpg",
+            "static_filter": {}
+          },
+          "pod_path": "/static/images/events/tim-stafford-tiki.jpg"
+        }
+      },
+      "/images/events/tim-stafford-tiki.mobile.jpg": {
+        "options": null,
+        "value": {
+          "hashed": "80ceb2faa2723bc24f80906e50e8584bff27207bbf3373d0a783f1bbdb28400f",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/images/events/tim-stafford-tiki.mobile.jpg",
+            "static_filter": {}
+          },
+          "pod_path": "/static/images/events/tim-stafford-tiki.mobile.jpg"
+        }
+      },
+      "/images/home/tim-stafford-boston-terrier.jpg": {
+        "options": null,
+        "value": {
+          "hashed": "d9175c418286c1d607409b601c6e27c63a0f37f174c1f4a20e89c2ac20705362",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/images/home/tim-stafford-boston-terrier.jpg",
+            "static_filter": {}
+          },
+          "pod_path": "/static/images/home/tim-stafford-boston-terrier.jpg"
+        }
+      },
+      "/images/home/tim-stafford-boston-terrier.mobile.jpg": {
+        "options": null,
+        "value": {
+          "hashed": "21633e5722ba7b532099addfb71c90a016e81d203364a2de70e6f743a29318e4",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/images/home/tim-stafford-boston-terrier.mobile.jpg",
+            "static_filter": {}
+          },
+          "pod_path": "/static/images/home/tim-stafford-boston-terrier.mobile.jpg"
+        }
+      },
+      "/images/home/tim-stafford-cat.jpg": {
+        "options": null,
+        "value": {
+          "hashed": "8e56e7d08ded0331932a509e4307a209c52dc851d02e266884ce7ed0c75a46db",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/images/home/tim-stafford-cat.jpg",
+            "static_filter": {}
+          },
+          "pod_path": "/static/images/home/tim-stafford-cat.jpg"
+        }
+      },
+      "/images/home/tim-stafford-dog.jpg": {
+        "options": null,
+        "value": {
+          "hashed": "cc96ee584816138b0c506e4ce34cba66b5992ed5a036b9d1fb8534246a7b6545",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/images/home/tim-stafford-dog.jpg",
+            "static_filter": {}
+          },
+          "pod_path": "/static/images/home/tim-stafford-dog.jpg"
+        }
+      },
+      "/images/home/tim-stafford-portrait.jpg": {
+        "options": null,
+        "value": {
+          "hashed": "54bdf1c66f3f790a819175f5f26e1dcda88631fe5e38fb757f5459e86b2b170f",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/images/home/tim-stafford-portrait.jpg",
+            "static_filter": {}
+          },
+          "pod_path": "/static/images/home/tim-stafford-portrait.jpg"
+        }
+      },
+      "/images/home/tim-stafford-tattooing.jpg": {
+        "options": null,
+        "value": {
+          "hashed": "19d55ca7c90e55176451dd132f21d9686f89c869b05a357f4e9b0246a992357b",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/images/home/tim-stafford-tattooing.jpg",
+            "static_filter": {}
+          },
+          "pod_path": "/static/images/home/tim-stafford-tattooing.jpg"
+        }
+      },
+      "/images/home/tim-stafford-tattooing.mobile.jpg": {
+        "options": null,
+        "value": {
+          "hashed": "3cf7ef7ef1cf470d578b90790941823fb6abbf4200e332861c6d11c8fff32331",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/images/home/tim-stafford-tattooing.mobile.jpg",
+            "static_filter": {}
+          },
+          "pod_path": "/static/images/home/tim-stafford-tattooing.mobile.jpg"
+        }
+      },
+      "/images/home/tim-stafford-turtle.jpg": {
+        "options": null,
+        "value": {
+          "hashed": "4c1ee006318b22a7791f7ac5cbbd0bfee55780dc48120399f342e436fd8939af",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/images/home/tim-stafford-turtle.jpg",
+            "static_filter": {}
+          },
+          "pod_path": "/static/images/home/tim-stafford-turtle.jpg"
+        }
+      },
+      "/images/home/tim-stafford-wolf.jpg": {
+        "options": null,
+        "value": {
+          "hashed": "805e192b5ce4448769e6ff4c240187ad17e168b4e840215f61211637c3ed20b3",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/images/home/tim-stafford-wolf.jpg",
+            "static_filter": {}
+          },
+          "pod_path": "/static/images/home/tim-stafford-wolf.jpg"
+        }
+      },
+      "/images/icons/close-icon.svg": {
+        "options": null,
+        "value": {
+          "hashed": "7c98a44ba20bb62a6d1ba3e8305d1a3a80261cf173f454f815fa3a0a876b2f39",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/images/icons/close-icon.svg",
+            "static_filter": {}
+          },
+          "pod_path": "/static/images/icons/close-icon.svg"
+        }
+      },
+      "/images/icons/menu-icon.svg": {
+        "options": null,
+        "value": {
+          "hashed": "150f473bdd746d2d62f810d278c2a75879f8da9944966e1e7eeee64f81154ebc",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/images/icons/menu-icon.svg",
+            "static_filter": {}
+          },
+          "pod_path": "/static/images/icons/menu-icon.svg"
+        }
+      },
+      "/images/icons/tim-logo.svg": {
+        "options": null,
+        "value": {
+          "hashed": "fd68cc17d05f9a7f4eebee81c4f457eb352c8f5f7e674701a19df06e16fe99ac",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/images/icons/tim-logo.svg",
+            "static_filter": {}
+          },
+          "pod_path": "/static/images/icons/tim-logo.svg"
+        }
+      },
+      "/images/icons/tim-stafford-logo.svg": {
+        "options": null,
+        "value": {
+          "hashed": "79eff1d532565dc628adf6a9206c84c2b3c0ea8f3796cfd8cd36ece97e4f67de",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/images/icons/tim-stafford-logo.svg",
+            "static_filter": {}
+          },
+          "pod_path": "/static/images/icons/tim-stafford-logo.svg"
+        }
+      },
+      "/package.json": {
+        "options": null,
+        "value": {
+          "hashed": "004416be87a87b336f692bd040b38c22ceb6e409dada1dc15d2dbfbff858a801",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/package.json",
+            "static_filter": {}
+          },
+          "pod_path": "/static/package.json"
+        }
+      },
+      "/robots.txt": {
+        "options": null,
+        "value": {
+          "hashed": "e5c4b84484ee4216e9373be99380320c25dd94805f99f0a805846f087636553f",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/robots.txt",
+            "static_filter": {}
+          },
+          "pod_path": "/static/robots.txt"
+        }
+      },
+      "/script.js": {
+        "options": null,
+        "value": {
+          "hashed": "9b0885c61e2a6e79d9cfd9e9a804dbcf608f924a742766ddc2bef4cc255c31f0",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/script.js",
+            "static_filter": {}
+          },
+          "pod_path": "/static/script.js"
+        }
+      },
+      "/sitemap.xml": {
+        "options": null,
+        "value": {
+          "hashed": null,
+          "kind": "sitemap",
+          "meta": {
+            "collections": null,
+            "filters": null,
+            "locales": null,
+            "path": "/sitemap.xml",
+            "template": null
+          },
+          "pod_path": null
+        }
+      },
+      "/store/": {
+        "options": {},
+        "value": {
+          "hashed": "2206f478df38305b93b4df948e7da436bebc6d62a8e18e21deabc0a65bcb250b",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/pages",
+            "locale": "en",
+            "pod_path": "/content/pages/store.yaml"
+          },
+          "pod_path": "/content/pages/store.yaml"
+        }
+      },
+      "/store/anderson-paak/": {
+        "options": {},
+        "value": {
+          "hashed": "3f7bc634bb6880fc409df9863a1d7410bb8d036f7c0a7a92d53ea570eb320caa",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/products",
+            "locale": "en",
+            "pod_path": "/content/products/anderson-paak.yaml"
+          },
+          "pod_path": "/content/products/anderson-paak.yaml"
+        }
+      },
+      "/store/billie-eilish/": {
+        "options": {},
+        "value": {
+          "hashed": "4e0dce0f93c745fde856bb4a693aded3c2d9b7960cc9fb306172553287fd32d4",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/products",
+            "locale": "en",
+            "pod_path": "/content/products/billie-eilish.yaml"
+          },
+          "pod_path": "/content/products/billie-eilish.yaml"
+        }
+      },
+      "/store/cardi-b/": {
+        "options": {},
+        "value": {
+          "hashed": "4316893e83767d0fb2aa637a9b6924221c31705f4816c9bbbe9197b07d22cd9d",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/products",
+            "locale": "en",
+            "pod_path": "/content/products/cardi-b.yaml"
+          },
+          "pod_path": "/content/products/cardi-b.yaml"
+        }
+      },
+      "/store/chance-the-rapper/": {
+        "options": {},
+        "value": {
+          "hashed": "a7c2d7ac78d05392458afe1853622049af8157ed574ada68f9330bd571366b06",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/products",
+            "locale": "en",
+            "pod_path": "/content/products/chance-the-rapper.yaml"
+          },
+          "pod_path": "/content/products/chance-the-rapper.yaml"
+        }
+      },
+      "/store/donald-glover/": {
+        "options": {},
+        "value": {
+          "hashed": "aa195e40aa11a675a316e79b399957958bfabf3e4e6760b07f50d09c3c7c6c21",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/products",
+            "locale": "en",
+            "pod_path": "/content/products/donald-glover.yaml"
+          },
+          "pod_path": "/content/products/donald-glover.yaml"
+        }
+      },
+      "/store/kendrick-lamar/": {
+        "options": {},
+        "value": {
+          "hashed": "4cd7633f9af0d6ef0ed45d2288841cc078366d67c8cf720ee2d090d60e40f815",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/products",
+            "locale": "en",
+            "pod_path": "/content/products/kendrick-lamar.yaml"
+          },
+          "pod_path": "/content/products/kendrick-lamar.yaml"
+        }
+      },
+      "/store/lizzo/": {
+        "options": {},
+        "value": {
+          "hashed": "92c1a6e27d1f9e0416c133c6b750343239a3f62ea44ad6da7129db9f9a366dfb",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/products",
+            "locale": "en",
+            "pod_path": "/content/products/lizzo.yaml"
+          },
+          "pod_path": "/content/products/lizzo.yaml"
+        }
+      },
+      "/store/the-weeknd/": {
+        "options": {},
+        "value": {
+          "hashed": "e812261855fca5aab527d0fd394de3de918b7eb01e5ecd2701db5318117f3a88",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/products",
+            "locale": "en",
+            "pod_path": "/content/products/the-weeknd.yaml"
+          },
+          "pod_path": "/content/products/the-weeknd.yaml"
+        }
+      },
+      "/store/travis-scott/": {
+        "options": {},
+        "value": {
+          "hashed": "d98634a3a1394afc4a94e7fa02bfd563801045ed1db94922dbcd31c352085699",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/products",
+            "locale": "en",
+            "pod_path": "/content/products/travis-scott.yaml"
+          },
+          "pod_path": "/content/products/travis-scott.yaml"
+        }
+      },
+      "/store/tyler-the-creator/": {
+        "options": {},
+        "value": {
+          "hashed": "43930773c4f0b100ee56ebf4a0b0c19cbd5707bed2288f3082394decd85c0e05",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/products",
+            "locale": "en",
+            "pod_path": "/content/products/tyler-the-creator.yaml"
+          },
+          "pod_path": "/content/products/tyler-the-creator.yaml"
+        }
+      },
+      "/style.css": {
+        "options": null,
+        "value": {
+          "hashed": "24a177f1fdce7996376edce4f7fd8ed548a6ec213a3f7fb8c246e8e204f86762",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/style.css",
+            "static_filter": {}
+          },
+          "pod_path": "/static/style.css"
+        }
+      },
+      "/web.js": {
+        "options": null,
+        "value": {
+          "hashed": "b8fc527b9d374e4bbf7dff8e164fcd99e740eeeb0333c5790439099738f0611b",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/web.js",
+            "static_filter": {}
+          },
+          "pod_path": "/static/web.js"
+        }
+      },
+      "/website_screenshot.png": {
+        "options": null,
+        "value": {
+          "hashed": "4fdf81ec46de38b5867ee278be352cdff41aff15d0481d7b9bf91ed70a572f6d",
+          "kind": "static",
+          "meta": {
+            "fingerprinted": false,
+            "locale": null,
+            "localization": null,
+            "localized": false,
+            "path_filter": {
+              "ignored": [
+                "^.*/\\.[^/]*$"
+              ],
+              "included": []
+            },
+            "pod_path": "/static/website_screenshot.png",
+            "static_filter": {}
+          },
+          "pod_path": "/static/website_screenshot.png"
+        }
+      }
+    },
     "dev": {
       "/sitemap.xml": {
         "options": null,
@@ -935,7 +1816,10 @@
             "source_formats": [
               "/static/"
             ],
-            "static_filter": {}
+            "static_filter": {
+              "ignored": [],
+              "included": []
+            }
           },
           "pod_path": null
         }

@@ -1958,6 +1958,10 @@ textarea:focus {
   -webkit-flex: 1 0 auto;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -2404,6 +2408,13 @@ textarea:focus {
   .store .tst-section--product .tst-chapter .cta__item.snipcart-add-item {
     width: 100%;
   }
+}
+
+.store .tst-section--product .tst-section__item__background-images {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .snipcart-modal, .snipcart-cart-header, .snipcart-cart__content, .snipcart-featured-payment-methods__title {
