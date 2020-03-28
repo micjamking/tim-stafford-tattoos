@@ -64,3 +64,10 @@ deployments:
     branch: "gh-pages"
     env:
       host: timstaffordtattoos.com
+  heroku:
+    destination: "git"
+    repo: "https://git.heroku.com/tim-stafford-tattoos.git"
+    branch: "master"
+    env:
+      host: tim-stafford-tattoos.herokuapp.com
+      scheme: https
