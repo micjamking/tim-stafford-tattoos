@@ -32,6 +32,11 @@
         +md-lt
           order: $i
 
+  &__item--mobile-only
+    display: flex
+    +md
+      display: none
+
   &__item--full-width
     position: absolute
     top: 0
@@ -125,9 +130,9 @@
     .tst-chapter__body
       margin-bottom: 10px
 
-    .tst-chapter__body__paragraph
-      +type-weight-regular
-      +type-size-body-medium
+      > p
+        +type-weight-regular
+        +type-size-body-medium
 
   &--faq
     .tst-section__container
@@ -144,3 +149,46 @@
 
     .tst-chapter__title
       margin-bottom: 30px
+
+  &--product
+    // .tst-section__container
+    //   margin-bottom: 80px
+    //   +md
+    //     margin-bottom: 140px
+
+    .tst-section__item--image-only
+      height: calc(338 / 1440 * 100vw)
+      min-height: 200px
+      max-height: 338px
+      +md-lt
+        flex: auto
+        height: 100vw
+        max-height: 400px
+        margin-bottom: 25px
+
+    .tst-section__item__chapter
+      +md
+        padding-right: 50px
+
+    // .tst-chapter__title,
+    // .tst-chapter__body
+    //   +md-lt
+    //     text-align: center
+    //
+    // .tst-chapter__title
+    //   margin-bottom: 10px
+    //
+    //   &::before,
+    //   &::after
+    //     display: inline-flex
+    //     color: inherit
+    //
+    //   &::before
+    //     content: "\“"
+    //
+    //   &::after
+    //     content: "\”"
+    //
+    // .tst-chapter__body
+    //   +type-size-body-medium
+    //   max-width: 565px

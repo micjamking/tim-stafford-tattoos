@@ -1,0 +1,29 @@
+{% import "/views/macros/_chapter.html" as chapter with context %}
+{% set products = g.docs('products', order_by=('order', 'title'), locale=doc.locale) %}
+
+<div class="tst-section-products{% if partial.class %} {{partial.class}}{% endif %}">
+  <div class="tst-section-products__container">
+
+    <div class="tst-section-products__list">
+      <!-- TODO: Setup ngFor loop for tst-section-products -->
+      {% for product in products if product.path_format %}
+      {% set product_images = product.product.images.split(',') %}
+      <div class="tst-section-product tst-section-product--{{loop.index}}">
+        <a href="{{product.url.path}}" class="tst-section-product__button">
+          <div class="tst-section-product__image background-images">
+            <div class="tst-section-product__image__image background-images__image"
+              style="background-image: url({{product_images[0]}})"></div>
+          </div>
+          <div class="tst-section-product__content">
+            <div class="tst-section-product__chapter tst-chapter">
+              <div class="tst-section-product__chapter__title">{{_(product.product.title)}}</div>
+              <div class="tst-section-product__chapter__price">{{_(product.product.price)}}</div>
+            </div>
+          </div>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+</div>

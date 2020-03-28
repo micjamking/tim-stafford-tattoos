@@ -10,8 +10,8 @@ partials:
   class: "tst-hero--main"
   chapter:
     class: "tst-hero__chapter"
-    title@: "Tim Stafford"
-    subtitle@: "Tattoo Artist & Illustrator"
+    title@: !g.string ui.home_hero_title.string
+    subtitle@: !g.string ui.home_hero_subtitle.string
   background_images:
   - class: "background-images__image--boston-terrier tst-desktop-only"
     url: "/static/images/home/tim-stafford-boston-terrier.jpg"
@@ -29,22 +29,20 @@ partials:
   - class: "tst-section__item--order-2"
     chapter:
       class: "tst-section__item__chapter"
-      title@: "CREATIVITY IS EVERYTHING"
-      body@:
-      - "Timothy Stafford is an Austin-based tattoo artist and illustrator who specializes in 'New School', combining unique character design, realistic texture and vibrant color to create a style all his own. For the last decade, Tim has been establishing himself as one of the premier atists and illustrators in the tattoo industry, creating mind-blowing tattoos & illustrations completely from scratch."
-      - "Tim was also featured on Paramount Network's Ink Master Season 11 as a top-4 finisher."
-
+      title@: !g.string ui.home_bio_title.string
+      body@: !g.string ui.home_bio_body.string
 
 - partial: section-gallery
   class: "tst-section-gallery--home"
   ig_gallery_settings:
     item_count: 4
   chapter_top:
-    title@: "Latest Artwork"
+    title@: !g.string ui.home_gallery_title.string
   chapter_bottom:
     ctas:
-    - label@: "View More"
-      url: !g.url /content/pages/artwork.yaml
+    - label@: !g.string ui.home_gallery_cta.string
+      url: !g.string ui.global_instagram_cta.url
+      new_window: true
 
 
 - partial: section
@@ -52,13 +50,11 @@ partials:
   sections:
   - class: "tst-section__item--full-width tst-section__item--centered"
     chapter:
-      title@: "Ready To Get Tattooed?"
-      body@:
-      - "Lets consult over your ideas, finalize your concept, schedule a date that works for both of us, and place a deposit."
-      - "Can’t wait to get started!"
+      title@: !g.string ui.home_contact_title.string
+      body@: !g.string ui.home_contact_body.string
       ctas:
       - class: "button--gold"
-        label@: "Get In Touch"
+        label@: !g.string ui.home_contact_cta.string
         url: !g.url /content/pages/contact.yaml
     background_images:
     - class: "background-images__image--tim-stafford-tattooing tst-desktop-only"

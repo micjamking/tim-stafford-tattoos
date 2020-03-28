@@ -23,7 +23,7 @@ export default class CarouselController {
    * Initializes carousel
    */
   init() {
-    console.log('carousel controller initialized.')
+    // console.log('carousel controller initialized.')
   }
 
 }

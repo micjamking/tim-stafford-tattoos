@@ -1,5 +1,6 @@
 $title: Artwork
-$path: /{root}/artwork/
+$path: ~
+$hidden: true
 $order: 1
 
 

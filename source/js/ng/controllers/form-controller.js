@@ -18,7 +18,7 @@ export default class FormController {
     this.loading = false;
     this.submitted = false;
 
-    console.log('form controller instantiated.');
+    // console.log('form controller instantiated.');
 
   }
 

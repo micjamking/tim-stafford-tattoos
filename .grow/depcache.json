@@ -4,17 +4,52 @@
   ],
   "/content/pages/contact.yaml": [
     "/content/pages/contact.yaml",
-    "/content/partials/contact-form.yaml"
+    "/content/pages/events.yaml",
+    "/content/pages/store.yaml",
+    "/content/partials/contact-form.yaml",
+    "/content/partials/footer.yaml",
+    "/content/strings/ui.yaml",
+    "/static/apple-touch-icon-precomposed.png",
+    "/static/favicon.png",
+    "/static/images/contact/tim-stafford-clockwork-orange.jpg",
+    "/static/images/contact/tim-stafford-clockwork-orange.mobile.jpg",
+    "/static/script.js",
+    "/static/style.css",
+    "/static/website_screenshot.png",
+    "/views/partials/_footer.html",
+    "/views/partials/_form.html",
+    "/views/partials/_header.html",
+    "/views/partials/_hero.html",
+    "/views/partials/_preloader.html",
+    "/views/partials/_section.html"
   ],
   "/content/pages/events.yaml": [
-    "/content/pages/events.yaml"
+    "/content/pages/contact.yaml",
+    "/content/pages/events.yaml",
+    "/content/pages/store.yaml",
+    "/content/partials/footer.yaml",
+    "/content/strings/events.yaml",
+    "/content/strings/ui.yaml",
+    "/static/apple-touch-icon-precomposed.png",
+    "/static/favicon.png",
+    "/static/images/events/tim-stafford-tiki.jpg",
+    "/static/images/events/tim-stafford-tiki.mobile.jpg",
+    "/static/script.js",
+    "/static/style.css",
+    "/static/website_screenshot.png",
+    "/views/partials/_footer.html",
+    "/views/partials/_header.html",
+    "/views/partials/_hero.html",
+    "/views/partials/_preloader.html",
+    "/views/partials/_section-events.html"
   ],
   "/content/pages/home.yaml": [
-    "/content/pages/artwork.yaml",
     "/content/pages/contact.yaml",
     "/content/pages/events.yaml",
     "/content/pages/home.yaml",
+    "/content/pages/store.yaml",
     "/content/partials/footer.yaml",
+    "/content/strings/ui.yaml",
     "/static/apple-touch-icon-precomposed.png",
     "/static/favicon.png",
     "/static/images/home/tim-stafford-boston-terrier.jpg",
@@ -32,7 +67,59 @@
     "/views/partials/_section-gallery.html",
     "/views/partials/_section.html"
   ],
+  "/content/pages/store.yaml": [
+    "/content/pages/contact.yaml",
+    "/content/pages/events.yaml",
+    "/content/pages/store.yaml",
+    "/content/partials/footer.yaml",
+    "/content/products/billie-eilish.yaml",
+    "/content/strings/ui.yaml",
+    "/static/apple-touch-icon-precomposed.png",
+    "/static/favicon.png",
+    "/static/images/events/tim-stafford-tiki.jpg",
+    "/static/images/events/tim-stafford-tiki.mobile.jpg",
+    "/static/script.js",
+    "/static/style.css",
+    "/static/website_screenshot.png",
+    "/views/partials/_footer.html",
+    "/views/partials/_header.html",
+    "/views/partials/_hero.html",
+    "/views/partials/_preloader.html",
+    "/views/partials/_section-products.html"
+  ],
   "/content/partials/footer.yaml": [
-    "/content/partials/footer.yaml"
+    "/content/partials/footer.yaml",
+    "/content/strings/ui.yaml"
+  ],
+  "/content/products/billie-eilish.yaml": [
+    "/content/pages/contact.yaml",
+    "/content/pages/events.yaml",
+    "/content/pages/store.yaml",
+    "/content/partials/footer.yaml",
+    "/content/products/billie-eilish.yaml",
+    "/content/strings/products.yaml",
+    "/content/strings/ui.yaml",
+    "/static/apple-touch-icon-precomposed.png",
+    "/static/favicon.png",
+    "/static/script.js",
+    "/static/style.css",
+    "/static/website_screenshot.png",
+    "/views/partials/_breadcrumb.html",
+    "/views/partials/_footer.html",
+    "/views/partials/_header.html",
+    "/views/partials/_preloader.html",
+    "/views/partials/_section.html"
+  ],
+  "/content/strings/events.yaml": [
+    "/content/strings/events.yaml"
+  ],
+  "/content/strings/meta.yaml": [
+    "/content/strings/meta.yaml"
+  ],
+  "/content/strings/products.yaml": [
+    "/content/strings/products.yaml"
+  ],
+  "/content/strings/ui.yaml": [
+    "/content/strings/ui.yaml"
   ]
 }

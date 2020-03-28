@@ -810,7 +810,7 @@ var CarouselController = function () {
   _createClass(CarouselController, [{
     key: 'init',
     value: function init() {
-      console.log('carousel controller initialized.');
+      // console.log('carousel controller initialized.')
     }
   }]);
 
@@ -859,7 +859,7 @@ var FormController = function () {
     this.loading = false;
     this.submitted = false;
 
-    console.log('form controller instantiated.');
+    // console.log('form controller instantiated.');
   }
 
   /**
@@ -954,7 +954,7 @@ var HeroController = function () {
   _createClass(HeroController, [{
     key: 'init',
     value: function init() {
-      console.log('hero controller initialized.');
+      // console.log('hero controller initialized.')
     }
   }]);
 
@@ -1012,7 +1012,7 @@ var IGEventsController = function () {
   _createClass(IGEventsController, [{
     key: 'init',
     value: function init() {
-      console.log('instagram events initialized.');
+      // console.log('instagram events initialized.')
     }
   }]);
 
@@ -1070,7 +1070,7 @@ var IGGalleryController = function () {
   _createClass(IGGalleryController, [{
     key: 'init',
     value: function init() {
-      console.log('instagram gallery initialized.');
+      // console.log('instagram gallery initialized.')
     }
   }]);
 
@@ -1127,7 +1127,7 @@ var MobileMenuController = function () {
       return _this.closeMenu(e);
     });
 
-    console.log('mobile menu directive instantiated.');
+    // console.log('mobile menu directive instantiated.')
 
     this._$scope.$on('$destroy', function () {
       _this._dispose();

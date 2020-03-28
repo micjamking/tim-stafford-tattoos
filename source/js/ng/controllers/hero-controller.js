@@ -23,7 +23,7 @@ export default class HeroController {
    * Initializes hero animations
    */
   init() {
-    console.log('hero controller initialized.')
+    // console.log('hero controller initialized.')
   }
 
 }

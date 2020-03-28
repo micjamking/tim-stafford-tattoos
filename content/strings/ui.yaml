@@ -6,11 +6,21 @@ contact_hero_title:
   string@: Contact
 events_hero_title:
   string@: Events
+global_facebook_cta:
+  string@: Facebook
+  url: https://www.facebook.com/Timsfineart
+global_footer_disclaimer: {}
+global_footer_title:
+  string@: Tim Stafford Tattoos
+global_instagram_cta:
+  short_name@: Portfolio
+  string@: Instagram
+  url: https://www.instagram.com/2cartoony4me/
 home_bio_body:
-  string@: 'Timothy Stafford is an Austin-based tattoo artist and illustrator who specializes in ''New School'', combining unique character design, realistic texture and vibrant color to create a style all his own. For the last decade, Tim has been establishing himself as one of the premier atists and illustrators in the tattoo industry, creating mind-blowing tattoos & illustrations completely from scratch.
+  string@: 'Tim Stafford is an Austin-based tattoo artist and illustrator who specializes in ''New School'', combining unique character design, realistic texture and vibrant color to create a style all his own. For the last decade, Tim has been establishing himself as one of the premier atists and illustrators in the tattoo industry, crafting mind-blowing tattoos & illustrations completely by hand.
 
 
-    Tim was also featured on Paramount Network''s Ink Master Season 11 as a top-4 finisher.'
+    Tim was also featured on <a href="https://www.paramountnetwork.com/shows/ink-master/sq3765/season-11" target="_blank" rel="noreferrer">Paramount Network''s Ink Master Season 11 as a top-4 finisher.</a>'
 home_bio_title:
   string@: Creativity is Everything
 home_contact_body:

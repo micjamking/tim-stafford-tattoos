@@ -1,3 +1,6 @@
+{% set global = g.doc('/content/strings/ui.yaml', locale=doc.locale) %}
+{% set store = g.doc('/content/pages/store.yaml') %}
+
 <header class="tst-header">
   <div class="tst-header__container">
     <div class="tst-header__logo">
@@ -31,6 +34,16 @@
 
     <nav class="tst-nav tst-nav--desktop">
       <ul class="tst-nav__links">
+        <li class="tst-nav__links__link{% if doc.url == store.url %} tst-nav__links__link--active{% endif %}">
+          <a href="{{store.url.path}}">
+            {{_(store.title)}}
+          </a>
+        </li>
+        <li class="tst-nav__links__link">
+          <a href="{{global.global_instagram_cta.url}}" target="_blank" rel="noreferrer">
+            {{_(global.global_instagram_cta.short_name)}}
+          </a>
+        </li>
         {% for page in g.docs('pages', locale=doc.locale) if page.path_format %}
         <li class="tst-nav__links__link{% if doc == page %} tst-nav__links__link--active{% endif %}">
           <a href="{{page.url.path}}">
@@ -38,6 +51,15 @@
           </a>
         </li>
         {% endfor %}
+        <li class="tst-nav__links__link">
+          <button type="button" class="tst-nav__links__link__cart snipcart-checkout">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" alt="" title="" class="snipcart-cart-header__icon snipcart__icon--blue-dark snipcart__icon">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M51.714 20.47L55 60H9l3.286-39.53h9.857v-6.588C22.143 8.424 26.556 4 32 4c5.444 0 9.857 4.424 9.857 9.882v6.589h9.857zM25.43 13.883v16.47h-3.286v-6.587h-6.834l-2.737 32.94h38.856l-2.737-32.94h-6.834v6.588h-3.286v-16.47c0-3.634-2.947-6.589-6.571-6.589-3.624 0-6.571 2.955-6.571 6.588zm3.285 9.883V20.47h6.572v3.294h-6.572z" fill="#0E0E0E"></path>
+            </svg>
+            <span class="snipcart-items-count"></span>
+            <span class="snipcart-total-price"></span>
+          </button>
+        </li>
       </ul>
     </nav>
 
@@ -51,6 +73,13 @@
           </g>
         </svg>
       </div>
+      <button type="button" class="tst-nav__mobile__cart snipcart-checkout">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" alt="" title="" class="snipcart-cart-header__icon snipcart__icon--blue-dark snipcart__icon">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M51.714 20.47L55 60H9l3.286-39.53h9.857v-6.588C22.143 8.424 26.556 4 32 4c5.444 0 9.857 4.424 9.857 9.882v6.589h9.857zM25.43 13.883v16.47h-3.286v-6.587h-6.834l-2.737 32.94h38.856l-2.737-32.94h-6.834v6.588h-3.286v-16.47c0-3.634-2.947-6.589-6.571-6.589-3.624 0-6.571 2.955-6.571 6.588zm3.285 9.883V20.47h6.572v3.294h-6.572z" fill="#0E0E0E"></path>
+        </svg>
+        <span class="snipcart-items-count"></span>
+        <span class="snipcart-total-price"></span>
+      </button>
       <div class="tst-nav__menu tst-nav__menu--off-canvas" tst-mobile-menu-wrapper>
         <div class="tst-nav__close-icon" tst-mobile-menu-close-button>
           <svg viewBox="0 0 20 19">
@@ -62,6 +91,16 @@
         <ul class="tst-nav__links">
           <li class="tst-nav__links__link{% if doc.url.path == '/' %} tst-nav__links__link--active{% endif %}">
             <a href="/">{{_('Home')}}</a>
+          </li>
+          <li class="tst-nav__links__link{% if doc.url == store.url %} tst-nav__links__link--active{% endif %}">
+            <a href="{{store.url.path}}">
+              {{_(store.title)}}
+            </a>
+          </li>
+          <li class="tst-nav__links__link">
+            <a href="{{global.global_instagram_cta.url}}" target="_blank" rel="noreferrer">
+              {{_(global.global_instagram_cta.short_name)}}
+            </a>
           </li>
           {% for page in g.docs('pages', locale=doc.locale) if page.path_format %}
           <li class="tst-nav__links__link{% if doc == page %} tst-nav__links__link--active{% endif %}">

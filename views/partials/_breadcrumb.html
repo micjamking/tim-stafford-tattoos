@@ -1,0 +1,12 @@
+{% set store = g.doc('/content/pages/store.yaml') %}
+
+<section class="tst-breadcrumb">
+  <div class="tst-breadcrumb__container">
+    <div class="tst-breadcrumb__store">
+      <a class="tst-breadcrumb__store__link" href="{{store.url.path}}"
+        data-g-category="{{_('Navigation')}}"
+        data-g-label="{{_(store.title)}}"
+        data-g-action="{{_('Return to Store')}}"><span class="tst-breadcrumb__store__link__arrow">{{_('← ')}}</span>{{_('Back to Store')}}</a>
+    </div>
+  </div>
+</section>

@@ -9,6 +9,9 @@
   height: 80px
   +md
     height: $global-header-height
+  +xl
+    max-width: $global-container-max-width
+    margin: 0 auto
 
   &__container
     position: relative
@@ -27,6 +30,8 @@
     +md
       top: 41px
       left: 50px
+    +xl
+      left: 0
     a
       display: flex
       line-height: 1
@@ -47,6 +52,8 @@
     position: absolute
     top: 50px
     right: 50px
+    +xl
+      right: 0
 
   .tst-nav__links
     display: flex

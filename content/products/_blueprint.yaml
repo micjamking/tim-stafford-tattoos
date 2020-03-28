@@ -1,0 +1,3 @@
+title: Products              # Collection's title.
+path: /{root}/store/{base}/  # The URL path format.
+view: /views/base.html       # The template to use.

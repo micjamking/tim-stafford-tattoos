@@ -15,6 +15,32 @@
           },
           "pod_path": null
         }
+      },
+      "/store/": {
+        "options": {},
+        "value": {
+          "hashed": "2839118d742b80f6817d0eeab229084ed347a50ec36e9cc7f264bc69a5e82a88",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/pages",
+            "locale": "en",
+            "pod_path": "/content/pages/store.yaml"
+          },
+          "pod_path": "/content/pages/store.yaml"
+        }
+      },
+      "/store/billie-eilish/": {
+        "options": {},
+        "value": {
+          "hashed": "e92fedff2e740686ee24ff94005ebb62572699896d89085874fc7807ae60f88c",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/products",
+            "locale": "en",
+            "pod_path": "/content/products/billie-eilish.yaml"
+          },
+          "pod_path": "/content/products/billie-eilish.yaml"
+        }
       }
     }
   },
@@ -23,7 +49,7 @@
       "/": {
         "options": {},
         "value": {
-          "hashed": "14939668598cada9b916b3024c2bbb5f501b7eaa000dcc57ecce56c6a36c727f",
+          "hashed": "b00de7d5f684db77919f42a0528cd23d80dac81a736fff7d4e8296d28ce9cebf",
           "kind": "doc",
           "meta": {
             "collection_path": "/content/pages",
@@ -73,7 +99,7 @@
       "/contact/": {
         "options": {},
         "value": {
-          "hashed": "692812bb94b8c01a090224b74b0676d3aab93031149d9ee6e522db3646af75b1",
+          "hashed": "0d2ef7cfef07a6ad10ae56ce57e4a9387e4a087a22c875b819e2d1a590ddc068",
           "kind": "doc",
           "meta": {
             "collection_path": "/content/pages",
@@ -86,7 +112,7 @@
       "/events/": {
         "options": {},
         "value": {
-          "hashed": "97bf706cc60abd2d2886e183db2c04caf7a7c8b30a6df93348109068f98a69db",
+          "hashed": "bd32785cf20084e3525dd57db1a4147ac1e52aa23ef916e06c4216b9533360a4",
           "kind": "doc",
           "meta": {
             "collection_path": "/content/pages",
@@ -94,6 +120,32 @@
             "pod_path": "/content/pages/events.yaml"
           },
           "pod_path": "/content/pages/events.yaml"
+        }
+      },
+      "/store/": {
+        "options": {},
+        "value": {
+          "hashed": "56a647872576497a4e0674159b0cf0c9006e63a367afaae420c4d0df1e4b529e",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/pages",
+            "locale": "en",
+            "pod_path": "/content/pages/store.yaml"
+          },
+          "pod_path": "/content/pages/store.yaml"
+        }
+      },
+      "/store/billie-eilish/": {
+        "options": {},
+        "value": {
+          "hashed": "c490b4ea46cd238496416bb0565f86461089e5a054fb0386e29f0af0c340adb7",
+          "kind": "doc",
+          "meta": {
+            "collection_path": "/content/products",
+            "locale": "en",
+            "pod_path": "/content/products/billie-eilish.yaml"
+          },
+          "pod_path": "/content/products/billie-eilish.yaml"
         }
       }
     }

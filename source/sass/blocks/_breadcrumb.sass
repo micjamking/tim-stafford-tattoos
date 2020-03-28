@@ -1,0 +1,22 @@
+/* ==========================================================================
+   Breadcrumb
+   ========================================================================== */
+
+.tst-breadcrumb
+  &__container
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+    padding: 0 25px 20px
+    +md
+      align-items: center
+      flex-direction: row
+    +xl
+      max-width: $global-container-max-width
+      margin: 0 auto 20px
+      padding: 0
+  &__store__link
+    +type-body
+    +type-size-form-small
+    text-decoration: none

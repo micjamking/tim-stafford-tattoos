@@ -1,11 +1,12 @@
 product_1001:
   categories: prints
-  description@: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id fermentum mauris. Curabitur mollis tincidunt magna et aliquet. Vestibulum lacus tellus, tempor quis sodales et, maximus eu dui. Nunc a augue dictum, fringilla orci eu, dictum libero.
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id fermentum mauris. Curabitur mollis tincidunt magna et aliquet. Vestibulum lacus tellus, tempor quis sodales et, maximus eu dui. Nunc a augue dictum, fringilla orci eu, dictum libero.
   images: https://instagram.fhnl1-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/87828475_1294210354123171_2006490586061194251_n.jpg?_nc_ht=instagram.fhnl1-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=gicUE2NXeUgAX9nP-0h&oh=67eab27763a035a07bc5f7a060d188db&oe=5EA7BB7B
   on_sale: 'FALSE'
-  price: $40.00
-  sale_price: $30.00
+  price: '40.00'
+  sale_price: '30.00'
   sku: '1001'
+  slug: billie-eilish
   stock: '100'
-  title@: Billie Eilish - Popstar Collectible Print
-  variant_sizes: 11 x 14
+  title: Billie Eilish - Popstar Collectible Print
+  variant_sizes: 11x14

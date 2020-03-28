@@ -7,7 +7,7 @@ partials:
 - partial: hero
   chapter:
     class: "tst-hero__chapter"
-    title@: "Contact"
+    title@: !g.string ui.contact_hero_title.string
   background_images:
   - class: "background-images__image--clockwork-orange tst-desktop-only"
     url: "/static/images/contact/tim-stafford-clockwork-orange.jpg"
@@ -19,8 +19,8 @@ partials:
   sections:
   - class: "tst-section__item--centered"
     chapter:
-      title@: "Booking By Appointment Only"
-      body@: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin massa justo, fermentum vel mauris quis, ornare imperdiet ante. Cras a sem sed massa convallis lobortis."
+      title@: !g.string ui.contact_faq_title.string
+      body@: !g.string ui.contact_faq_body.string
 
 - partial: form
   class: "tst-form--contact"

@@ -11,7 +11,7 @@
       <ul class="tst-nav__links">
         {% for item in footer.nav__social %}
         <li class="tst-nav__links__link{% if item.class %} {{item.class}}{% endif %}">
-          <a class="cta-button--link-only" href="{{item.url}}">{{_(item.label)}}</a>
+          <a class="cta-button--link-only" href="{{item.url}}"{% if item.new_window %} target="_blank" rel="noreferrer"{% endif %}>{{_(item.label)}}</a>
         </li>
         {% endfor %}
       </ul>

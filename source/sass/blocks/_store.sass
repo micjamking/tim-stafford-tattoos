@@ -1,0 +1,42 @@
+.store
+  .tst-section--product
+    +md
+      margin-top: 30px
+    .tst-chapter
+      &__price
+        +type-size-body-medium
+        &::before
+          content: '$'
+      &__sizes,
+      &__quantity
+        margin-bottom: 20px
+        > .label
+          margin-bottom: 5px
+        > input,
+        > select
+          font-size: 14px
+          min-width: 100px
+      .tst-chapter__ctas,
+      .tst-chapter__cta,
+      .cta__item.snipcart-add-item
+        +md-lt
+          width: 100%
+
+.snipcart
+  &-modal,
+  &-cart-header,
+  &-cart__content,
+  &-featured-payment-methods__title
+    background-color: #FFFFFF
+  &-item-line__media--small
+    +md-lt
+      margin-right: 10px
+  &-item-line__title.snipcart__font--xlarge
+    +md-lt
+      font-size: 14px
+  &__font--secondary,
+  &__font--subtitle
+    +type-font-body
+  &__icon--blue-light path,
+  &__icon--blue-dark path
+    fill: $global-color-black

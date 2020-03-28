@@ -20,7 +20,7 @@ class MobileMenuController {
     if (this.$menuButton) this.$menuButton.addEventListener('click', (e) => this.openMenu(e));
     if (this.$closeButton) this.$closeButton.addEventListener('click', (e) => this.closeMenu(e));
 
-    console.log('mobile menu directive instantiated.')
+    // console.log('mobile menu directive instantiated.')
 
     this._$scope.$on('$destroy', () => {
       this._dispose();

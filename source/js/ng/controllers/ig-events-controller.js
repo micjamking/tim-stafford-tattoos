@@ -21,7 +21,7 @@ export default class IGEventsController {
    * Initializes Instagram events
    */
   init() {
-    console.log('instagram events initialized.')
+    // console.log('instagram events initialized.')
   }
 
 }

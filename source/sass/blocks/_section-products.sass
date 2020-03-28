@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Section Products
+   ========================================================================== */
+
+.tst-section-products
+  &__container
+    +mobile-section-padding
+    +xl
+      max-width: $global-container-max-width
+      margin: 0 auto
+
+  &__container,
+  &__list
+    position: relative
+    display: flex
+    width: 100%
+    height: auto
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+  &__list
+    +md
+      flex-direction: row
+    +xl
+      max-width: $global-container-max-width
+
+  .tst-section-product
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-bottom: 40px
+    +md
+      margin-right: 50px
+      width: calc(25% - 37.5px)
+
+    &:last-child
+      margin-right: 0
+
+    &__button
+      display: block
+      width: 100%
+      height: 100%
+      transition: all 300ms ease
+      +md
+        opacity: 0.75
+        .tst-section-product__chapter__title,
+        .tst-section-product__chapter__price
+          opacity: 0.75
+        &:hover
+          opacity: 1.0
+          text-decoration: none
+          .tst-section-product__chapter__title,
+          .tst-section-product__chapter__price
+            opacity: 1.0
+
+    &__image
+      position: relative
+      display: flex
+      width: calc(100vw - 40px)
+      min-width: 200px
+      height: calc(100vw - 40px)
+      min-height: 200px
+      max-width: 400px
+      max-height: 400px
+      flex: 1 0 auto
+      +md
+        max-width: 100%
+        max-height: ($global-container-max-width - 150) / 4
+
+    &__chapter
+      margin-top: 20px
+      align-items: center
+      text-align: center
+
+    &__chapter__title
+      +type-weight-bold
+      margin-bottom: 10px
+
+    &__chapter__price
+      &::before
+        content: '$'

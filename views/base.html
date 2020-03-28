@@ -77,9 +77,11 @@
 
   <!-- DNS Prefetch -->
   <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="//cdn.snipcart.com" />
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Bowlby+One|Open+Sans:300,400,700">
+  <link rel="stylesheet" href="//cdn.snipcart.com/themes/v3.0.10/default/snipcart.css" />
   <link rel="stylesheet" href="{{ g.static('/static/style.css').url.path }}" />
 
   {% if podspec.meta.favicon_path %}
@@ -117,7 +119,7 @@
 {% if doc.url.path == '/' %}
   {% set body_class = 'home' %}
 {% else %}
-  {% set body_class = doc.url.path|replace("/", "") %}
+  {% set body_class = doc.url.path|replace("/", " ") %}
 {% endif %}
 <body class="{{ body_class }}">
   {% include "/views/partials/_preloader.html" %}
@@ -137,5 +139,7 @@
   </section>
 
   {% include "/views/partials/_footer.html" %}
+  <div id="snipcart" data-api-key="ZjI4NTkxM2YtYzkwZC00MzFjLWJhMmYtYTA3NGM2M2ViMjkxNjM3MjA5NTgzMDAzMzE0ODUz" hidden></div>
+  <script src="https://cdn.snipcart.com/themes/v3.0.10/default/snipcart.js"></script>
 </body>
 </html>

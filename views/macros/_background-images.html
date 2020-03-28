@@ -13,7 +13,11 @@
       {% if image.lazy_image %}
       data-src="{{g.static(image.url).url.path}}"
       {% else %}
+      {% if image.url.startswith('/static/') %}
       style="background-image: url({{g.static(image.url).url.path}})"
+      {% else %}
+      style="background-image: url({{image.url}})"
+      {% endif %}
       {% endif %}
     {% endif %}></div>
   {% endfor %}

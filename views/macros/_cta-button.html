@@ -13,7 +13,22 @@
 {% if options.url %}
    {% set url = options.url %}
 {% endif %}
-<a href="{{url}}" class="cta__item button{% if options.class %} {{options.class}}{% endif %}"{% if options.delay %} data-delay="{{options.delay}}"{% endif %}>
+<a href="{{url}}" class="cta__item button{% if options.class %} {{options.class}}{% endif %}"
+  {% if options.new_window %}target="_blank" rel="noreferrer"{% endif %}
+  {% if options.delay %} data-delay="{{options.delay}}"{% endif %}
+  {% if options.data %}
+  {% if options.data.item_id %}data-item-id="{{options.data.item_id}}"{% endif %}
+  {% if options.data.item_price %}data-item-price="{{options.data.item_price}}"{% endif %}
+  {% if options.data.item_id %}data-item-url="{{doc.url.path}}"{% endif %}
+  {% if options.data.item_image %}data-item-image="{{options.data.item_image}}"{% endif %}
+  {% if options.data.item_name %}data-item-name="{{options.data.item_name}}"{% endif %}
+  {% if options.data.item_id %}data-item-quantity="[[globalQuantity]]"{% endif %}
+  {% if options.data.item_sizes %}
+  {% set sizes = options.data.item_sizes.split(',') %}
+  data-item-custom1-name="{{_('Size')}}"
+  data-item-custom1-options="{{sizes|join('|')}}"
+  {% endif %}
+  {% endif %}>
   <span class="button__label">
    <span class="button__label__label">{{_(options.label)}}</span>
  </span>

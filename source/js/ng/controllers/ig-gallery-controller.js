@@ -21,7 +21,7 @@ export default class IGGalleryController {
    * Initializes Instagram gallery
    */
   init() {
-    console.log('instagram gallery initialized.')
+    // console.log('instagram gallery initialized.')
   }
 
 }

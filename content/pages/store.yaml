@@ -1,21 +1,17 @@
-$title: Events
-$path: /{root}/events/
-$order: 2
-
+$title: Store
+$path: /{root}/store/
+$order: 1
+$hidden: true
 
 partials:
 - partial: hero
   chapter:
     class: "tst-hero__chapter"
-    title@: !g.string ui.events_hero_title.string
+    title@: !g.string ui.store_hero_title.string
   background_images:
   - class: "background-images__image--tiki tst-desktop-only"
     url: "/static/images/events/tim-stafford-tiki.jpg"
   - class: "background-images__image--tiki tst-mobile-only"
     url: "/static/images/events/tim-stafford-tiki.mobile.jpg"
 
-- partial: section-events
-  events: !g.yaml /content/strings/events.yaml
-  events_settings:
-    item_count: 4
-    show_historical_events: false
+- partial: section-products

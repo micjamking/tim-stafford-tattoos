@@ -34,15 +34,34 @@
     text-transform: uppercase
     +type-heading
     margin-bottom: 24px
+    &--desktop-only
+      display: none
+      +md
+        display: flex
 
   &__subtitle
     order: 3
     position: relative
 
+  &__price
+    order: 3
+    position: relative
+    +type-weight-bold
+
   &__body
     width: 100%
     order: 4
     +type-body
+
+  &__sizes
+    order: 5
+    position: relative
+    +type-weight-bold
+
+  &__quantity
+    order: 5
+    position: relative
+    +type-weight-bold
 
   &__ctas
     display: flex
