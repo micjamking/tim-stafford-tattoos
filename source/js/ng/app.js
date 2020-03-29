@@ -6,8 +6,7 @@
 import CarouselController from './controllers/carousel-controller';
 import FormController from './controllers/form-controller';
 import HeroController from './controllers/hero-controller';
-import IGEventsController from './controllers/ig-events-controller';
-import IGGalleryController from './controllers/ig-gallery-controller';
+import EventsController from './controllers/events-controller';
 
 /** Directives */
 import mobileMenuDirective from './directives/mobile-menu';
@@ -44,12 +43,8 @@ export default class App {
         class: HeroController
       },
       {
-        name: 'TSTIGEventsController',
-        class: IGEventsController
-      },
-      {
-        name: 'TSTIGGalleryController',
-        class: IGGalleryController
+        name: 'TSTEventsController',
+        class: EventsController
       }
     ];
 

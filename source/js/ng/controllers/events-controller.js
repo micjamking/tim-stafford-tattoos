@@ -1,10 +1,10 @@
 /**
- * Instagram Events controller
+ * Events controller
  */
 
 import utils from './../../lib/utils';
 
-export default class IGEventsController {
+export default class EventsController {
   static get $inject() {
     return ['$element', '$scope', '$window'];
   }
@@ -18,10 +18,10 @@ export default class IGEventsController {
   }
 
   /**
-   * Initializes Instagram events
+   * Initializes Events
    */
   init() {
-    // console.log('instagram events initialized.')
+    // console.log('events initialized.')
   }
 
 }

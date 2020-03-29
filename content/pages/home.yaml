@@ -34,8 +34,11 @@ partials:
 
 - partial: section-gallery
   class: "tst-section-gallery--home"
-  ig_gallery_settings:
-    item_count: 4
+  gallery:
+  - url: '/static/images/home/tim-stafford-turtle.jpg'
+  - url: '/static/images/home/tim-stafford-cat.jpg'
+  - url: '/static/images/home/tim-stafford-dog.jpg'
+  - url: '/static/images/home/tim-stafford-wolf.jpg'
   chapter_top:
     title@: !g.string ui.home_gallery_title.string
   chapter_bottom:
