@@ -110,8 +110,23 @@
     "/content/strings/products.yaml"
   ],
   "/content/products/billie-eilish.yaml": [
+    "/content/pages/contact.yaml",
+    "/content/pages/events.yaml",
+    "/content/pages/store.yaml",
+    "/content/partials/footer.yaml",
     "/content/products/billie-eilish.yaml",
-    "/content/strings/products.yaml"
+    "/content/strings/products.yaml",
+    "/content/strings/ui.yaml",
+    "/static/apple-touch-icon-precomposed.png",
+    "/static/favicon.png",
+    "/static/script.js",
+    "/static/style.css",
+    "/static/website_screenshot.png",
+    "/views/partials/_breadcrumb.html",
+    "/views/partials/_footer.html",
+    "/views/partials/_header.html",
+    "/views/partials/_preloader.html",
+    "/views/partials/_section.html"
   ],
   "/content/products/cardi-b.yaml": [
     "/content/products/cardi-b.yaml",
@@ -122,16 +137,46 @@
     "/content/strings/products.yaml"
   ],
   "/content/products/donald-glover.yaml": [
+    "/content/pages/contact.yaml",
+    "/content/pages/events.yaml",
+    "/content/pages/store.yaml",
+    "/content/partials/footer.yaml",
     "/content/products/donald-glover.yaml",
-    "/content/strings/products.yaml"
+    "/content/strings/products.yaml",
+    "/content/strings/ui.yaml",
+    "/static/apple-touch-icon-precomposed.png",
+    "/static/favicon.png",
+    "/static/script.js",
+    "/static/style.css",
+    "/static/website_screenshot.png",
+    "/views/partials/_breadcrumb.html",
+    "/views/partials/_footer.html",
+    "/views/partials/_header.html",
+    "/views/partials/_preloader.html",
+    "/views/partials/_section.html"
   ],
   "/content/products/kendrick-lamar.yaml": [
     "/content/products/kendrick-lamar.yaml",
     "/content/strings/products.yaml"
   ],
   "/content/products/lizzo.yaml": [
+    "/content/pages/contact.yaml",
+    "/content/pages/events.yaml",
+    "/content/pages/store.yaml",
+    "/content/partials/footer.yaml",
     "/content/products/lizzo.yaml",
-    "/content/strings/products.yaml"
+    "/content/strings/products.yaml",
+    "/content/strings/ui.yaml",
+    "/static/apple-touch-icon-precomposed.png",
+    "/static/favicon.png",
+    "/static/script.js",
+    "/static/style.css",
+    "/static/website_screenshot.png",
+    "/views/partials/_breadcrumb.html",
+    "/views/partials/_footer.html",
+    "/views/partials/_header.html",
+    "/views/partials/_preloader.html",
+    "/views/partials/_section.html"
   ],
   "/content/products/the-weeknd.yaml": [
     "/content/products/the-weeknd.yaml",

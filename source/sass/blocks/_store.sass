@@ -15,7 +15,18 @@
         > input,
         > select
           font-size: 14px
-          min-width: 100px
+          line-height: normal
+          width: 100%
+          min-width: 200px
+          height: 50px
+          border: 1px solid #f0f5f6
+          padding: 16px
+          background-color: #FFFFFF
+          appearance: none
+          +md
+            min-width: 227px
+        > select
+          background: url(http://cdn.snipcart.com/themes/v3.0.10/default/assets/icons/select-cursor.svg) no-repeat right 22px center
       .tst-chapter__ctas,
       .tst-chapter__cta,
       .cta__item.snipcart-add-item
@@ -30,6 +41,7 @@
   &-cart__content,
   &-modal__container,
   &-discount-box,
+  &-cart-summary,
   &-featured-payment-methods__title
     background-color: #FFFFFF
   &-item-line__media--small
@@ -53,11 +65,13 @@
 
   &-cart-header
     padding: 32px 25px
+    border-bottom: 1px solid #d9dfe0
     +md
       width: 100%
       max-width: $global-container-max-width
       padding: 32px 30px
       margin: 20px auto 16px auto
+      border-bottom: 0 none
 
   &-layout__content
     +md
@@ -75,3 +89,47 @@
     +md
       font-size: 16px
       text-transform: capitalize
+
+  &__icon--brand
+    height: 15px
+
+  &-featured-payment-methods
+    margin-top: 0px
+    flex-direction: column
+    &__list-item
+      padding: 8px 10px
+    &__title
+      position: relative
+      top: auto
+      margin-bottom: 10px
+
+  // TODO: Hiding promo code box
+  &-discount-box
+    display: none
+
+  &__box--badge
+    background-color: #FFFFFF
+    border: 1px solid $global-color-black
+    &-highlight
+      background: none
+      background-color: $global-color-black
+      color: #fff
+
+  &__actions--link
+    +type-black
+    +type-weight-bold
+
+  &__box--gray.snipcart-billing-completed
+    background-color: #FFFFFF
+    border: 1px solid $global-color-black
+    border-radius: 2px
+    margin-top: 20px
+    margin-bottom: 20px
+    +md
+      margin-top: 0
+
+  &-cart-button.snipcart-cart-button--highlight
+    +button
+    +type-size-body-medium
+    +type-weight-bold
+    background-color: $global-color-black
