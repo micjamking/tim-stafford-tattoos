@@ -652,11 +652,11 @@ var _heroController = __webpack_require__(9);
 
 var _heroController2 = _interopRequireDefault(_heroController);
 
-var _eventsController = __webpack_require__(13);
+var _eventsController = __webpack_require__(10);
 
 var _eventsController2 = _interopRequireDefault(_eventsController);
 
-var _mobileMenu = __webpack_require__(12);
+var _mobileMenu = __webpack_require__(11);
 
 var _mobileMenu2 = _interopRequireDefault(_mobileMenu);
 
@@ -957,9 +957,65 @@ var HeroController = function () {
 exports.default = HeroController;
 
 /***/ }),
-/* 10 */,
-/* 11 */,
-/* 12 */
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); /**
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      * Events controller
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      */
+
+var _utils = __webpack_require__(0);
+
+var _utils2 = _interopRequireDefault(_utils);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+var EventsController = function () {
+  _createClass(EventsController, null, [{
+    key: '$inject',
+    get: function get() {
+      return ['$element', '$scope', '$window'];
+    }
+  }]);
+
+  function EventsController($element, $scope, $window) {
+    _classCallCheck(this, EventsController);
+
+    this._$scope = $scope;
+    this._$el = $element[0];
+    this._$w = $window;
+
+    this._utils = new _utils2.default();
+  }
+
+  /**
+   * Initializes Events
+   */
+
+
+  _createClass(EventsController, [{
+    key: 'init',
+    value: function init() {
+      // console.log('events initialized.')
+    }
+  }]);
+
+  return EventsController;
+}();
+
+exports.default = EventsController;
+
+/***/ }),
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1086,64 +1142,6 @@ var mobileMenuDirective = function mobileMenuDirective() {
 };
 
 exports.default = mobileMenuDirective;
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }(); /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      * Events controller
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      */
-
-var _utils = __webpack_require__(0);
-
-var _utils2 = _interopRequireDefault(_utils);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-var EventsController = function () {
-  _createClass(EventsController, null, [{
-    key: '$inject',
-    get: function get() {
-      return ['$element', '$scope', '$window'];
-    }
-  }]);
-
-  function EventsController($element, $scope, $window) {
-    _classCallCheck(this, EventsController);
-
-    this._$scope = $scope;
-    this._$el = $element[0];
-    this._$w = $window;
-
-    this._utils = new _utils2.default();
-  }
-
-  /**
-   * Initializes Events
-   */
-
-
-  _createClass(EventsController, [{
-    key: 'init',
-    value: function init() {
-      // console.log('events initialized.')
-    }
-  }]);
-
-  return EventsController;
-}();
-
-exports.default = EventsController;
 
 /***/ })
 /******/ ]);

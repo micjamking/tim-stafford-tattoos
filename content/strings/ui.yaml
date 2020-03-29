@@ -4,6 +4,8 @@ contact_faq_title:
   string@: Booking By Appointment Only
 contact_hero_title:
   string@: Contact
+events_event_cta:
+  string@: Book Event
 events_hero_title:
   string@: Events
 global_facebook_cta:
