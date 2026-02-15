@@ -32,8 +32,6 @@ export default class FormController {
     // Initialize captcha
     this.generateCaptcha();
 
-    console.log('Form controller instantiated. Captcha question:', this.captchaQuestion);
-
   }
 
   /**
@@ -46,7 +44,6 @@ export default class FormController {
     this._correctAnswer = selected.answer.toLowerCase().trim();
     this.captchaAnswer = '';
     this.captchaError = false;
-    console.log('Captcha generated:', this.captchaQuestion, 'Answer:', this._correctAnswer);
   }
 
   /**
@@ -74,7 +71,6 @@ export default class FormController {
         this._$scope.$apply();
       }
 
-      console.log('Captcha validation failed');
       return;
     }
 
@@ -84,8 +80,6 @@ export default class FormController {
     iframeEl.addEventListener('load', () => {
       this.loading = false;
       this.submitted = true;
-
-      console.log('iframe loadeded!');
 
       if (!this._$scope.$$phase) {
         this._$scope.$apply();
@@ -98,8 +92,6 @@ export default class FormController {
     this.captchaError = false;
 
     formEl.submit();
-
-    console.log('form submitted...');
   }
 
 }
