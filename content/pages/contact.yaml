@@ -9,10 +9,10 @@ partials:
     class: "tst-hero__chapter"
     title@: !g.string ui.contact_hero_title.string
   background_images:
-  - class: "background-images__image--clockwork-orange tst-desktop-only"
-    url: "/static/images/contact/tim-stafford-clockwork-orange.jpg"
-  - class: "background-images__image--clockwork-orange tst-mobile-only"
-    url: "/static/images/contact/tim-stafford-clockwork-orange.mobile.jpg"
+  - class: "background-images__image--contact-header tst-desktop-only"
+    url: "/static/images/contact/tim-stafford-contact-header.jpg"
+  - class: "background-images__image--contact-header tst-mobile-only"
+    url: "/static/images/contact/tim-stafford-contact-header-mobile.jpg"
 
 - partial: section
   class: "tst-section--faq"
@@ -20,7 +20,6 @@ partials:
   - class: "tst-section__item--centered"
     chapter:
       title@: !g.string ui.contact_faq_title.string
-      body@: !g.string ui.contact_faq_body.string
 
 - partial: form
   class: "tst-form--contact"

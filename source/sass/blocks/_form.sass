@@ -63,10 +63,9 @@
     position: relative
     z-index: 2
 
-  .form__field__input:focus,
-  .form__field__input:valid,
-    + .form__field__label
-      transform: translate3d(0, 0, 0) scale3d(0.85,0.85,0.85)
+  .form__field__input:focus + .form__field__label,
+  .form__field__input:valid + .form__field__label
+    transform: translate3d(0, 0, 0) scale3d(0.85,0.85,0.85)
 
   .form__field__input[type="date"]
     margin-bottom: 60px
@@ -87,6 +86,17 @@
     justify-content: center
     align-items: center
     text-align: center
+
+    button[type="submit"]:disabled
+      opacity: 0.5
+      cursor: not-allowed
+      pointer-events: none
+
+  .form__field__error
+    order: 3
+    +type-size-form-small
+    +type-red
+    margin-top: 5px
 
 input[type="text"],
 input[type="email"],

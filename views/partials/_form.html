@@ -8,8 +8,30 @@
       <div class="form__title">{{_(form.get('title'))}}</div>
       <div class="form__description">{{_(form.get('description'))}}</div>
       {{google_forms.render_fields(form.get('items'))}}
+
+      <!-- Security Question Captcha -->
+      <div class="form__header">
+          {{_('Security Question')}}
+      </div>
+      <div class="form__field">
+        <div class="form__field__description form__field__captcha" ng-if="form.captchaQuestion">
+          <span ng-bind="form.captchaQuestion"></span>
+          <span class="required">*</span>
+        </div>
+        <input
+          type="text"
+          ng-model="form.captchaAnswer"
+          class="form__field__input"
+          placeholder="{{_('Your answer')}}"
+          required
+          autocomplete="off">
+        <div class="form__field__error" ng-if="form.captchaError">
+          {{_('Incorrect answer. Please try again.')}}
+        </div>
+      </div>
+
       <div class="tst-form__cta">
-        <button type="submit" class="button" ng-disabled="form.loading">
+        <button type="submit" class="button" ng-disabled="form.loading || !form.captchaAnswer">
           <span class="button__label">{{_('Submit')}}</span>
         </button>
       </div>
