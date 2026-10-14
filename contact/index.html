@@ -14,7 +14,7 @@
   <!-- Open Graph (Facebook) -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Tim Stafford | Tattoo Artist &amp; Illustrator" />
-  <meta property="og:url" content="http://timstaffordtattoos.com/contact/" />
+  <meta property="og:url" content="http://localhost/contact/" />
   <meta property="og:title" content="Contact | Tim Stafford | Tattoo Artist &amp; Illustrator" />
   <meta property="og:description" content="Timothy Stafford is an Austin-based tattoo artist and illustrator who specializes in &#39;New School&#39;." />
   <meta property="og:image" content="/website_screenshot.png" />
@@ -33,9 +33,11 @@
 
   <!-- DNS Prefetch -->
   <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="//cdn.snipcart.com" />
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Bowlby+One|Open+Sans:300,400,700">
+  <link rel="stylesheet" href="//cdn.snipcart.com/themes/v3.0.10/default/snipcart.css" />
   <link rel="stylesheet" href="/style.css" />
 
   <!-- Icons -->
@@ -48,7 +50,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
   <script src="/script.js"></script>
 </head>
-<body class="contact">
+<body class=" contact ">
 <div class="tst-preloader">
   <div class="tst-preloader__container">
     <svg class="tst-preloader__logo" preserveAspectRatio="none" viewBox="0 0 358 204" width="358px" height="204px">
@@ -98,6 +100,7 @@
     </svg>
   </div>
 </div>
+
 <header class="tst-header">
   <div class="tst-header__container">
     <div class="tst-header__logo">
@@ -132,8 +135,13 @@
     <nav class="tst-nav tst-nav--desktop">
       <ul class="tst-nav__links">
         <li class="tst-nav__links__link">
-          <a href="/artwork/">
-            Artwork
+          <a href="/store/">
+            Store
+          </a>
+        </li>
+        <li class="tst-nav__links__link">
+          <a href="https://www.instagram.com/2cartoony4me/" target="_blank" rel="noreferrer">
+            Portfolio
           </a>
         </li>
         <li class="tst-nav__links__link">
@@ -145,6 +153,15 @@
           <a href="/contact/">
             Contact
           </a>
+        </li>
+        <li class="tst-nav__links__link">
+          <button type="button" class="tst-nav__links__link__cart snipcart-checkout">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" alt="" title="" class="snipcart-cart-header__icon snipcart__icon--blue-dark snipcart__icon">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M51.714 20.47L55 60H9l3.286-39.53h9.857v-6.588C22.143 8.424 26.556 4 32 4c5.444 0 9.857 4.424 9.857 9.882v6.589h9.857zM25.43 13.883v16.47h-3.286v-6.587h-6.834l-2.737 32.94h38.856l-2.737-32.94h-6.834v6.588h-3.286v-16.47c0-3.634-2.947-6.589-6.571-6.589-3.624 0-6.571 2.955-6.571 6.588zm3.285 9.883V20.47h6.572v3.294h-6.572z" fill="#0E0E0E"></path>
+            </svg>
+            <span class="snipcart-items-count"></span>
+            <span class="snipcart-total-price"></span>
+          </button>
         </li>
       </ul>
     </nav>
@@ -159,6 +176,13 @@
           </g>
         </svg>
       </div>
+      <button type="button" class="tst-nav__mobile__cart snipcart-checkout">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" alt="" title="" class="snipcart-cart-header__icon snipcart__icon--blue-dark snipcart__icon">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M51.714 20.47L55 60H9l3.286-39.53h9.857v-6.588C22.143 8.424 26.556 4 32 4c5.444 0 9.857 4.424 9.857 9.882v6.589h9.857zM25.43 13.883v16.47h-3.286v-6.587h-6.834l-2.737 32.94h38.856l-2.737-32.94h-6.834v6.588h-3.286v-16.47c0-3.634-2.947-6.589-6.571-6.589-3.624 0-6.571 2.955-6.571 6.588zm3.285 9.883V20.47h6.572v3.294h-6.572z" fill="#0E0E0E"></path>
+        </svg>
+        <span class="snipcart-items-count"></span>
+        <span class="snipcart-total-price"></span>
+      </button>
       <div class="tst-nav__menu tst-nav__menu--off-canvas" tst-mobile-menu-wrapper>
         <div class="tst-nav__close-icon" tst-mobile-menu-close-button>
           <svg viewBox="0 0 20 19">
@@ -172,8 +196,13 @@
             <a href="/">Home</a>
           </li>
           <li class="tst-nav__links__link">
-            <a href="/artwork/">
-              Artwork
+            <a href="/store/">
+              Store
+            </a>
+          </li>
+          <li class="tst-nav__links__link">
+            <a href="https://www.instagram.com/2cartoony4me/" target="_blank" rel="noreferrer">
+              Portfolio
             </a>
           </li>
           <li class="tst-nav__links__link">
@@ -219,12 +248,14 @@
 
 
 
+
+
 </div>
 
   </div>
 </div>
 
-<div  class="tst-section tst-section--faq">
+<div  class="tst-section tst-section--contact-intro">
   <div class="tst-section__container">
         <div class="tst-section__item tst-section__item--centered">
 
@@ -232,10 +263,13 @@
     <div class="tst-chapter">
 
 
-  <div class="tst-chapter__title">Booking By Appointment Only</div>
+  <div class="tst-chapter__title">Let's build a character worth wearing.</div>
+
+  <div class="tst-chapter__subtitle">Expressive characters. Cinematic scenes. Tattoos with a story.</div>
 
 
-  <!-- <div class="tst-chapter__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin massa justo, fermentum vel mauris quis, ornare imperdiet ante. Cras a sem sed massa convallis lobortis.</div> -->
+  <div class="tst-chapter__body"><p>I create custom illustrative tattoos inspired by film, fiction, and larger-than-life personalities. My work often develops over multiple sessions, giving a character or a full scene room to come alive.</p></div>
+
 
 
 
@@ -249,135 +283,115 @@
 </div>
 <div class="tst-form tst-form--contact">
   <div class="tst-form__container" ng-controller="TSTFormController as form">
-    <form class="tst-form__form" action="https://docs.google.com/forms/d/e/1FAIpQLSd532UbXTGc6qm-fTrAN8ofdv22We0yXYvkuxhzvpcoy9Xucw/formResponse?hl=en" target="tst-form-iframe" ng-submit="form.submit($event)" ng-hide="form.submitted" tst-form>
-      <div class="form__title">Tattoo Inquiry Form</div>
-      <div class="form__description">Please fill out this form so I can learn more about your tattoo.</div>
-          <div class="form__header">Personal Details</div>
+    <form class="tst-form__form" action="https://docs.google.com/forms/d/e/1FAIpQLSd532UbXTGc6qm-fTrAN8ofdv22We0yXYvkuxhzvpcoy9Xucw/formResponse?hl=en" target="tst-form-iframe" ng-submit="form.submit($event)" ng-hide="form.submitted" tst-form novalidate>
+      <div class="form__title">Tell me about your idea.</div>
+      <div class="form__description">A rough idea is enough to start. Only three fields are required.</div>
 
-          <div class="form__field" data-name="entry.518236460">
-      <input
-        type="text"
-        required
-        
-        name="entry.518236460"
-        class="form__field__input">
+                    <div class="form__field" data-name="entry.518236460">
       <label class="form__field__label">
-    First & Last Name
+    Your name
     <span class="required">*</span>
   </label>
 
+    <input
+      type="text"
+      required
+      name="entry.518236460"
+placeholder="What should I call you?"      class="form__field__input">
   </div>
 
-          <div class="form__field" data-name="entry.1385944832">
-      <input
-        type="email"
-        required
-        
-        name="entry.1385944832"
-        class="form__field__input">
+
+              <div class="form__field" data-name="entry.1385944832">
       <label class="form__field__label">
-    Email Address
+    Email
     <span class="required">*</span>
   </label>
 
+    <input
+      type="email"
+      required
+      name="entry.1385944832"
+placeholder="Where I can reply"      class="form__field__input">
   </div>
 
-          <div class="form__field" data-name="entry.613305966">
-      <input
-        type="tel"
-        required
-        
-        name="entry.613305966"
-        class="form__field__input">
+
+              <div class="form__field" data-name="entry.218980995">
       <label class="form__field__label">
-    Phone Number (incl. area code)
+    Your tattoo idea
     <span class="required">*</span>
   </label>
 
-  </div>
-
-          <div class="form__field" data-name="entry.203964628">
-      <input
-        type="text"
-        required
-        
-        name="entry.203964628"
-        class="form__field__input">
-      <label class="form__field__label">
-    City
-    <span class="required">*</span>
-  </label>
-
-  </div>
-
-          <div class="form__field" data-name="entry.801729749">
-      <input
-        type="text"
-        required
-        
-        name="entry.801729749"
-        class="form__field__input">
-      <label class="form__field__label">
-    State
-    <span class="required">*</span>
-  </label>
-
-  </div>
-
-    <div class="form__header">Tattoo Details</div>
-
-          <div class="form__field" data-name="entry.218980995">
     <textarea
-      placeholder=""
       required
       name="entry.218980995"
-      class="form__field__input"></textarea>
-      <label class="form__field__label">
-    Description of tattoo
-    <span class="required">*</span>
-  </label>
-
-  </div>
-
-          <div class="form__field" data-name="entry.33282855">
-      <input
-        type="text"
-        required
-        
-        name="entry.33282855"
-        class="form__field__input">
-      <label class="form__field__label">
-    Location of tattoo
-    <span class="required">*</span>
-  </label>
-
-  </div>
-
-          <div class="form__field" data-name="entry.1509603270">
-      <input
-        type="date"
-        required
-        pattern=[0-9]{4}-[0-9]{2}-[0-9]{2}
-        name="entry.1509603270"
-        class="form__field__input">
-      <label class="form__field__label">
-    Desired start date for tattoo session
-    <span class="required">*</span>
-  </label>
-
+placeholder="Tell me the character, scene, or feeling you have in mind—and why it matters to you."      class="form__field__input"></textarea>
   </div>
 
 
-
-      <!-- Security Question Captcha -->
-      <div class="form__header">
-          Security Question
+      <div class="form__header form__header--optional" ng-click="form.toggleOptional()" ng-class="{'form__header--expanded': form.showOptional}">
+        <span>Add a few details — optional</span>
+        <span class="form__header__toggle" ng-bind="form.showOptional ? '−' : '+'"></span>
       </div>
-      <div class="form__field">
-        <div class="form__field__description form__field__captcha" ng-if="form.captchaQuestion">
-          <span ng-bind="form.captchaQuestion"></span>
+
+  <div class="form__optional-section" ng-show="form.showOptional">
+                <div class="form__field" data-name="entry.33282855">
+      <label class="form__field__label">
+    Placement & rough size
+  </label>
+
+    <input
+      type="text"
+      
+      name="entry.33282855"
+placeholder="e.g. outer forearm, about palm-sized"      class="form__field__input">
+  </div>
+
+
+                <div class="form__field" data-name="entry.1509603270">
+      <label class="form__field__label">
+    Ideal timing
+  </label>
+
+    <select
+      
+      class="form__field__input form__field__select"
+      name="entry.1509603270">
+      <option value="">Select…</option>
+      <option value="As soon as possible">As soon as possible</option>
+      <option value="In the next 1–3 months">In the next 1–3 months</option>
+      <option value="3+ months out">3+ months out</option>
+      <option value="Just exploring for now">Just exploring for now</option>
+    </select>
+  </div>
+
+
+                <div class="form__field" data-name="entry.613305966">
+      <label class="form__field__label">
+    Anything else I should know?
+  </label>
+
+    <textarea
+      
+      name="entry.613305966"
+placeholder="Reference names or links, cover-ups, first tattoo, traveling to Austin…"      class="form__field__input"></textarea>
+  </div>
+
+
+  </div>
+
+
+      <!-- Honeypot -->
+      <div class="form__field form__field--hp" aria-hidden="true" tabindex="-1">
+        <input type="text" name="website" ng-model="form.honeypot" autocomplete="off" tabindex="-1">
+      </div>
+
+      <!-- Captcha -->
+      <div class="form__field form__field--captcha">
+        <label class="form__field__label form__field__label--static">
+          Quick check
           <span class="required">*</span>
-        </div>
+        </label>
+        <div class="form__field__captcha-question" ng-if="form.captchaQuestion" ng-bind="form.captchaQuestion"></div>
         <input
           type="text"
           ng-model="form.captchaAnswer"
@@ -390,16 +404,65 @@
         </div>
       </div>
 
+      <div class="form__ref-images">
+        Have reference images? After submitting, reply to your confirmation email and attach them there.
+      </div>
+
       <div class="tst-form__cta">
         <button type="submit" class="button" ng-disabled="form.loading || !form.captchaAnswer">
-          <span class="button__label">Submit</span>
+          <span class="button__label" ng-if="!form.loading">Send my tattoo idea</span>
+          <span class="button__label" ng-if="form.loading">Sending…</span>
         </button>
+      </div>
+
+      <div class="form__reply-time">
+        I read every inquiry myself and typically reply within 3 business days.
+      </div>
+
+      <div class="form__error-message" ng-if="form.submitError">
+        Something went wrong. Please try again, or email <a href="mailto:timstaffordtattoos@gmail.com">timstaffordtattoos@gmail.com</a>.
       </div>
     </form>
     <iframe class="hidden" name="tst-form-iframe" tst-form-iframe></iframe>
     <div class="tst-form__success" ng-show="form.submitted">
-      Thank you! We've received your message and will review it as soon as we can.
+      <div class="tst-form__success__label">GOT IT — THANK YOU</div>
+      <div class="tst-form__success__title">Your idea's in.</div>
+      <div class="tst-form__success__body">
+        <p>I read every inquiry myself and typically reply within 3 business days.</p>
+        <p>Have reference images? Reply to your confirmation email and attach them there.</p>
+        <p>If the email doesn't arrive, check spam, then contact <a href="mailto:timstaffordtattoos@gmail.com">timstaffordtattoos@gmail.com</a>.</p>
+      </div>
     </div>
+  </div>
+</div>
+
+<div  class="tst-section tst-section--steps">
+  <div class="tst-section__container">
+        <div class="tst-section__item tst-section__item--centered">
+
+
+    <div class="tst-chapter">
+
+
+  <div class="tst-chapter__title">What happens next</div>
+
+
+
+  <div class="tst-chapter__body"><ol>
+<li><strong>I review your idea.</strong> I read inquiries personally and typically reply within 3 business days.</li>
+<li><strong>We talk it through.</strong> If we're a good fit, we'll arrange a free consultation at the studio or over video.</li>
+<li><strong>We book your tattoo.</strong> We discuss size, sessions, pricing, and timing. A deposit reserves your appointment.</li>
+</ol></div>
+
+
+
+
+
+</div>
+
+
+</div>
+
   </div>
 </div>  </section>
 
@@ -407,19 +470,21 @@
 <footer class="tst-footer">
   <div class="tst-footer__container">
     <div class="tst-copyright">
-      &copy; 2019 Tim Stafford Tattoos
+      &copy; 2026 Tim Stafford Tattoos
     </div>
 
     <nav class="tst-nav tst-nav--social">
       <ul class="tst-nav__links">
         <li class="tst-nav__links__link ge-nav__links__link--facebook">
-          <a class="cta-button--link-only" href="">Facebook</a>
+          <a class="cta-button--link-only" href="https://www.facebook.com/Timsfineart" target="_blank" rel="noreferrer">Facebook</a>
         </li>
         <li class="tst-nav__links__link ge-nav__links__link--instagram">
-          <a class="cta-button--link-only" href="">Instagram</a>
+          <a class="cta-button--link-only" href="https://www.instagram.com/2cartoony4me/" target="_blank" rel="noreferrer">Instagram</a>
         </li>
       </ul>
     </nav>
   </div>
-</footer></body>
+</footer>  <div id="snipcart" data-api-key="ZjI4NTkxM2YtYzkwZC00MzFjLWJhMmYtYTA3NGM2M2ViMjkxNjM3MjA5NTgzMDAzMzE0ODUz" hidden></div>
+  <script src="https://cdn.snipcart.com/themes/v3.0.10/default/snipcart.js"></script>
+</body>
 </html>
