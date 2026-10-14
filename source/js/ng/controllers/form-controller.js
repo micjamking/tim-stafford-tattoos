@@ -1,9 +1,6 @@
-/**
- * Form controller
- */
-
 const formSelector = '[tst-form]';
 const iframeSelector = '[tst-form-iframe]';
+const SUBMIT_TIMEOUT_MS = 15000;
 
 export default class FormController {
   static get $inject() {
@@ -17,81 +14,100 @@ export default class FormController {
 
     this.loading = false;
     this.submitted = false;
+    this.submitError = false;
     this.captchaError = false;
+    this.showOptional = false;
+    this.honeypot = '';
+    this._formLoadTime = Date.now();
 
-    // Tattoo-themed captcha questions
     this.captchaQuestions = [
-      { question: 'Tim specializes in bold colors and dynamic compositions. If a sleeve takes 3 sessions and each session is 4 hours, how many total hours? (just the number)', answer: '12' },
-      { question: 'A traditional rose tattoo has 8 petals and you want 3 roses. How many petals total? (just the number)', answer: '24' },
-      { question: 'New school style adds vibrant energy to classic designs. If a piece takes 5 hours at $150/hour, what\'s the cost? (just the number)', answer: '750' },
-      { question: 'Bold line work is a signature of Tim\'s style. If you have 2 tattoos on each arm, how many tattoos? (just the number)', answer: '4' },
-      { question: 'Tattoo healing takes dedication. If you need to moisturize 3 times daily for 7 days, how many total applications? (just the number)', answer: '21' },
-      { question: 'Custom illustration brings your vision to life. If a back piece covers 15 inches wide and 10 inches tall, what\'s the area? (just the number)', answer: '150' }
+      { question: 'What is 3 + 7?', answer: '10' },
+      { question: 'What is 8 + 5?', answer: '13' },
+      { question: 'What is 6 + 9?', answer: '15' },
+      { question: 'What is 4 + 8?', answer: '12' },
+      { question: 'What is 7 + 6?', answer: '13' },
+      { question: 'What is 9 + 3?', answer: '12' },
+      { question: 'What is 5 + 7?', answer: '12' },
+      { question: 'What is 2 + 9?', answer: '11' }
     ];
 
-    // Initialize captcha
     this.generateCaptcha();
-
   }
 
-  /**
-   * Generates a random captcha question
-   */
+  toggleOptional() {
+    this.showOptional = !this.showOptional;
+  }
+
   generateCaptcha() {
     const randomIndex = Math.floor(Math.random() * this.captchaQuestions.length);
     const selected = this.captchaQuestions[randomIndex];
     this.captchaQuestion = selected.question;
-    this._correctAnswer = selected.answer.toLowerCase().trim();
+    this._correctAnswer = selected.answer;
     this.captchaAnswer = '';
-    this.captchaError = false;
   }
 
-  /**
-   * Validates the captcha answer
-   * @returns {boolean} - Whether the captcha is valid
-   */
   validateCaptcha() {
-    const userAnswer = (this.captchaAnswer || '').toLowerCase().trim();
-    return userAnswer === this._correctAnswer;
+    return (this.captchaAnswer || '').trim() === this._correctAnswer;
   }
 
-  /**
-   * Submits the form data by POST'ing to an iframe.
-   * @param {Event} e - Event Object
-   */
+  validateEmail(formEl) {
+    const emailInput = formEl.querySelector('input[type="email"]');
+    if (!emailInput) return true;
+    const value = emailInput.value.trim();
+    if (!value) return false;
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+  }
+
   submit(e) {
     e.preventDefault();
 
-    // Validate captcha first
+    this.submitError = false;
+
+    if (this.honeypot) return;
+    if (Date.now() - this._formLoadTime < 2000) return;
+
     if (!this.validateCaptcha()) {
       this.captchaError = true;
-      this.generateCaptcha(); // Generate a new question
+      this.generateCaptcha();
+      this._applyScope();
+      return;
+    }
 
-      if (!this._$scope.$$phase) {
-        this._$scope.$apply();
-      }
+    let formEl = this._$el.querySelector(formSelector);
 
+    if (!this.validateEmail(formEl)) {
+      const emailInput = formEl.querySelector('input[type="email"]');
+      if (emailInput) emailInput.focus();
+      this._applyScope();
       return;
     }
 
     let iframeEl = this._$el.querySelector(iframeSelector);
-    let formEl = this._$el.querySelector(formSelector);
+
+    const timeoutId = setTimeout(() => {
+      if (this.loading) {
+        this.loading = false;
+        this.submitError = true;
+        this._applyScope();
+      }
+    }, SUBMIT_TIMEOUT_MS);
 
     iframeEl.addEventListener('load', () => {
+      clearTimeout(timeoutId);
       this.loading = false;
       this.submitted = true;
-
-      if (!this._$scope.$$phase) {
-        this._$scope.$apply();
-      }
-
+      this._applyScope();
     }, {'once': true});
 
     this.loading = true;
-    this.submitted = false;
     this.captchaError = false;
 
     formEl.submit();
   }
 
+  _applyScope() {
+    if (!this._$scope.$$phase) {
+      this._$scope.$apply();
+    }
+  }
 }

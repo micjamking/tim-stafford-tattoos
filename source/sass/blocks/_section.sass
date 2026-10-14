@@ -150,6 +150,106 @@
     .tst-chapter__title
       margin-bottom: 30px
 
+  &--contact-intro
+    .tst-section__container
+      margin-bottom: 60px
+      +md
+        margin-bottom: 80px
+
+    .tst-chapter
+      align-items: center
+
+    .tst-chapter__title
+      text-align: center
+      margin-bottom: 10px
+      font-size: 22px
+      line-height: 1.4
+      +md
+        font-size: 28px
+        line-height: 1.3
+
+    .tst-chapter__subtitle
+      text-align: center
+      font-style: italic
+      +type-size-body-medium
+      margin-bottom: 20px
+      color: $global-color-dark-grey
+
+    .tst-chapter__body
+      text-align: center
+      +type-size-body-medium
+      max-width: 600px
+      margin-bottom: 16px
+
+      &::after
+        content: "Private studio · Austin, Texas · By appointment"
+        display: block
+        margin-top: 24px
+        +type-size-form-small
+        +type-weight-bold
+        letter-spacing: 2px
+        text-transform: uppercase
+        color: $global-color-dark-grey
+
+  &--steps
+    .tst-section__container
+      margin-top: 20px
+      margin-bottom: 100px
+
+    .tst-chapter
+      align-items: center
+      width: 100%
+      max-width: 600px
+
+    .tst-chapter__title
+      text-align: center
+      letter-spacing: 4px
+      text-transform: uppercase
+      margin-bottom: 40px
+      font-size: 20px
+      +md
+        font-size: 24px
+
+    .tst-chapter__body
+      width: 100%
+      text-align: left
+
+      ol
+        list-style: none
+        counter-reset: step-counter
+        padding: 0
+        margin: 0
+
+      li
+        counter-increment: step-counter
+        position: relative
+        padding-left: 56px
+        margin-bottom: 32px
+        min-height: 40px
+
+        &::before
+          content: counter(step-counter)
+          position: absolute
+          left: 0
+          top: 0
+          width: 40px
+          height: 40px
+          border-radius: 50%
+          border: 2px solid $global-color-black
+          display: flex
+          align-items: center
+          justify-content: center
+          +type-weight-bold
+          font-size: 16px
+
+        &:last-child
+          margin-bottom: 0
+
+        strong
+          display: block
+          +type-weight-bold
+          margin-bottom: 4px
+
   &--product
     // .tst-section__container
     //   margin-bottom: 80px

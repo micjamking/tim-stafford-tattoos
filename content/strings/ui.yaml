@@ -2,6 +2,48 @@ contact_faq_title:
   string@: Booking By Appointment Only
 contact_hero_title:
   string@: Contact
+contact_intro_label:
+  string@: START A PROJECT
+contact_intro_title:
+  string@: Let's build a character worth wearing.
+contact_intro_subtitle:
+  string@: Expressive characters. Cinematic scenes. Tattoos with a story.
+contact_intro_body:
+  string@: 'I create custom illustrative tattoos inspired by film, fiction, and larger-than-life personalities. My work often develops over multiple sessions, giving a character or a full scene room to come alive.'
+contact_intro_location:
+  string@: Private studio · Austin, Texas · By appointment
+contact_form_title:
+  string@: Tell me about your idea.
+contact_form_subtitle:
+  string@: A rough idea is enough to start. Only three fields are required.
+contact_form_ref_images:
+  string@: Have reference images? After submitting, reply to your confirmation email and attach them there.
+contact_form_button:
+  string@: Send my tattoo idea
+contact_form_reply_time:
+  string@: I read every inquiry myself and typically reply within 3 business days.
+contact_success_label:
+  string@: GOT IT — THANK YOU
+contact_success_title:
+  string@: Your idea's in.
+contact_success_body:
+  string@: 'I read every inquiry myself and typically reply within 3 business days.
+
+
+    Have reference images? Reply to your confirmation email and attach them there.
+
+
+    If the email doesn''t arrive, check spam, then contact <a href="mailto:timstaffordtattoos@gmail.com">timstaffordtattoos@gmail.com</a>.'
+contact_steps_title:
+  string@: What happens next
+contact_steps_body:
+  string@: '1. **I review your idea.** I read inquiries personally and typically reply within 3 business days.
+
+    2. **We talk it through.** If we''re a good fit, we''ll arrange a free consultation at the studio or over video.
+
+    3. **We book your tattoo.** We discuss size, sessions, pricing, and timing. A deposit reserves your appointment.'
+contact_optional_header:
+  string@: Add a few details — optional
 events_event_cta:
   string@: Book Event
 events_hero_title:

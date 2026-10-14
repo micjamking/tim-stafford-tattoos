@@ -4,20 +4,24 @@
   <div class="tst-form__container" ng-controller="TSTFormController as form">
     {% if partial.form %}
     {% set form = partial.form %}
-    <form class="tst-form__form" action="{{form.action}}" target="tst-form-iframe" ng-submit="form.submit($event)" ng-hide="form.submitted" tst-form>
+    <form class="tst-form__form" action="{{form.action}}" target="tst-form-iframe" ng-submit="form.submit($event)" ng-hide="form.submitted" tst-form novalidate>
       <div class="form__title">{{_(form.get('title'))}}</div>
       <div class="form__description">{{_(form.get('description'))}}</div>
+
       {{google_forms.render_fields(form.get('items'))}}
 
-      <!-- Security Question Captcha -->
-      <div class="form__header">
-          {{_('Security Question')}}
+      <!-- Honeypot -->
+      <div class="form__field form__field--hp" aria-hidden="true" tabindex="-1">
+        <input type="text" name="website" ng-model="form.honeypot" autocomplete="off" tabindex="-1">
       </div>
-      <div class="form__field">
-        <div class="form__field__description form__field__captcha" ng-if="form.captchaQuestion">
-          <span ng-bind="form.captchaQuestion"></span>
+
+      <!-- Captcha -->
+      <div class="form__field form__field--captcha">
+        <label class="form__field__label form__field__label--static">
+          {{_('Quick check')}}
           <span class="required">*</span>
-        </div>
+        </label>
+        <div class="form__field__captcha-question" ng-if="form.captchaQuestion" ng-bind="form.captchaQuestion"></div>
         <input
           type="text"
           ng-model="form.captchaAnswer"
@@ -30,15 +34,34 @@
         </div>
       </div>
 
+      <div class="form__ref-images">
+        {{_('Have reference images? After submitting, reply to your confirmation email and attach them there.')}}
+      </div>
+
       <div class="tst-form__cta">
         <button type="submit" class="button" ng-disabled="form.loading || !form.captchaAnswer">
-          <span class="button__label">{{_('Submit')}}</span>
+          <span class="button__label" ng-if="!form.loading">{{_('Send my tattoo idea')}}</span>
+          <span class="button__label" ng-if="form.loading">{{_('Sending…')}}</span>
         </button>
+      </div>
+
+      <div class="form__reply-time">
+        {{_('I read every inquiry myself and typically reply within 3 business days.')}}
+      </div>
+
+      <div class="form__error-message" ng-if="form.submitError">
+        {{_('Something went wrong. Please try again, or email')}} <a href="mailto:timstaffordtattoos@gmail.com">timstaffordtattoos@gmail.com</a>.
       </div>
     </form>
     <iframe class="hidden" name="tst-form-iframe" tst-form-iframe></iframe>
     <div class="tst-form__success" ng-show="form.submitted">
-      {{_('Thank you! We\'ve received your message and will review it as soon as we can.')}}
+      <div class="tst-form__success__label">{{_('GOT IT — THANK YOU')}}</div>
+      <div class="tst-form__success__title">{{_("Your idea's in.")}}</div>
+      <div class="tst-form__success__body">
+        <p>{{_('I read every inquiry myself and typically reply within 3 business days.')}}</p>
+        <p>{{_('Have reference images? Reply to your confirmation email and attach them there.')}}</p>
+        <p>{{_("If the email doesn't arrive, check spam, then contact")}} <a href="mailto:timstaffordtattoos@gmail.com">timstaffordtattoos@gmail.com</a>.</p>
+      </div>
     </div>
     {% endif %}
   </div>

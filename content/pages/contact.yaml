@@ -15,12 +15,22 @@ partials:
     url: "/static/images/contact/tim-stafford-contact-header-mobile.jpg"
 
 - partial: section
-  class: "tst-section--faq"
+  class: "tst-section--contact-intro"
   sections:
   - class: "tst-section__item--centered"
     chapter:
-      title@: !g.string ui.contact_faq_title.string
+      title@: !g.string ui.contact_intro_title.string
+      subtitle@: !g.string ui.contact_intro_subtitle.string
+      body@: !g.string ui.contact_intro_body.string
 
 - partial: form
   class: "tst-form--contact"
   form: !g.yaml /content/partials/contact-form.yaml
+
+- partial: section
+  class: "tst-section--steps"
+  sections:
+  - class: "tst-section__item--centered"
+    chapter:
+      title@: !g.string ui.contact_steps_title.string
+      body@: !g.string ui.contact_steps_body.string

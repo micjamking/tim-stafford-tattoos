@@ -1,66 +1,58 @@
 action: https://docs.google.com/forms/d/e/1FAIpQLSd532UbXTGc6qm-fTrAN8ofdv22We0yXYvkuxhzvpcoy9Xucw/formResponse?hl=en
-description@: Please fill out this form so I can learn more about your tattoo.
+description@: !g.string ui.contact_form_subtitle.string
 items:
-- header:
-    title@: Personal Details
-  required: false
-- description: ''
+- description@: What should I call you?
   fields:
   - field_type: TEXT
     name: entry.518236460
-    placeholder@: Your answer
-  label@: First & Last Name
+    placeholder@: What should I call you?
+  label@: Your name
   required: true
-- description: ''
+- description@: Where I can reply
   fields:
   - field_type: TEXT
     name: entry.1385944832
-    placeholder@: Your answer
-  label@: Email Address
+    placeholder@: Where I can reply
+  label@: Email
   required: true
-- description@: tel-field
-  fields:
-  - field_type: TEXT
-    name: entry.613305966
-    placeholder@: Your answer
-  label@: Phone Number (incl. area code)
-  required: true
-- description: ''
-  fields:
-  - field_type: TEXT
-    name: entry.203964628
-    placeholder@: Your answer
-  label@: City
-  required: true
-- description: ''
-  fields:
-  - field_type: TEXT
-    name: entry.801729749
-    placeholder@: Your answer
-  label@: State
-  required: true
-- header:
-    title@: Tattoo Details
-  required: false
-- description: ''
+- description@: Tell me the character, scene, or feeling you have in mind—and why it matters to you.
   fields:
   - field_type: TEXTAREA
     name: entry.218980995
-    placeholder@: Your answer
-  label@: Description of tattoo
+    placeholder@: Tell me the character, scene, or feeling you have in mind—and why it matters to you.
+  label@: Your tattoo idea
   required: true
-- description: ''
+- header:
+    title@: !g.string ui.contact_optional_header.string
+  required: false
+- description@: e.g. outer forearm, about palm-sized
   fields:
   - field_type: TEXT
     name: entry.33282855
-    placeholder@: Your answer
-  label@: Location of tattoo
-  required: true
-- description@: date-field
+    placeholder@: e.g. outer forearm, about palm-sized
+  label@: Placement & rough size
+  required: false
+- description@: Select timing
   fields:
-  - field_type: TEXT
+  - field_type: SELECT
     name: entry.1509603270
-    placeholder@: Your answer
-  label@: Desired start date for tattoo session
-  required: true
-title@: Tattoo Inquiry Form
+    value@: As soon as possible
+  - field_type: SELECT
+    name: entry.1509603270
+    value@: In the next 1–3 months
+  - field_type: SELECT
+    name: entry.1509603270
+    value@: 3+ months out
+  - field_type: SELECT
+    name: entry.1509603270
+    value@: Just exploring for now
+  label@: Ideal timing
+  required: false
+- description@: Reference names or links, cover-ups, first tattoo, traveling to Austin…
+  fields:
+  - field_type: TEXTAREA
+    name: entry.613305966
+    placeholder@: Reference names or links, cover-ups, first tattoo, traveling to Austin…
+  label@: Anything else I should know?
+  required: false
+title@: !g.string ui.contact_form_title.string
