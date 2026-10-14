@@ -14,7 +14,7 @@
   <!-- Open Graph (Facebook) -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Tim Stafford | Tattoo Artist &amp; Illustrator" />
-  <meta property="og:url" content="http://timstaffordtattoos.com/" />
+  <meta property="og:url" content="http://localhost/" />
   <meta property="og:title" content="Tim Stafford | Tattoo Artist &amp; Illustrator" />
   <meta property="og:description" content="Timothy Stafford is an Austin-based tattoo artist and illustrator who specializes in &#39;New School&#39;." />
   <meta property="og:image" content="/website_screenshot.png" />
@@ -33,9 +33,11 @@
 
   <!-- DNS Prefetch -->
   <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="//cdn.snipcart.com" />
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Bowlby+One|Open+Sans:300,400,700">
+  <link rel="stylesheet" href="//cdn.snipcart.com/themes/v3.0.10/default/snipcart.css" />
   <link rel="stylesheet" href="/style.css" />
 
   <!-- Icons -->
@@ -98,6 +100,7 @@
     </svg>
   </div>
 </div>
+
 <header class="tst-header">
   <div class="tst-header__container">
     <div class="tst-header__logo">
@@ -132,8 +135,13 @@
     <nav class="tst-nav tst-nav--desktop">
       <ul class="tst-nav__links">
         <li class="tst-nav__links__link">
-          <a href="/artwork/">
-            Artwork
+          <a href="/store/">
+            Store
+          </a>
+        </li>
+        <li class="tst-nav__links__link">
+          <a href="https://www.instagram.com/2cartoony4me/" target="_blank" rel="noreferrer">
+            Portfolio
           </a>
         </li>
         <li class="tst-nav__links__link">
@@ -145,6 +153,15 @@
           <a href="/contact/">
             Contact
           </a>
+        </li>
+        <li class="tst-nav__links__link">
+          <button type="button" class="tst-nav__links__link__cart snipcart-checkout">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" alt="" title="" class="snipcart-cart-header__icon snipcart__icon--blue-dark snipcart__icon">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M51.714 20.47L55 60H9l3.286-39.53h9.857v-6.588C22.143 8.424 26.556 4 32 4c5.444 0 9.857 4.424 9.857 9.882v6.589h9.857zM25.43 13.883v16.47h-3.286v-6.587h-6.834l-2.737 32.94h38.856l-2.737-32.94h-6.834v6.588h-3.286v-16.47c0-3.634-2.947-6.589-6.571-6.589-3.624 0-6.571 2.955-6.571 6.588zm3.285 9.883V20.47h6.572v3.294h-6.572z" fill="#0E0E0E"></path>
+            </svg>
+            <span class="snipcart-items-count"></span>
+            <span class="snipcart-total-price"></span>
+          </button>
         </li>
       </ul>
     </nav>
@@ -159,6 +176,13 @@
           </g>
         </svg>
       </div>
+      <button type="button" class="tst-nav__mobile__cart snipcart-checkout">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" alt="" title="" class="snipcart-cart-header__icon snipcart__icon--blue-dark snipcart__icon">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M51.714 20.47L55 60H9l3.286-39.53h9.857v-6.588C22.143 8.424 26.556 4 32 4c5.444 0 9.857 4.424 9.857 9.882v6.589h9.857zM25.43 13.883v16.47h-3.286v-6.587h-6.834l-2.737 32.94h38.856l-2.737-32.94h-6.834v6.588h-3.286v-16.47c0-3.634-2.947-6.589-6.571-6.589-3.624 0-6.571 2.955-6.571 6.588zm3.285 9.883V20.47h6.572v3.294h-6.572z" fill="#0E0E0E"></path>
+        </svg>
+        <span class="snipcart-items-count"></span>
+        <span class="snipcart-total-price"></span>
+      </button>
       <div class="tst-nav__menu tst-nav__menu--off-canvas" tst-mobile-menu-wrapper>
         <div class="tst-nav__close-icon" tst-mobile-menu-close-button>
           <svg viewBox="0 0 20 19">
@@ -172,8 +196,13 @@
             <a href="/">Home</a>
           </li>
           <li class="tst-nav__links__link">
-            <a href="/artwork/">
-              Artwork
+            <a href="/store/">
+              Store
+            </a>
+          </li>
+          <li class="tst-nav__links__link">
+            <a href="https://www.instagram.com/2cartoony4me/" target="_blank" rel="noreferrer">
+              Portfolio
             </a>
           </li>
           <li class="tst-nav__links__link">
@@ -221,6 +250,8 @@
 
 
 
+
+
 </div>
 
   </div>
@@ -246,10 +277,13 @@
     <div class="tst-chapter tst-section__item__chapter">
 
 
-  <div class="tst-chapter__title">CREATIVITY IS EVERYTHING</div>
+  <div class="tst-chapter__title">Creativity is Everything</div>
 
 
-  <div class="tst-chapter__body"><p class="tst-chapter__body__paragraph">Timothy Stafford is an Austin-based tattoo artist and illustrator who specializes in 'New School', combining unique character design, realistic texture and vibrant color to create a style all his own. For the last decade, Tim has been establishing himself as one of the premier atists and illustrators in the tattoo industry, creating mind-blowing tattoos & illustrations completely from scratch.</p><p class="tst-chapter__body__paragraph">Tim was also featured on Paramount Network's Ink Master Season 11 as a top-4 finisher.</p></div>
+
+  <div class="tst-chapter__body"><p>Tim Stafford is an Austin-based tattoo artist and illustrator who specializes in 'New School', combining unique character design, realistic texture and vibrant color to create a style all his own. For the last decade, Tim has been establishing himself as one of the premier atists and illustrators in the tattoo industry, crafting mind-blowing tattoos &amp; illustrations completely by hand.</p>
+<p>Tim was also featured on <a href="https://www.paramountnetwork.com/shows/ink-master/sq3765/season-11" target="_blank" rel="noreferrer">Paramount Network's Ink Master Season 11 as a top-4 finisher.</a></p></div>
+
 
 
 
@@ -262,15 +296,14 @@
   </div>
 </div>
 <div class="tst-section-gallery tst-section-gallery--home">
-  <div class="tst-section-gallery__container"
-    ng-controller="TSTIGGalleryController as gallery"
-    ng-init="gallery.init({&#34;item_count&#34;: 4})"
->
+  <div class="tst-section-gallery__container">
     <div class="tst-section-gallery__chapter-top">
-        <div class="tst-chapter">
+      <div class="tst-chapter">
 
 
   <div class="tst-chapter__title">Latest Artwork</div>
+
+
 
 
 
@@ -281,8 +314,7 @@
 
     </div>
 
-    <div class="tst-section-gallery__images" tst-gallery>
-      <!-- TODO: Setup ngFor loop for tst-gallery -->
+    <div class="tst-section-gallery__images">
       <div class="tst-section-gallery__image background-images tst-section-gallery__image--1">
         <a href class="tst-section-gallery__image-link">
           <div class="tst-section-gallery__image__image background-images__image"
@@ -310,7 +342,9 @@
     </div>
 
     <div class="tst-section-gallery__chapter-bottom">
-        <div class="tst-chapter">
+      <div class="tst-chapter">
+
+
 
 
 
@@ -320,7 +354,8 @@
 
   <div class="tst-chapter__ctas ctas">
       <div class="tst-chapter__cta ctas__cta">
-        <a href="http://timstaffordtattoos.com/artwork/" class="cta__item button">
+        <a href="https://www.instagram.com/2cartoony4me/" class="cta__item button"
+target="_blank" rel="noreferrer">
   <span class="button__label">
    <span class="button__label__label">View More</span>
  </span>
@@ -333,7 +368,6 @@
 
     </div>
   </div>
-
 </div>
 
 <div  class="tst-section tst-section--get-in-touch tst-section--light-theme">
@@ -356,13 +390,17 @@
   <div class="tst-chapter__title">Ready To Get Tattooed?</div>
 
 
-  <div class="tst-chapter__body"><p class="tst-chapter__body__paragraph">Lets consult over your ideas, finalize your concept, schedule a date that works for both of us, and place a deposit.</p><p class="tst-chapter__body__paragraph">Can’t wait to get started!</p></div>
+
+  <div class="tst-chapter__body"><p>Lets consult over your ideas, finalize your concept, schedule a date that works for both of us, and place a deposit.</p>
+<p>Can’t wait to get started!</p></div>
+
 
 
 
   <div class="tst-chapter__ctas ctas">
       <div class="tst-chapter__cta ctas__cta">
-        <a href="http://timstaffordtattoos.com/contact/" class="cta__item button button--gold">
+        <a href="http://localhost/contact/" class="cta__item button button--gold"
+>
   <span class="button__label">
    <span class="button__label__label">Get In Touch</span>
  </span>
@@ -383,19 +421,21 @@
 <footer class="tst-footer">
   <div class="tst-footer__container">
     <div class="tst-copyright">
-      &copy; 2019 Tim Stafford Tattoos
+      &copy; 2026 Tim Stafford Tattoos
     </div>
 
     <nav class="tst-nav tst-nav--social">
       <ul class="tst-nav__links">
         <li class="tst-nav__links__link ge-nav__links__link--facebook">
-          <a class="cta-button--link-only" href="">Facebook</a>
+          <a class="cta-button--link-only" href="https://www.facebook.com/Timsfineart" target="_blank" rel="noreferrer">Facebook</a>
         </li>
         <li class="tst-nav__links__link ge-nav__links__link--instagram">
-          <a class="cta-button--link-only" href="">Instagram</a>
+          <a class="cta-button--link-only" href="https://www.instagram.com/2cartoony4me/" target="_blank" rel="noreferrer">Instagram</a>
         </li>
       </ul>
     </nav>
   </div>
-</footer></body>
+</footer>  <div id="snipcart" data-api-key="ZjI4NTkxM2YtYzkwZC00MzFjLWJhMmYtYTA3NGM2M2ViMjkxNjM3MjA5NTgzMDAzMzE0ODUz" hidden></div>
+  <script src="https://cdn.snipcart.com/themes/v3.0.10/default/snipcart.js"></script>
+</body>
 </html>

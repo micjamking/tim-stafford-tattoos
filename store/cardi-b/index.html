@@ -14,8 +14,8 @@
   <!-- Open Graph (Facebook) -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Tim Stafford | Tattoo Artist &amp; Illustrator" />
-  <meta property="og:url" content="http://timstaffordtattoos.com/artwork/" />
-  <meta property="og:title" content="Artwork | Tim Stafford | Tattoo Artist &amp; Illustrator" />
+  <meta property="og:url" content="http://localhost/store/cardi-b/" />
+  <meta property="og:title" content="Cardi B | Tim Stafford | Tattoo Artist &amp; Illustrator" />
   <meta property="og:description" content="Timothy Stafford is an Austin-based tattoo artist and illustrator who specializes in &#39;New School&#39;." />
   <meta property="og:image" content="/website_screenshot.png" />
   <meta property="og:image:type" content="image/png" />
@@ -26,29 +26,31 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@timstaffordtattoos">
   <meta name="twitter:creator" content="@timstaffordtattoos">
-  <meta name="twitter:title" content="Artwork | Tim Stafford | Tattoo Artist &amp; Illustrator" />
+  <meta name="twitter:title" content="Cardi B | Tim Stafford | Tattoo Artist &amp; Illustrator" />
   <meta name="twitter:description" content="Timothy Stafford is an Austin-based tattoo artist and illustrator who specializes in &#39;New School&#39;.">
 
   <!-- Google+ -->
 
   <!-- DNS Prefetch -->
   <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="//cdn.snipcart.com" />
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Bowlby+One|Open+Sans:300,400,700">
+  <link rel="stylesheet" href="//cdn.snipcart.com/themes/v3.0.10/default/snipcart.css" />
   <link rel="stylesheet" href="/style.css" />
 
   <!-- Icons -->
   <link rel="icon" type="image/png" href="/favicon.png" />
   <link rel="apple-touch-icon" href="/apple-touch-icon-precomposed.png" />
 
-  <title>Artwork | Tim Stafford | Tattoo Artist &amp; Illustrator</title>
+  <title>Cardi B | Tim Stafford | Tattoo Artist &amp; Illustrator</title>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
   <script src="/script.js"></script>
 </head>
-<body class="artwork">
+<body class=" store cardi-b ">
 <div class="tst-preloader">
   <div class="tst-preloader__container">
     <svg class="tst-preloader__logo" preserveAspectRatio="none" viewBox="0 0 358 204" width="358px" height="204px">
@@ -98,6 +100,7 @@
     </svg>
   </div>
 </div>
+
 <header class="tst-header">
   <div class="tst-header__container">
     <div class="tst-header__logo">
@@ -131,9 +134,14 @@
 
     <nav class="tst-nav tst-nav--desktop">
       <ul class="tst-nav__links">
-        <li class="tst-nav__links__link tst-nav__links__link--active">
-          <a href="/artwork/">
-            Artwork
+        <li class="tst-nav__links__link">
+          <a href="/store/">
+            Store
+          </a>
+        </li>
+        <li class="tst-nav__links__link">
+          <a href="https://www.instagram.com/2cartoony4me/" target="_blank" rel="noreferrer">
+            Portfolio
           </a>
         </li>
         <li class="tst-nav__links__link">
@@ -145,6 +153,15 @@
           <a href="/contact/">
             Contact
           </a>
+        </li>
+        <li class="tst-nav__links__link">
+          <button type="button" class="tst-nav__links__link__cart snipcart-checkout">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" alt="" title="" class="snipcart-cart-header__icon snipcart__icon--blue-dark snipcart__icon">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M51.714 20.47L55 60H9l3.286-39.53h9.857v-6.588C22.143 8.424 26.556 4 32 4c5.444 0 9.857 4.424 9.857 9.882v6.589h9.857zM25.43 13.883v16.47h-3.286v-6.587h-6.834l-2.737 32.94h38.856l-2.737-32.94h-6.834v6.588h-3.286v-16.47c0-3.634-2.947-6.589-6.571-6.589-3.624 0-6.571 2.955-6.571 6.588zm3.285 9.883V20.47h6.572v3.294h-6.572z" fill="#0E0E0E"></path>
+            </svg>
+            <span class="snipcart-items-count"></span>
+            <span class="snipcart-total-price"></span>
+          </button>
         </li>
       </ul>
     </nav>
@@ -159,6 +176,13 @@
           </g>
         </svg>
       </div>
+      <button type="button" class="tst-nav__mobile__cart snipcart-checkout">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" alt="" title="" class="snipcart-cart-header__icon snipcart__icon--blue-dark snipcart__icon">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M51.714 20.47L55 60H9l3.286-39.53h9.857v-6.588C22.143 8.424 26.556 4 32 4c5.444 0 9.857 4.424 9.857 9.882v6.589h9.857zM25.43 13.883v16.47h-3.286v-6.587h-6.834l-2.737 32.94h38.856l-2.737-32.94h-6.834v6.588h-3.286v-16.47c0-3.634-2.947-6.589-6.571-6.589-3.624 0-6.571 2.955-6.571 6.588zm3.285 9.883V20.47h6.572v3.294h-6.572z" fill="#0E0E0E"></path>
+        </svg>
+        <span class="snipcart-items-count"></span>
+        <span class="snipcart-total-price"></span>
+      </button>
       <div class="tst-nav__menu tst-nav__menu--off-canvas" tst-mobile-menu-wrapper>
         <div class="tst-nav__close-icon" tst-mobile-menu-close-button>
           <svg viewBox="0 0 20 19">
@@ -171,9 +195,14 @@
           <li class="tst-nav__links__link">
             <a href="/">Home</a>
           </li>
-          <li class="tst-nav__links__link tst-nav__links__link--active">
-            <a href="/artwork/">
-              Artwork
+          <li class="tst-nav__links__link">
+            <a href="/store/">
+              Store
+            </a>
+          </li>
+          <li class="tst-nav__links__link">
+            <a href="https://www.instagram.com/2cartoony4me/" target="_blank" rel="noreferrer">
+              Portfolio
             </a>
           </li>
           <li class="tst-nav__links__link">
@@ -193,71 +222,86 @@
 </header>
   <section class="tst-main">
 
-<div class="tst-hero">
-  <div class="tst-hero__container"
->
-
-
-      <div class="tst-hero__background-images background-images">
-  <div class="background-images__image background-images__image--octopus tst-desktop-only"
-      style="background-image: url(/images/artwork/tim-stafford-octopus.jpg)"
-></div>
-  <div class="background-images__image background-images__image--octopus tst-mobile-only"
-      style="background-image: url(/images/artwork/tim-stafford-octopus.mobile.jpg)"
-></div>
-</div>
-
-
-
-      <div class="tst-chapter tst-hero__chapter">
-
-
-  <div class="tst-chapter__title">Artwork</div>
-
-
-
-
-
-
-</div>
-
+<section class="tst-breadcrumb">
+  <div class="tst-breadcrumb__container">
+    <div class="tst-breadcrumb__store">
+      <a class="tst-breadcrumb__store__link" href="/store/"
+        data-g-category="Navigation"
+        data-g-label="Store"
+        data-g-action="Return to Store"><span class="tst-breadcrumb__store__link__arrow">← </span>Back to Store</a>
+    </div>
   </div>
+</section>
+
+<div  class="tst-section tst-section--product">
+  <div class="tst-section__container">
+        <div class="tst-section__item tst-section__item--mobile-only tst-section__item--mobile-order-1">
+
+
+    <div class="tst-chapter tst-section__item__chapter">
+
+
+  <div class="tst-chapter__title">Cardi B - Popstar Collectible Print</div>
+
+
+
+
+
+
+
+
 </div>
-<div class="tst-section-gallery tst-section-gallery--artwork">
-  <div class="tst-section-gallery__container"
-    ng-controller="TSTIGGalleryController as gallery"
-    ng-init="gallery.init({&#34;item_count&#34;: 20})"
->
-    <div class="tst-section-gallery__chapter-top">
-        <div class="tst-chapter">
+
+
+</div>
+
+        <div class="tst-section__item tst-section__item--image-only tst-section__item--order-1 tst-section__item--mobile-order-2">
+    <div class="tst-section__item__background-images background-images">
+  <div class="background-images__image background-images__image--product"
+      style="background-image: url(https://instagram.fhnl1-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/88918710_137825390902496_6267607733311498697_n.jpg?_nc_ht=instagram.fhnl1-1.fna.fbcdn.net&amp;_nc_cat=108&amp;_nc_ohc=seEeCoYxGWsAX-u8ntM&amp;oh=48ace6eb20dc9f60109e80da6334dccd&amp;oe=5EA7DD33)"
+></div>
+</div>
 
 
 
 
+</div>
+
+        <div class="tst-section__item tst-section__item--order-2 tst-section__item--mobile-order-3">
 
 
+    <div class="tst-chapter tst-section__item__chapter">
+
+
+  <div class="tst-chapter__title tst-chapter__title--desktop-only">Cardi B - Popstar Collectible Print</div>
+
+
+  <div class="tst-chapter__price">40.00</div>
+
+  <div class="tst-chapter__body"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id fermentum mauris. Curabitur mollis tincidunt magna et aliquet. Vestibulum lacus tellus, tempor quis sodales et, maximus eu dui. Nunc a augue dictum, fringilla orci eu, dictum libero.</p></div>
+
+
+
+  <div class="tst-chapter__sizes">
+    <div class="tst-chapter__sizes__label label">Sizes:</div>
+    <select name="sizes">
+      <option value="11x14" selected>11x14</option>
+    </select>
+  </div>
+
+  <div class="tst-chapter__quantity">
+    <div class="tst-chapter__quantity__label label">Quantity:</div>
+    <input type="number" max="9999" min="1" value="1" step="1" ng-init="globalQuantity = 1" ng-model="globalQuantity" />
+  </div>
 
   <div class="tst-chapter__ctas ctas">
       <div class="tst-chapter__cta ctas__cta">
-        <a href="" class="cta__item button">
+        <a href="" class="cta__item button snipcart-add-item"
+data-item-id="1010"data-item-price="40.00"data-item-url="/store/cardi-b/"data-item-image="https://instagram.fhnl1-1.fna.fbcdn.net/v/t51.2885-15/e35/s1080x1080/88918710_137825390902496_6267607733311498697_n.jpg?_nc_ht=instagram.fhnl1-1.fna.fbcdn.net&amp;_nc_cat=108&amp;_nc_ohc=seEeCoYxGWsAX-u8ntM&amp;oh=48ace6eb20dc9f60109e80da6334dccd&amp;oe=5EA7DD33"data-item-name="Cardi B - Popstar Collectible Print"data-item-quantity="[[globalQuantity]]"  data-item-custom1-name="Size"
+  data-item-custom1-options="11x14"
+>
   <span class="button__label">
-   <span class="button__label__label">All</span>
- </span>
-</a>
-
-      </div>
-      <div class="tst-chapter__cta ctas__cta">
-        <a href="" class="cta__item button">
-  <span class="button__label">
-   <span class="button__label__label">Tattoos</span>
- </span>
-</a>
-
-      </div>
-      <div class="tst-chapter__cta ctas__cta">
-        <a href="" class="cta__item button">
-  <span class="button__label">
-   <span class="button__label__label">Illustration</span>
+   <span class="button__label__label">Add to Cart</span>
  </span>
 </a>
 
@@ -266,80 +310,31 @@
 
 </div>
 
-    </div>
-
-    <div class="tst-section-gallery__images" tst-gallery>
-      <!-- TODO: Setup ngFor loop for tst-gallery -->
-      <div class="tst-section-gallery__image background-images tst-section-gallery__image--1">
-        <a href class="tst-section-gallery__image-link">
-          <div class="tst-section-gallery__image__image background-images__image"
-            style="background-image: url(/images/home/tim-stafford-turtle.jpg)"></div>
-        </a>
-      </div>
-      <div class="tst-section-gallery__image background-images tst-section-gallery__image--2">
-        <a href class="tst-section-gallery__image-link">
-          <div class="tst-section-gallery__image__image background-images__image"
-            style="background-image: url(/images/home/tim-stafford-cat.jpg)"></div>
-        </a>
-      </div>
-      <div class="tst-section-gallery__image background-images tst-section-gallery__image--3">
-        <a href class="tst-section-gallery__image-link">
-          <div class="tst-section-gallery__image__image background-images__image"
-            style="background-image: url(/images/home/tim-stafford-dog.jpg)"></div>
-        </a>
-      </div>
-      <div class="tst-section-gallery__image background-images tst-section-gallery__image--4">
-        <a href class="tst-section-gallery__image-link">
-          <div class="tst-section-gallery__image__image background-images__image"
-            style="background-image: url(/images/home/tim-stafford-wolf.jpg)"></div>
-        </a>
-      </div>
-    </div>
-
-    <div class="tst-section-gallery__chapter-bottom">
-        <div class="tst-chapter">
-
-
-
-
-
-
-
-  <div class="tst-chapter__ctas ctas">
-      <div class="tst-chapter__cta ctas__cta">
-        <a href="" class="cta__item button">
-  <span class="button__label">
-   <span class="button__label__label">Load More</span>
- </span>
-</a>
-
-      </div>
-  </div>
 
 </div>
 
-    </div>
   </div>
-
 </div>  </section>
 
 
 <footer class="tst-footer">
   <div class="tst-footer__container">
     <div class="tst-copyright">
-      &copy; 2019 Tim Stafford Tattoos
+      &copy; 2026 Tim Stafford Tattoos
     </div>
 
     <nav class="tst-nav tst-nav--social">
       <ul class="tst-nav__links">
         <li class="tst-nav__links__link ge-nav__links__link--facebook">
-          <a class="cta-button--link-only" href="">Facebook</a>
+          <a class="cta-button--link-only" href="https://www.facebook.com/Timsfineart" target="_blank" rel="noreferrer">Facebook</a>
         </li>
         <li class="tst-nav__links__link ge-nav__links__link--instagram">
-          <a class="cta-button--link-only" href="">Instagram</a>
+          <a class="cta-button--link-only" href="https://www.instagram.com/2cartoony4me/" target="_blank" rel="noreferrer">Instagram</a>
         </li>
       </ul>
     </nav>
   </div>
-</footer></body>
+</footer>  <div id="snipcart" data-api-key="ZjI4NTkxM2YtYzkwZC00MzFjLWJhMmYtYTA3NGM2M2ViMjkxNjM3MjA5NTgzMDAzMzE0ODUz" hidden></div>
+  <script src="https://cdn.snipcart.com/themes/v3.0.10/default/snipcart.js"></script>
+</body>
 </html>

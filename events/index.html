@@ -14,7 +14,7 @@
   <!-- Open Graph (Facebook) -->
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Tim Stafford | Tattoo Artist &amp; Illustrator" />
-  <meta property="og:url" content="http://timstaffordtattoos.com/events/" />
+  <meta property="og:url" content="http://localhost/events/" />
   <meta property="og:title" content="Events | Tim Stafford | Tattoo Artist &amp; Illustrator" />
   <meta property="og:description" content="Timothy Stafford is an Austin-based tattoo artist and illustrator who specializes in &#39;New School&#39;." />
   <meta property="og:image" content="/website_screenshot.png" />
@@ -33,9 +33,11 @@
 
   <!-- DNS Prefetch -->
   <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+  <link rel="dns-prefetch" href="//cdn.snipcart.com" />
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Bowlby+One|Open+Sans:300,400,700">
+  <link rel="stylesheet" href="//cdn.snipcart.com/themes/v3.0.10/default/snipcart.css" />
   <link rel="stylesheet" href="/style.css" />
 
   <!-- Icons -->
@@ -48,7 +50,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
   <script src="/script.js"></script>
 </head>
-<body class="events">
+<body class=" events ">
 <div class="tst-preloader">
   <div class="tst-preloader__container">
     <svg class="tst-preloader__logo" preserveAspectRatio="none" viewBox="0 0 358 204" width="358px" height="204px">
@@ -98,6 +100,7 @@
     </svg>
   </div>
 </div>
+
 <header class="tst-header">
   <div class="tst-header__container">
     <div class="tst-header__logo">
@@ -132,8 +135,13 @@
     <nav class="tst-nav tst-nav--desktop">
       <ul class="tst-nav__links">
         <li class="tst-nav__links__link">
-          <a href="/artwork/">
-            Artwork
+          <a href="/store/">
+            Store
+          </a>
+        </li>
+        <li class="tst-nav__links__link">
+          <a href="https://www.instagram.com/2cartoony4me/" target="_blank" rel="noreferrer">
+            Portfolio
           </a>
         </li>
         <li class="tst-nav__links__link tst-nav__links__link--active">
@@ -145,6 +153,15 @@
           <a href="/contact/">
             Contact
           </a>
+        </li>
+        <li class="tst-nav__links__link">
+          <button type="button" class="tst-nav__links__link__cart snipcart-checkout">
+            <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" alt="" title="" class="snipcart-cart-header__icon snipcart__icon--blue-dark snipcart__icon">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M51.714 20.47L55 60H9l3.286-39.53h9.857v-6.588C22.143 8.424 26.556 4 32 4c5.444 0 9.857 4.424 9.857 9.882v6.589h9.857zM25.43 13.883v16.47h-3.286v-6.587h-6.834l-2.737 32.94h38.856l-2.737-32.94h-6.834v6.588h-3.286v-16.47c0-3.634-2.947-6.589-6.571-6.589-3.624 0-6.571 2.955-6.571 6.588zm3.285 9.883V20.47h6.572v3.294h-6.572z" fill="#0E0E0E"></path>
+            </svg>
+            <span class="snipcart-items-count"></span>
+            <span class="snipcart-total-price"></span>
+          </button>
         </li>
       </ul>
     </nav>
@@ -159,6 +176,13 @@
           </g>
         </svg>
       </div>
+      <button type="button" class="tst-nav__mobile__cart snipcart-checkout">
+        <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" alt="" title="" class="snipcart-cart-header__icon snipcart__icon--blue-dark snipcart__icon">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M51.714 20.47L55 60H9l3.286-39.53h9.857v-6.588C22.143 8.424 26.556 4 32 4c5.444 0 9.857 4.424 9.857 9.882v6.589h9.857zM25.43 13.883v16.47h-3.286v-6.587h-6.834l-2.737 32.94h38.856l-2.737-32.94h-6.834v6.588h-3.286v-16.47c0-3.634-2.947-6.589-6.571-6.589-3.624 0-6.571 2.955-6.571 6.588zm3.285 9.883V20.47h6.572v3.294h-6.572z" fill="#0E0E0E"></path>
+        </svg>
+        <span class="snipcart-items-count"></span>
+        <span class="snipcart-total-price"></span>
+      </button>
       <div class="tst-nav__menu tst-nav__menu--off-canvas" tst-mobile-menu-wrapper>
         <div class="tst-nav__close-icon" tst-mobile-menu-close-button>
           <svg viewBox="0 0 20 19">
@@ -172,8 +196,13 @@
             <a href="/">Home</a>
           </li>
           <li class="tst-nav__links__link">
-            <a href="/artwork/">
-              Artwork
+            <a href="/store/">
+              Store
+            </a>
+          </li>
+          <li class="tst-nav__links__link">
+            <a href="https://www.instagram.com/2cartoony4me/" target="_blank" rel="noreferrer">
+              Portfolio
             </a>
           </li>
           <li class="tst-nav__links__link tst-nav__links__link--active">
@@ -219,18 +248,19 @@
 
 
 
+
+
 </div>
 
   </div>
 </div>
 <div class="tst-section-events">
   <div class="tst-section-events__container"
-    ng-controller="TSTIGEventsController as events"
-    ng-init="events.init({&#34;show_historical_events&#34;: false, &#34;item_count&#34;: 4})"
+    ng-controller="TSTEventsController as events"
+    ng-init="events.init({&#34;item_count&#34;: 4, &#34;show_historical_events&#34;: false})"
 >
 
-    <div class="tst-section-events__list" tst-events>
-      <!-- TODO: Setup ngFor loop for tst-section-events -->
+    <div class="tst-section-events__list">
       <div class="tst-section-event tst-section-event--1">
         <div class="tst-section-event__image background-images">
           <div class="tst-section-event__image__image background-images__image"
@@ -239,13 +269,10 @@
 
         <div class="tst-section-event__content">
           <div class="tst-section-event__chapter tst-chapter">
-            <div class="tst-section-event__chapter__title">GUESS WHOS COMIN BACK OAHU!?</div>
-            <div class="tst-section-event__chapter__date">December 18, 2018 — January 10, 2019</div>
-            <div class="tst-section-event__chapter__location">Honolulu, Hawaii</div>
-            <div class="tst-section-event__chapter__description">Ready to cap this year off right!!! After this year, much needed REST, RELAXATION AND PRICELESS FAMILY TIME is in order...</div>
-            <div class="tst-section-event__chapter__ctas ctas">
+<div class="tst-section-event__chapter__title">GUESS WHOS COMIN BACK OAHU!?</div>            <div class="tst-section-event__chapter__date">December 18, 2018 — January 10, 2019</div>
+<div class="tst-section-event__chapter__location">Honolulu, Hawaii</div><div class="tst-section-event__chapter__description">Ready to cap this year off right!!! After this year, much needed REST, RELAXATION AND PRICELESS FAMILY TIME is in order...</div>            <div class="tst-section-event__chapter__ctas ctas">
               <div class="tst-section-event__chapter__cta ctas__cta">
-                <a class="cta__item button">
+                <a href="#" class="cta__item button">
                   <span class="button__label">
                    <span class="button__label__label">Book Event</span>
                  </span>
@@ -255,79 +282,6 @@
           </div>
         </div>
       </div>
-      <div class="tst-section-event tst-section-event--2">
-        <div class="tst-section-event__image background-images">
-          <div class="tst-section-event__image__image background-images__image"
-            style="background-image: url(/images/events/tim-stafford-event-honolulu.jpg)"></div>
-        </div>
-
-        <div class="tst-section-event__content">
-          <div class="tst-section-event__chapter tst-chapter">
-            <div class="tst-section-event__chapter__title">GUESS WHOS COMIN BACK OAHU!?</div>
-            <div class="tst-section-event__chapter__date">December 18, 2018 — January 10, 2019</div>
-            <div class="tst-section-event__chapter__location">Honolulu, Hawaii</div>
-            <div class="tst-section-event__chapter__description">Ready to cap this year off right!!! After this year, much needed REST, RELAXATION AND PRICELESS FAMILY TIME is in order...</div>
-            <div class="tst-section-event__chapter__ctas ctas">
-              <div class="tst-section-event__chapter__cta ctas__cta">
-                <a class="cta__item button">
-                  <span class="button__label">
-                   <span class="button__label__label">Book Event</span>
-                 </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tst-section-event tst-section-event--3">
-        <div class="tst-section-event__image background-images">
-          <div class="tst-section-event__image__image background-images__image"
-            style="background-image: url(/images/events/tim-stafford-event-honolulu.jpg)"></div>
-        </div>
-
-        <div class="tst-section-event__content">
-          <div class="tst-section-event__chapter tst-chapter">
-            <div class="tst-section-event__chapter__title">GUESS WHOS COMIN BACK OAHU!?</div>
-            <div class="tst-section-event__chapter__date">December 18, 2018 — January 10, 2019</div>
-            <div class="tst-section-event__chapter__location">Honolulu, Hawaii</div>
-            <div class="tst-section-event__chapter__description">Ready to cap this year off right!!! After this year, much needed REST, RELAXATION AND PRICELESS FAMILY TIME is in order...</div>
-            <div class="tst-section-event__chapter__ctas ctas">
-              <div class="tst-section-event__chapter__cta ctas__cta">
-                <a class="cta__item button">
-                  <span class="button__label">
-                   <span class="button__label__label">Book Event</span>
-                 </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="tst-section-event tst-section-event--4">
-        <div class="tst-section-event__image background-images">
-          <div class="tst-section-event__image__image background-images__image"
-            style="background-image: url(/images/events/tim-stafford-event-honolulu.jpg)"></div>
-        </div>
-
-        <div class="tst-section-event__content">
-          <div class="tst-section-event__chapter tst-chapter">
-            <div class="tst-section-event__chapter__title">GUESS WHOS COMIN BACK OAHU!?</div>
-            <div class="tst-section-event__chapter__date">December 18, 2018 — January 10, 2019</div>
-            <div class="tst-section-event__chapter__location">Honolulu, Hawaii</div>
-            <div class="tst-section-event__chapter__description">Ready to cap this year off right!!! After this year, much needed REST, RELAXATION AND PRICELESS FAMILY TIME is in order...</div>
-            <div class="tst-section-event__chapter__ctas ctas">
-              <div class="tst-section-event__chapter__cta ctas__cta">
-                <a class="cta__item button">
-                  <span class="button__label">
-                   <span class="button__label__label">Book Event</span>
-                 </span>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 
@@ -337,19 +291,21 @@
 <footer class="tst-footer">
   <div class="tst-footer__container">
     <div class="tst-copyright">
-      &copy; 2019 Tim Stafford Tattoos
+      &copy; 2026 Tim Stafford Tattoos
     </div>
 
     <nav class="tst-nav tst-nav--social">
       <ul class="tst-nav__links">
         <li class="tst-nav__links__link ge-nav__links__link--facebook">
-          <a class="cta-button--link-only" href="">Facebook</a>
+          <a class="cta-button--link-only" href="https://www.facebook.com/Timsfineart" target="_blank" rel="noreferrer">Facebook</a>
         </li>
         <li class="tst-nav__links__link ge-nav__links__link--instagram">
-          <a class="cta-button--link-only" href="">Instagram</a>
+          <a class="cta-button--link-only" href="https://www.instagram.com/2cartoony4me/" target="_blank" rel="noreferrer">Instagram</a>
         </li>
       </ul>
     </nav>
   </div>
-</footer></body>
+</footer>  <div id="snipcart" data-api-key="ZjI4NTkxM2YtYzkwZC00MzFjLWJhMmYtYTA3NGM2M2ViMjkxNjM3MjA5NTgzMDAzMzE0ODUz" hidden></div>
+  <script src="https://cdn.snipcart.com/themes/v3.0.10/default/snipcart.js"></script>
+</body>
 </html>
